@@ -1,0 +1,4 @@
+# Internal / build artefacts
+.bob/
+PLAN.md
+content/
