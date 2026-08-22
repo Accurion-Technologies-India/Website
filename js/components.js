@@ -11,11 +11,8 @@
   'use strict';
 
   /* ── Root path detection ────────────────────────────────── */
-  // The <base href="/Website/"> tag in each HTML page handles path
-  // resolution, so we use empty root.  All relative URLs like
-  // "index.html" will automatically resolve to "/Website/index.html".
-  // When switching to a custom domain, remove the <base> tags and
-  // revert root to the old depth-based calculation if needed.
+  // The <base href="/"> tag in each HTML page handles root-relative
+  // path resolution across the custom domain.
   var root = '';
 
   /* ── Navbar ─────────────────────────────────────────────── */
