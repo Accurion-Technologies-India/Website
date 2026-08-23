@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon"
     href="assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/Accurion Technologies Logo Only.png" />
   <link rel="stylesheet" href="css/style.css" />
-  <script>!function(){var t=localStorage.getItem("accurion-theme")||((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");document.documentElement.setAttribute("data-theme",t);try{var p=window.location.pathname;if(p&&(p.endsWith(".html")||p.endsWith("/index.html"))){var c=p.replace(/\/index\.html$/,"/").replace(/\.html$/,"")||"/";window.history.replaceState(null,"",c+window.location.search+window.location.hash)}}catch(e){}}();</script>
+  <script>!function () { var t = localStorage.getItem("accurion-theme") || ((window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light"); document.documentElement.setAttribute("data-theme", t); try { var p = window.location.pathname; if (p && (p.endsWith(".html") || p.endsWith("/index.html"))) { var c = p.replace(/\/index\.html$/, "/").replace(/\.html$/, "") || "/"; window.history.replaceState(null, "", c + window.location.search + window.location.hash) } } catch (e) { } }();</script>
   <style>
     .form-success {
       display: none;
@@ -114,12 +114,12 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="phone">Phone Number <span style="color:var(--color-primary)">*</span></label>
-                  <input type="tel" id="phone" name="phone" placeholder="+91 83838 51980" required autocomplete="tel" />
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required
+                    autocomplete="tel" />
                 </div>
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="accuriontechnologies@gmail.com"
-                    autocomplete="email" />
+                  <input type="email" id="email" name="email" placeholder="Enter your Email" autocomplete="email" />
                 </div>
               </div>
 
