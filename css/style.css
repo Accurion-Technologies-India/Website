@@ -394,7 +394,13 @@ input, textarea, select {
   height: var(--navbar-height);
   background: var(--color-nav-bg);
   border-bottom: 1px solid transparent;
+  display: flex;
+  align-items: center;
   transition: background var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.navbar .container {
+  height: 100%;
 }
 
 .navbar.scrolled {
@@ -419,7 +425,7 @@ input, textarea, select {
 }
 
 .navbar-logo img {
-  height: 44px;
+  height: 52px;
   width: auto;
   display: block;
   object-fit: contain;
