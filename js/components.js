@@ -31,7 +31,7 @@
   <div class="navbar-inner">
 
     <a href="${root || '/'}" class="navbar-logo" aria-label="Accurion Technologies Home">
-      <img src="${root}assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/WITHOUT TAGLINE New Logo-01.png" alt="Accurion Technologies" />
+      <img src="${root}assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/Accurion Technologies Logo Only.png" alt="Accurion Technologies" />
     </a>
 
     <ul class="navbar-nav" role="list">
