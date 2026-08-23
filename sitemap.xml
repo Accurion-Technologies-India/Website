@@ -3,32 +3,32 @@
 
   <!-- Core Pages -->
   <url><loc>https://www.accuriontechnologies.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/blogs.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/shop-coming-soon.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/blogs</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/shop-coming-soon</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 
   <!-- Products -->
   <url><loc>https://www.accuriontechnologies.com/products/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/concrete-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/cement-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/soil-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/bitumen-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/aggregate-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/ndt-equipment.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/water-testing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/lab-balances.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/lab-chemicals.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/lab-glassware.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/lab-moulds.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/compression-machines.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/sieves-shakers.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/products/general-lab.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/concrete-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/cement-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/soil-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/bitumen-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/aggregate-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/ndt-equipment</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/water-testing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/lab-balances</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/lab-chemicals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/lab-glassware</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/lab-moulds</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/compression-machines</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/sieves-shakers</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/products/general-lab</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Blog -->
-  <url><loc>https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/blog/understanding-nabl-calibration.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.accuriontechnologies.com/blog/importance-of-quality-testing.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/blog/understanding-nabl-calibration</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.accuriontechnologies.com/blog/importance-of-quality-testing</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
 </urlset>

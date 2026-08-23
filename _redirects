@@ -1,0 +1,25 @@
+# Clean URLs for Netlify / Cloudflare Pages
+/about.html                     /about                     301!
+/services.html                  /services                  301!
+/blogs.html                     /blogs                     301!
+/contact.html                   /contact                   301!
+/shop-coming-soon.html          /shop-coming-soon          301!
+/index.html                     /                          301!
+/products/index.html            /products/                 301!
+/products/aggregate-testing.html     /products/aggregate-testing     301!
+/products/bitumen-testing.html       /products/bitumen-testing       301!
+/products/cement-testing.html        /products/cement-testing        301!
+/products/compression-machines.html  /products/compression-machines  301!
+/products/concrete-testing.html     /products/concrete-testing     301!
+/products/general-lab.html          /products/general-lab          301!
+/products/lab-balances.html         /products/lab-balances         301!
+/products/lab-chemicals.html        /products/lab-chemicals        301!
+/products/lab-glassware.html        /products/lab-glassware        301!
+/products/lab-moulds.html           /products/lab-moulds           301!
+/products/ndt-equipment.html        /products/ndt-equipment        301!
+/products/sieves-shakers.html       /products/sieves-shakers       301!
+/products/soil-testing.html         /products/soil-testing         301!
+/products/water-testing.html        /products/water-testing        301!
+/blog/how-to-setup-civil-quality-lab.html   /blog/how-to-setup-civil-quality-lab   301!
+/blog/importance-of-quality-testing.html    /blog/importance-of-quality-testing    301!
+/blog/understanding-nabl-calibration.html   /blog/understanding-nabl-calibration   301!

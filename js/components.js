@@ -30,47 +30,47 @@
 <div class="container">
   <div class="navbar-inner">
 
-    <a href="${root}index.html" class="navbar-logo" aria-label="Accurion Technologies Home">
+    <a href="${root || '/'}" class="navbar-logo" aria-label="Accurion Technologies Home">
       <img src="${root}assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/WITHOUT TAGLINE New Logo-01.png" alt="Accurion Technologies" />
     </a>
 
     <ul class="navbar-nav" role="list">
-      <li class="nav-item"><a href="${root}index.html" class="nav-link${a('home')}">Home</a></li>
-      <li class="nav-item"><a href="${root}about.html" class="nav-link${a('about')}">About Us</a></li>
+      <li class="nav-item"><a href="${root || '/'}" class="nav-link${a('home')}">Home</a></li>
+      <li class="nav-item"><a href="${root}about" class="nav-link${a('about')}">About Us</a></li>
       <li class="nav-item">
-        <a href="${root}products/index.html" class="nav-link${a('products')}" aria-haspopup="true">
+        <a href="${root}products/" class="nav-link${a('products')}" aria-haspopup="true">
           Our Products <span class="nav-arrow">▾</span>
         </a>
         <div class="mega-menu" role="menu">
           <div class="mega-menu-group">
             <h4>Civil Testing</h4>
-            <a href="${root}products/concrete-testing.html">Concrete Testing</a>
-            <a href="${root}products/cement-testing.html">Cement Testing</a>
-            <a href="${root}products/soil-testing.html">Soil Testing</a>
-            <a href="${root}products/bitumen-testing.html">Bitumen Testing</a>
-            <a href="${root}products/aggregate-testing.html">Aggregate Testing</a>
-            <a href="${root}products/ndt-equipment.html">NDT Equipment</a>
+            <a href="${root}products/concrete-testing">Concrete Testing</a>
+            <a href="${root}products/cement-testing">Cement Testing</a>
+            <a href="${root}products/soil-testing">Soil Testing</a>
+            <a href="${root}products/bitumen-testing">Bitumen Testing</a>
+            <a href="${root}products/aggregate-testing">Aggregate Testing</a>
+            <a href="${root}products/ndt-equipment">NDT Equipment</a>
           </div>
           <div class="mega-menu-group">
             <h4>Water &amp; Chemicals</h4>
-            <a href="${root}products/water-testing.html">Water Testing</a>
-            <a href="${root}products/lab-chemicals.html">Lab Chemicals</a>
-            <a href="${root}products/lab-glassware.html">Lab Glassware</a>
-            <a href="${root}products/lab-moulds.html">Moulds &amp; Apparatus</a>
+            <a href="${root}products/water-testing">Water Testing</a>
+            <a href="${root}products/lab-chemicals">Lab Chemicals</a>
+            <a href="${root}products/lab-glassware">Lab Glassware</a>
+            <a href="${root}products/lab-moulds">Moulds &amp; Apparatus</a>
           </div>
           <div class="mega-menu-group">
             <h4>Instruments</h4>
-            <a href="${root}products/lab-balances.html">Lab Balances</a>
-            <a href="${root}products/compression-machines.html">Compression Machines</a>
-            <a href="${root}products/sieves-shakers.html">Sieves &amp; Shakers</a>
-            <a href="${root}products/general-lab.html">General Lab Equipment</a>
+            <a href="${root}products/lab-balances">Lab Balances</a>
+            <a href="${root}products/compression-machines">Compression Machines</a>
+            <a href="${root}products/sieves-shakers">Sieves &amp; Shakers</a>
+            <a href="${root}products/general-lab">General Lab Equipment</a>
           </div>
         </div>
       </li>
-      <li class="nav-item"><a href="${root}services.html" class="nav-link${a('services')}">Services</a></li>
-      <li class="nav-item"><a href="${root}shop-coming-soon.html" class="nav-link${a('shop')}">Shop Online</a></li>
-      <li class="nav-item"><a href="${root}blogs.html" class="nav-link${a('blogs')}">Blogs</a></li>
-      <li class="nav-item"><a href="${root}contact.html" class="nav-link nav-cta${a('contact')}">Contact Us</a></li>
+      <li class="nav-item"><a href="${root}services" class="nav-link${a('services')}">Services</a></li>
+      <li class="nav-item"><a href="${root}shop-coming-soon" class="nav-link${a('shop')}">Shop Online</a></li>
+      <li class="nav-item"><a href="${root}blogs" class="nav-link${a('blogs')}">Blogs</a></li>
+      <li class="nav-item"><a href="${root}contact" class="nav-link nav-cta${a('contact')}">Contact Us</a></li>
     </ul>
 
     <div class="navbar-actions">
@@ -93,36 +93,36 @@
     var mobileHTML = `
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <ul class="mobile-nav-list">
-    <li class="mobile-nav-item"><a href="${root}index.html" class="mobile-nav-link">Home</a></li>
-    <li class="mobile-nav-item"><a href="${root}about.html" class="mobile-nav-link">About Us</a></li>
+    <li class="mobile-nav-item"><a href="${root || '/'}" class="mobile-nav-link">Home</a></li>
+    <li class="mobile-nav-item"><a href="${root}about" class="mobile-nav-link">About Us</a></li>
     <li class="mobile-nav-item">
       <a href="javascript:void(0)" class="mobile-nav-link" id="mobileProductsToggle">
         Our Products <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
       </a>
       <div class="mobile-nav-accordion" id="mobileProductsAccordion">
         <p class="mobile-nav-accordion-heading">Civil Testing</p>
-        <a href="${root}products/concrete-testing.html">Concrete Testing</a>
-        <a href="${root}products/cement-testing.html">Cement Testing</a>
-        <a href="${root}products/soil-testing.html">Soil Testing</a>
-        <a href="${root}products/bitumen-testing.html">Bitumen Testing</a>
-        <a href="${root}products/aggregate-testing.html">Aggregate Testing</a>
-        <a href="${root}products/ndt-equipment.html">NDT Equipment</a>
+        <a href="${root}products/concrete-testing">Concrete Testing</a>
+        <a href="${root}products/cement-testing">Cement Testing</a>
+        <a href="${root}products/soil-testing">Soil Testing</a>
+        <a href="${root}products/bitumen-testing">Bitumen Testing</a>
+        <a href="${root}products/aggregate-testing">Aggregate Testing</a>
+        <a href="${root}products/ndt-equipment">NDT Equipment</a>
         <p class="mobile-nav-accordion-heading">Water &amp; Chemicals</p>
-        <a href="${root}products/water-testing.html">Water Testing</a>
-        <a href="${root}products/lab-chemicals.html">Lab Chemicals</a>
-        <a href="${root}products/lab-glassware.html">Lab Glassware</a>
-        <a href="${root}products/lab-moulds.html">Moulds &amp; Apparatus</a>
+        <a href="${root}products/water-testing">Water Testing</a>
+        <a href="${root}products/lab-chemicals">Lab Chemicals</a>
+        <a href="${root}products/lab-glassware">Lab Glassware</a>
+        <a href="${root}products/lab-moulds">Moulds &amp; Apparatus</a>
         <p class="mobile-nav-accordion-heading">Instruments</p>
-        <a href="${root}products/lab-balances.html">Lab Balances</a>
-        <a href="${root}products/compression-machines.html">Compression Machines</a>
-        <a href="${root}products/sieves-shakers.html">Sieves &amp; Shakers</a>
-        <a href="${root}products/general-lab.html">General Lab Equipment</a>
+        <a href="${root}products/lab-balances">Lab Balances</a>
+        <a href="${root}products/compression-machines">Compression Machines</a>
+        <a href="${root}products/sieves-shakers">Sieves &amp; Shakers</a>
+        <a href="${root}products/general-lab">General Lab Equipment</a>
       </div>
     </li>
-    <li class="mobile-nav-item"><a href="${root}services.html" class="mobile-nav-link">Services</a></li>
-    <li class="mobile-nav-item"><a href="${root}shop-coming-soon.html" class="mobile-nav-link">Shop Online</a></li>
-    <li class="mobile-nav-item"><a href="${root}blogs.html" class="mobile-nav-link">Blogs</a></li>
-    <li class="mobile-nav-item"><a href="${root}contact.html" class="mobile-nav-link" style="color:var(--color-primary);font-weight:700;">Contact Us</a></li>
+    <li class="mobile-nav-item"><a href="${root}services" class="mobile-nav-link">Services</a></li>
+    <li class="mobile-nav-item"><a href="${root}shop-coming-soon" class="mobile-nav-link">Shop Online</a></li>
+    <li class="mobile-nav-item"><a href="${root}blogs" class="mobile-nav-link">Blogs</a></li>
+    <li class="mobile-nav-item"><a href="${root}contact" class="mobile-nav-link" style="color:var(--color-primary);font-weight:700;">Contact Us</a></li>
   </ul>
 </nav>
 <div class="mobile-nav-overlay" id="mobileOverlay"></div>`;
@@ -168,26 +168,26 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul class="footer-links">
-        <li><a href="${root}index.html">Home</a></li>
-        <li><a href="${root}about.html">About Us</a></li>
-        <li><a href="${root}products/index.html">Our Products</a></li>
-        <li><a href="${root}services.html">Services</a></li>
-        <li><a href="${root}shop-coming-soon.html">Shop Online</a></li>
-        <li><a href="${root}blogs.html">Blogs</a></li>
-        <li><a href="${root}contact.html">Contact Us</a></li>
+        <li><a href="${root || '/'}">Home</a></li>
+        <li><a href="${root}about">About Us</a></li>
+        <li><a href="${root}products/">Our Products</a></li>
+        <li><a href="${root}services">Services</a></li>
+        <li><a href="${root}shop-coming-soon">Shop Online</a></li>
+        <li><a href="${root}blogs">Blogs</a></li>
+        <li><a href="${root}contact">Contact Us</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>Product Categories</h4>
       <ul class="footer-links">
-        <li><a href="${root}products/concrete-testing.html">Concrete Testing</a></li>
-        <li><a href="${root}products/soil-testing.html">Soil Testing</a></li>
-        <li><a href="${root}products/bitumen-testing.html">Bitumen Testing</a></li>
-        <li><a href="${root}products/lab-balances.html">Lab Balances</a></li>
-        <li><a href="${root}products/water-testing.html">Water Testing</a></li>
-        <li><a href="${root}products/compression-machines.html">Compression Machines</a></li>
-        <li><a href="${root}products/index.html" style="color:var(--color-primary);">View All →</a></li>
+        <li><a href="${root}products/concrete-testing">Concrete Testing</a></li>
+        <li><a href="${root}products/soil-testing">Soil Testing</a></li>
+        <li><a href="${root}products/bitumen-testing">Bitumen Testing</a></li>
+        <li><a href="${root}products/lab-balances">Lab Balances</a></li>
+        <li><a href="${root}products/water-testing">Water Testing</a></li>
+        <li><a href="${root}products/compression-machines">Compression Machines</a></li>
+        <li><a href="${root}products/" style="color:var(--color-primary);">View All →</a></li>
       </ul>
     </div>
 

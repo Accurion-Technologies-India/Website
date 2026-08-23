@@ -26,6 +26,22 @@
     }
   }
 
+  // Clean .html and /index.html from URL bar immediately if present
+  (function cleanUrlEarly() {
+    try {
+      var path = window.location.pathname;
+      if (path && (path.endsWith('.html') || path.endsWith('/index') || path.endsWith('/index.html'))) {
+        var clean = path
+          .replace(/\/index\.html$/, '/')
+          .replace(/\/index$/, '/')
+          .replace(/\.html$/, '');
+        if (!clean) clean = '/';
+        var newUrl = clean + window.location.search + window.location.hash;
+        window.history.replaceState(null, '', newUrl);
+      }
+    } catch (e) {}
+  })();
+
   // Apply stored or system theme immediately (before DOM ready, to prevent flash)
   (function initThemeEarly() {
     const stored = localStorage.getItem(THEME_KEY);
@@ -200,14 +216,16 @@
     }
 
     /* ── 6. Active Nav Link ───────────────────────────────── */
-    const currentPath = window.location.pathname;
+    const rawPath = window.location.pathname;
+    const currentPath = rawPath.replace(/\/index\.html$/, '/').replace(/\.html$/, '') || '/';
     document.querySelectorAll('.nav-link').forEach(function (link) {
       const href = link.getAttribute('href');
       if (!href) return;
-      const isHome = (href.endsWith('index.html') || href === './') &&
-                     (currentPath === '/' || currentPath.endsWith('/index.html'));
-      const isMatch = !isHome && href !== '#' &&
-                      currentPath.includes(href.replace(/^(\.\/|\/|\.\.\/)+/, '').replace('.html', ''));
+      const cleanHref = href.replace(/^(\.\/|\/|\.\.\/)+/, '').replace(/\/index\.html$/, '').replace(/\.html$/, '').replace(/\/$/, '');
+      const isHome = (href === '/' || href === './' || href === '' || href.endsWith('index.html')) &&
+                     (currentPath === '/' || currentPath === '');
+      const isMatch = !isHome && href !== '#' && cleanHref &&
+                      (currentPath === '/' + cleanHref || currentPath.endsWith('/' + cleanHref) || currentPath.includes(cleanHref));
       if (isHome || isMatch) link.classList.add('active');
     });
 
