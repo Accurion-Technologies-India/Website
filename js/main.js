@@ -1,7 +1,8 @@
 /* ============================================================
    Accurion Technologies — Main JS
    Handles: Dark mode, Navbar scroll, Mobile menu, Hero carousel,
-            Scroll-reveal, Active nav link, Smooth anchor scroll
+            Scroll-reveal, Active nav link, Smooth anchor scroll,
+            FAQ Accordion, Back-to-Top Button, Accessibility
    ============================================================ */
 
 (function () {
@@ -26,29 +27,13 @@
     }
   }
 
-  // Clean .html and /index.html from URL bar immediately if present
-  (function cleanUrlEarly() {
-    try {
-      var path = window.location.pathname;
-      if (path && (path.endsWith('.html') || path.endsWith('/index') || path.endsWith('/index.html'))) {
-        var clean = path
-          .replace(/\/index\.html$/, '/')
-          .replace(/\/index$/, '/')
-          .replace(/\.html$/, '');
-        if (!clean) clean = '/';
-        var newUrl = clean + window.location.search + window.location.hash;
-        window.history.replaceState(null, '', newUrl);
-      }
-    } catch (e) {}
-  })();
-
-  // Apply stored or system theme immediately (before DOM ready, to prevent flash)
+  // Apply stored or system theme immediately
   (function initThemeEarly() {
     const stored = localStorage.getItem(THEME_KEY);
     html.setAttribute('data-theme', stored || getSystemTheme());
   })();
 
-  // Listen for system preference changes (only if user has no stored preference)
+  // Listen for system preference changes
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
     if (!localStorage.getItem(THEME_KEY)) {
       applyTheme(e.matches ? 'dark' : 'light');
@@ -59,7 +44,6 @@
   document.addEventListener('DOMContentLoaded', function () {
 
     /* ── 1. Dark / Light Mode toggle ─────────────────────── */
-    // Re-apply now that #themeToggle exists in the DOM (injected by components.js)
     applyTheme(localStorage.getItem(THEME_KEY) || getSystemTheme());
 
     const themeToggle = document.getElementById('themeToggle');
@@ -83,9 +67,9 @@
     window.addEventListener('scroll', handleNavbarScroll, { passive: true });
     handleNavbarScroll();
 
-    /* ── 3. Mobile Menu ───────────────────────────────────── */
-    const hamburger    = document.getElementById('hamburger');
-    const mobileNav    = document.getElementById('mobileNav');
+    /* ── 3. Mobile Menu with Focus Management ─────────────── */
+    const hamburger     = document.getElementById('hamburger');
+    const mobileNav     = document.getElementById('mobileNav');
     const mobileOverlay = document.getElementById('mobileOverlay');
 
     function openMobileNav() {
@@ -95,6 +79,9 @@
       hamburger.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
+      // Focus first link in mobile menu
+      const firstLink = mobileNav.querySelector('a');
+      if (firstLink) firstLink.focus();
     }
 
     function closeMobileNav() {
@@ -104,17 +91,25 @@
       hamburger.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+      if (hamburger) hamburger.focus();
     }
 
     if (hamburger) {
       hamburger.addEventListener('click', function () {
-        mobileNav.classList.contains('open') ? closeMobileNav() : openMobileNav();
+        mobileNav && mobileNav.classList.contains('open') ? closeMobileNav() : openMobileNav();
       });
     }
 
     if (mobileOverlay) {
       mobileOverlay.addEventListener('click', closeMobileNav);
     }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileNav && mobileNav.classList.contains('open')) {
+        closeMobileNav();
+      }
+    });
 
     // Accordion: Our Products in mobile menu
     const mobileProductsToggle    = document.getElementById('mobileProductsToggle');
@@ -130,7 +125,7 @@
       });
     }
 
-    // Close mobile nav when a link is clicked
+    // Close mobile nav when any menu link is clicked
     document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle), .mobile-nav-accordion a')
       .forEach(function (link) {
         link.addEventListener('click', closeMobileNav);
@@ -145,6 +140,7 @@
       let current  = 0;
       let autoPlayTimer = null;
       const INTERVAL = 5000;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       function goToSlide(index) {
         slides[current].classList.remove('active');
@@ -155,6 +151,7 @@
       }
 
       function startAutoPlay() {
+        if (prefersReducedMotion) return;
         stopAutoPlay();
         autoPlayTimer = setInterval(function () { goToSlide(current + 1); }, INTERVAL);
       }
@@ -163,18 +160,15 @@
         if (autoPlayTimer) { clearInterval(autoPlayTimer); autoPlayTimer = null; }
       }
 
-      // Dot clicks
       dots.forEach(function (dot, i) {
         dot.addEventListener('click', function () { goToSlide(i); stopAutoPlay(); startAutoPlay(); });
       });
 
-      // Arrow buttons
       const prevBtn = document.getElementById('heroPrev');
       const nextBtn = document.getElementById('heroNext');
       if (prevBtn) prevBtn.addEventListener('click', function () { goToSlide(current - 1); stopAutoPlay(); startAutoPlay(); });
       if (nextBtn) nextBtn.addEventListener('click', function () { goToSlide(current + 1); stopAutoPlay(); startAutoPlay(); });
 
-      // Touch / swipe
       let touchStartX = 0;
       heroCarousel.addEventListener('touchstart', function (e) { touchStartX = e.touches[0].clientX; }, { passive: true });
       heroCarousel.addEventListener('touchend', function (e) {
@@ -182,14 +176,12 @@
         if (Math.abs(diff) > 50) { goToSlide(diff > 0 ? current + 1 : current - 1); stopAutoPlay(); startAutoPlay(); }
       }, { passive: true });
 
-      // Pause on hover / tab visibility
       heroCarousel.addEventListener('mouseenter', stopAutoPlay);
       heroCarousel.addEventListener('mouseleave', startAutoPlay);
       document.addEventListener('visibilitychange', function () {
         document.hidden ? stopAutoPlay() : startAutoPlay();
       });
 
-      // Init
       if (slides.length > 0) {
         slides[0].classList.add('active');
         if (dots[0]) dots[0].classList.add('active');
@@ -241,6 +233,34 @@
         }
       });
     });
+
+    /* ── 8. FAQ Accordion Toggle ──────────────────────────── */
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close other FAQs in the same group
+        const parentList = item.closest('.faq-list');
+        if (parentList) {
+          parentList.querySelectorAll('.faq-item').forEach(function (other) {
+            if (other !== item) other.classList.remove('open');
+          });
+        }
+        item.classList.toggle('open', !isOpen);
+      });
+    });
+
+    /* ── 9. Back to Top Button ────────────────────────────── */
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+      window.addEventListener('scroll', function () {
+        backToTopBtn.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+
+      backToTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
 
   }); // end DOMContentLoaded
 

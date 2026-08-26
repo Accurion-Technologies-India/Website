@@ -10,14 +10,26 @@
   function prefillFromURL() {
     const params = new URLSearchParams(window.location.search);
     const product = params.get('product');
+    const requestType = params.get('request');
     const messageField = document.getElementById('message');
     const subjectField = document.getElementById('subject');
 
-    if (product && messageField) {
+    if (product) {
       const decoded = decodeURIComponent(product.replace(/\+/g, ' '));
-      messageField.value = 'I am interested in: ' + decoded + '.\n\nPlease send me more details and pricing.';
-      if (subjectField && !subjectField.value) {
-        subjectField.value = 'Enquiry: ' + decoded;
+      if (requestType === 'catalogue') {
+        if (messageField) {
+          messageField.value = 'Please send me the official product catalogue, data sheet, and technical specifications for: ' + decoded + '.\n\nThank you.';
+        }
+        if (subjectField) {
+          subjectField.value = 'Catalogue Request: ' + decoded;
+        }
+      } else {
+        if (messageField) {
+          messageField.value = 'I am interested in: ' + decoded + '.\n\nPlease send me more details and pricing.';
+        }
+        if (subjectField && !subjectField.value) {
+          subjectField.value = 'Enquiry: ' + decoded;
+        }
       }
     }
   }
@@ -47,7 +59,14 @@
       let valid = true;
       required.forEach(function (field) {
         field.style.borderColor = '';
-        if (!field.value.trim()) {
+        if (field.type === 'checkbox') {
+          if (!field.checked) {
+            field.style.outline = '2px solid #C41217';
+            valid = false;
+          } else {
+            field.style.outline = '';
+          }
+        } else if (!field.value.trim()) {
           field.style.borderColor = '#C41217';
           valid = false;
         }
@@ -77,7 +96,6 @@
             successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
           }
         } else {
-          // Log Formspree's error detail to console for debugging
           try {
             var json = await response.json();
             var reason = (json && json.error) ? json.error
@@ -106,8 +124,6 @@
   }
 
   /* ── Init ───────────────────────────────────────────────── */
-  // Scripts load at end of <body> so DOM is usually already ready.
-  // Handle both cases to avoid missed or duplicate DOMContentLoaded events.
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       prefillFromURL();

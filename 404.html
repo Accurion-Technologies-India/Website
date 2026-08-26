@@ -5,59 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found — 404 | Accurion Technologies</title>
-  <meta name="description" content="The page you are looking for does not exist. Browse Accurion Technologies civil laboratory equipment and services." />
-  <link rel="icon" href="assets/logo/ICO FILE-20260622T084410Z-3-001/ICO FILE/WITHOUT TAGLINE New Logo-01.ico" />
-  <link rel="apple-touch-icon" href="assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/Accurion Technologies Logo Only.png" />
+  <meta name="description" content="The page you are looking for does not exist. Browse Accurion Technologies civil laboratory equipment and calibration services." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <script>
-    !function(){var t=localStorage.getItem("accurion-theme")||((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();
-    
-    // GitHub Pages Clean URL fallback router
-    (function () {
-      var path = window.location.pathname;
-      // List of known clean routes
-      var routes = [
-        'about', 'services', 'blogs', 'contact', 'shop-coming-soon',
-        'products/', 'products/aggregate-testing', 'products/bitumen-testing',
-        'products/cement-testing', 'products/compression-machines',
-        'products/concrete-testing', 'products/general-lab',
-        'products/lab-balances', 'products/lab-chemicals',
-        'products/lab-glassware', 'products/lab-moulds',
-        'products/ndt-equipment', 'products/sieves-shakers',
-        'products/soil-testing', 'products/water-testing',
-        'blog/how-to-setup-civil-quality-lab',
-        'blog/importance-of-quality-testing',
-        'blog/understanding-nabl-calibration'
-      ];
-      
-      var clean = path.replace(/^\/+|\/+$/g, '');
-      if (clean && routes.indexOf(clean) !== -1) {
-        window.location.replace('/' + clean + '.html' + window.location.search + window.location.hash);
-      }
-    })();
-  </script>
+  <script>!function(){var t=localStorage.getItem("accurion-theme")||((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");document.documentElement.setAttribute("data-theme",t)}();</script>
 </head>
 <body data-page="404">
+  <a href="#main-content" class="skip-link">Skip to Content</a>
 
-  <section class="page-hero" style="min-height:450px;display:flex;align-items:center;justify-content:center;text-align:center;">
-    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80');"></div>
-    <div class="container">
-      <div class="page-hero-content" style="max-width:600px;margin:0 auto;">
-        <span class="section-tag" style="font-size:1.125rem;letter-spacing:2px;margin-bottom:12px;">Error 404</span>
-        <h1 style="font-size:clamp(2.5rem,6vw,4rem);margin-bottom:16px;">Page Not Found</h1>
-        <p style="font-size:1.125rem;color:rgba(255,255,255,0.85);margin-bottom:32px;line-height:1.6;">
-          The page you are looking for might have been moved, renamed, or is temporarily unavailable.
-        </p>
-        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-          <a href="./" class="btn btn-primary btn-lg">Back to Home</a>
-          <a href="products/" class="btn btn-outline btn-lg">View Products</a>
-          <a href="contact" class="btn btn-lg" style="background:#fff;color:var(--color-primary);">Contact Us</a>
+  <main id="main-content">
+    <section class="page-hero" style="min-height:480px;display:flex;align-items:center;justify-content:center;text-align:center;">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=80');"></div>
+      <div class="container">
+        <div class="page-hero-content" style="max-width:640px;margin:0 auto;">
+          <span class="section-tag" style="font-size:1.125rem;letter-spacing:2px;margin-bottom:12px;">Error 404</span>
+          <h1 style="font-size:clamp(2.5rem,6vw,4rem);margin-bottom:16px;">Page Not Found</h1>
+          <p style="font-size:1.125rem;color:rgba(255,255,255,0.85);margin-bottom:32px;line-height:1.6;">
+            The page you are looking for might have been moved, renamed, or is temporarily unavailable.
+          </p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="./" class="btn btn-primary btn-lg">Back to Home</a>
+            <a href="products/" class="btn btn-outline btn-lg">View Products</a>
+            <a href="contact/" class="btn btn-lg" style="background:#fff;color:var(--color-primary);">Contact Us</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <script src="js/components.js?v=2"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
