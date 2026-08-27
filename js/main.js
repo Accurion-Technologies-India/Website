@@ -68,8 +68,8 @@
     handleNavbarScroll();
 
     /* ── 3. Mobile Menu with Focus Management ─────────────── */
-    const hamburger     = document.getElementById('hamburger');
-    const mobileNav     = document.getElementById('mobileNav');
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
     const mobileOverlay = document.getElementById('mobileOverlay');
 
     function openMobileNav() {
@@ -112,7 +112,7 @@
     });
 
     // Accordion: Our Products in mobile menu
-    const mobileProductsToggle    = document.getElementById('mobileProductsToggle');
+    const mobileProductsToggle = document.getElementById('mobileProductsToggle');
     const mobileProductsAccordion = document.getElementById('mobileProductsAccordion');
 
     if (mobileProductsToggle && mobileProductsAccordion) {
@@ -136,10 +136,10 @@
 
     if (heroCarousel) {
       const slides = heroCarousel.querySelectorAll('.hero-slide');
-      const dots   = heroCarousel.querySelectorAll('.hero-dot');
-      let current  = 0;
+      const dots = heroCarousel.querySelectorAll('.hero-dot');
+      let current = 0;
       let autoPlayTimer = null;
-      const INTERVAL = 5000;
+      const INTERVAL = 3000;
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       function goToSlide(index) {
@@ -215,9 +215,9 @@
       if (!href) return;
       const cleanHref = href.replace(/^(\.\/|\/|\.\.\/)+/, '').replace(/\/index\.html$/, '').replace(/\.html$/, '').replace(/\/$/, '');
       const isHome = (href === '/' || href === './' || href === '' || href.endsWith('index.html')) &&
-                     (currentPath === '/' || currentPath === '');
+        (currentPath === '/' || currentPath === '');
       const isMatch = !isHome && href !== '#' && cleanHref &&
-                      (currentPath === '/' + cleanHref || currentPath.endsWith('/' + cleanHref) || currentPath.includes(cleanHref));
+        (currentPath === '/' + cleanHref || currentPath.endsWith('/' + cleanHref) || currentPath.includes(cleanHref));
       if (isHome || isMatch) link.classList.add('active');
     });
 
