@@ -17,6 +17,7 @@
 
   /* ── Navbar ─────────────────────────────────────────────── */
   function buildNavbar() {
+    if (document.getElementById('navbar')) return;
     var page = document.body.getAttribute('data-page') || '';
 
     function a(p) { return page === p ? ' active' : ''; }
@@ -96,6 +97,7 @@
 
   /* ── Mobile Nav ─────────────────────────────────────────── */
   function buildMobileNav() {
+    if (document.getElementById('mobileNav')) return;
     var mobileHTML = `
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <ul class="mobile-nav-list">
@@ -140,13 +142,16 @@
     var wrapper = document.createElement('div');
     wrapper.innerHTML = mobileHTML.trim();
     var navbar = document.getElementById('navbar');
-    while (wrapper.firstChild) {
-      navbar.parentNode.insertBefore(wrapper.firstChild, navbar.nextSibling);
+    if (navbar && navbar.parentNode) {
+      while (wrapper.firstChild) {
+        navbar.parentNode.insertBefore(wrapper.firstChild, navbar.nextSibling);
+      }
     }
   }
 
   /* ── Footer ─────────────────────────────────────────────── */
   function buildFooter() {
+    if (document.querySelector('footer.footer')) return;
     var year = new Date().getFullYear();
     var footer = document.createElement('footer');
     footer.className = 'footer';
@@ -243,6 +248,7 @@
 
   /* ── WhatsApp Float ─────────────────────────────────────── */
   function buildWhatsApp() {
+    if (document.querySelector('.whatsapp-float')) return;
     var wa = document.createElement('a');
     wa.href = 'https://wa.me/918383851980?text=Hello%2C%20I%27m%20interested%20in%20your%20products%2Fservices.%20Please%20get%20in%20touch.';
     wa.className = 'whatsapp-float';
@@ -259,6 +265,7 @@
 
   /* ── Back to Top Button ─────────────────────────────────── */
   function buildBackToTop() {
+    if (document.getElementById('backToTop')) return;
     var btn = document.createElement('button');
     btn.id = 'backToTop';
     btn.className = 'back-to-top';

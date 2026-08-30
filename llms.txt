@@ -1,0 +1,33 @@
+# Accurion Technologies
+
+> Manufacturer, supplier and service provider of Civil Quality Laboratory Equipment and NABL-accredited calibration solutions across India.
+
+Accurion Technologies is an engineering laboratory equipment manufacturer based in Delhi, India. We provide turnkey civil engineering testing laboratory setups, testing apparatus conforming to IS, ASTM, and BS codes, and ISO/IEC 17025 traceable NABL calibration services.
+
+## Contact Information
+- **Website**: https://www.accuriontechnologies.com/
+- **Phone / WhatsApp**: +91 83838 51980
+- **Email**: accuriontechnologies@gmail.com / sales.accuriontechnologies@gmail.com
+- **Address**: E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar, Delhi - 110094, India
+
+## Product Categories
+- [Concrete Testing Equipment](https://www.accuriontechnologies.com/products/concrete-testing/): Compressive strength testing machines (CTM), cube moulds, slump cones, vibrating tables, air entrainment meters.
+- [Soil Testing Equipment](https://www.accuriontechnologies.com/products/soil-testing/): Proctor compaction, Atterberg limits, California Bearing Ratio (CBR), direct shear apparatus, unconfined compression.
+- [Bitumen Testing Equipment](https://www.accuriontechnologies.com/products/bitumen-testing/): Penetration test apparatus, softening point (Ring & Ball), ductility machine, flash point apparatus.
+- [Cement Testing Equipment](https://www.accuriontechnologies.com/products/cement-testing/): Vicat apparatus, Blaine air permeability apparatus, Le Chatelier soundness moulds, mortar mixers.
+- [NDT Equipment](https://www.accuriontechnologies.com/products/ndt-equipment/): Digital concrete test hammers (rebound hammer), Ultrasonic Pulse Velocity (UPV) testers, rebar locators.
+- [Laboratory Balances](https://www.accuriontechnologies.com/products/lab-balances/): Analytical balances, high-precision electronic balances, industrial platform scales, moisture analyzers.
+- [Water Testing Equipment](https://www.accuriontechnologies.com/products/water-testing/): pH meters, TDS / conductivity meters, turbidity meters, BOD incubators, water quality kits.
+- [Moulds & Apparatus](https://www.accuriontechnologies.com/products/lab-moulds/): Cast iron cube moulds, cylindrical moulds, beam moulds, mortar moulds.
+- [Sieves & Shakers](https://www.accuriontechnologies.com/products/sieves-shakers/): Brass & stainless steel test sieves (IS/ASTM), motorized sieve shakers, gyratory shakers.
+- [Metrology & Gauges](https://www.accuriontechnologies.com/products/metrology-gauges/): Micrometers, vernier calipers, dial gauges, coating thickness gauges (DFT).
+
+## Key Services
+- [NABL Calibration Services](https://www.accuriontechnologies.com/services/#calibration): Traceable calibration for CTM, UTM, proving rings, load cells, digital balances, and dimensional instruments.
+- [Turnkey Civil Quality Lab Setup](https://www.accuriontechnologies.com/services/#lab-setup): End-to-end lab design, equipment procurement, logistics, on-site commissioning, and staff training.
+- [Equipment Repair & Maintenance (AMC)](https://www.accuriontechnologies.com/services/#repair): Preventive maintenance and repairs for civil laboratory instruments.
+
+## Technical Guides & Articles
+- [How to Set Up a Complete Civil Quality Laboratory](https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab/): Roadmap for setting up on-site and central civil testing laboratories under IS standards.
+- [Understanding NABL Calibration](https://www.accuriontechnologies.com/blog/understanding-nabl-calibration/): Explanation of ISO/IEC 17025 traceability and audit compliance.
+- [Importance of Quality Testing in Modern Construction](https://www.accuriontechnologies.com/blog/importance-of-quality-testing/): Why rigorous material testing prevents structural failures.
