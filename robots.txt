@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /content/
+Disallow: /Miscellaneous/
+Disallow: /.bob/
 
 Sitemap: https://www.accuriontechnologies.com/sitemap.xml

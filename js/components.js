@@ -32,7 +32,7 @@
   <div class="navbar-inner">
 
     <a href="${root || '/'}" class="navbar-logo" aria-label="Accurion Technologies Home">
-      <img src="${root}assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/Accurion Technologies Logo Only.png" alt="Accurion Technologies" width="180" height="52" />
+      <img src="${root}assets/logo/accurion-logo.png" alt="Accurion Technologies" width="180" height="52" />
     </a>
 
     <ul class="navbar-nav" role="list">
@@ -161,7 +161,7 @@
   <div class="footer-grid">
 
     <div class="footer-brand">
-      <img src="${root}assets/logo/PNG FILE-20260622T084410Z-3-001/PNG FILE/WITHOUT TAGLINE New Logo-01.png" alt="Accurion Technologies" width="200" height="56" />
+      <img src="${root}assets/logo/accurion-logo.png" alt="Accurion Technologies" width="200" height="56" />
       <p class="footer-tagline">Where Accuracy Meets Innovation</p>
       <p class="footer-blurb">Trusted manufacturer, supplier &amp; service provider of complete Civil Quality Laboratory Equipment and NABL-accredited calibration solutions. Serving clients across India from Delhi.</p>
       <div class="footer-social">
