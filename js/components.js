@@ -32,7 +32,7 @@
   <div class="navbar-inner">
 
     <a href="${root || '/'}" class="navbar-logo" aria-label="Accurion Technologies Home">
-      <img src="${root}assets/logo/accurion-logo.png" alt="Accurion Technologies" width="180" height="52" />
+      <img src="${root}assets/logo/accurion-icon.png" alt="Accurion Technologies" width="76" height="52" />
     </a>
 
     <ul class="navbar-nav" role="list">
