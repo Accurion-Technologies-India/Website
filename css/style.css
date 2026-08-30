@@ -610,15 +610,15 @@ input, textarea, select {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 720px;
+  width: 920px;
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
   padding: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

@@ -56,13 +56,19 @@
             <a href="${root}products/water-testing/">Water Testing</a>
             <a href="${root}products/lab-chemicals/">Lab Chemicals</a>
             <a href="${root}products/lab-glassware/">Lab Glassware</a>
+            <a href="${root}products/lab-consumables/">Lab Consumables</a>
+          </div>
+          <div class="mega-menu-group">
+            <h4>Moulds &amp; Tools</h4>
             <a href="${root}products/lab-moulds/">Moulds &amp; Apparatus</a>
+            <a href="${root}products/sieves-shakers/">Sieves &amp; Shakers</a>
+            <a href="${root}products/sampling-tools/">Sampling &amp; Tools</a>
           </div>
           <div class="mega-menu-group">
             <h4>Instruments</h4>
-            <a href="${root}products/lab-balances/">Lab Balances</a>
             <a href="${root}products/compression-machines/">Compression Machines</a>
-            <a href="${root}products/sieves-shakers/">Sieves &amp; Shakers</a>
+            <a href="${root}products/lab-balances/">Lab Balances</a>
+            <a href="${root}products/metrology-gauges/">Metrology &amp; Gauges</a>
             <a href="${root}products/general-lab/">General Lab Equipment</a>
           </div>
         </div>
@@ -111,11 +117,15 @@
         <a href="${root}products/water-testing/">Water Testing</a>
         <a href="${root}products/lab-chemicals/">Lab Chemicals</a>
         <a href="${root}products/lab-glassware/">Lab Glassware</a>
+        <a href="${root}products/lab-consumables/">Lab Consumables</a>
+        <p class="mobile-nav-accordion-heading">Moulds &amp; Tools</p>
         <a href="${root}products/lab-moulds/">Moulds &amp; Apparatus</a>
-        <p class="mobile-nav-accordion-heading">Instruments</p>
-        <a href="${root}products/lab-balances/">Lab Balances</a>
-        <a href="${root}products/compression-machines/">Compression Machines</a>
         <a href="${root}products/sieves-shakers/">Sieves &amp; Shakers</a>
+        <a href="${root}products/sampling-tools/">Sampling &amp; Handling Tools</a>
+        <p class="mobile-nav-accordion-heading">Instruments &amp; Metrology</p>
+        <a href="${root}products/compression-machines/">Compression Machines</a>
+        <a href="${root}products/lab-balances/">Lab Balances</a>
+        <a href="${root}products/metrology-gauges/">Metrology &amp; Gauges</a>
         <a href="${root}products/general-lab/">General Lab Equipment</a>
       </div>
     </li>
@@ -184,10 +194,10 @@
         <li><a href="${root}products/concrete-testing/">Concrete Testing</a></li>
         <li><a href="${root}products/soil-testing/">Soil Testing</a></li>
         <li><a href="${root}products/bitumen-testing/">Bitumen Testing</a></li>
-        <li><a href="${root}products/lab-balances/">Lab Balances</a></li>
-        <li><a href="${root}products/water-testing/">Water Testing</a></li>
+        <li><a href="${root}products/metrology-gauges/">Metrology &amp; Gauges</a></li>
+        <li><a href="${root}products/sampling-tools/">Sampling Tools</a></li>
         <li><a href="${root}products/compression-machines/">Compression Machines</a></li>
-        <li><a href="${root}products/" style="color:var(--color-primary);">View All →</a></li>
+        <li><a href="${root}products/" style="color:var(--color-primary);">View All Categories →</a></li>
       </ul>
     </div>
 
