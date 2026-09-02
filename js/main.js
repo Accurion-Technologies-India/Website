@@ -111,6 +111,22 @@
       }
     });
 
+    // Accordion: About Us in mobile menu
+    const mobileAboutToggle = document.getElementById('mobileAboutToggle');
+    const mobileAboutAccordion = document.getElementById('mobileAboutAccordion');
+
+    if (mobileAboutToggle && mobileAboutAccordion) {
+      mobileAboutToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = mobileAboutAccordion.classList.contains('open');
+        mobileAboutAccordion.classList.toggle('open', !isOpen);
+        mobileAboutToggle.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+        const arrow = mobileAboutToggle.querySelector('.mobile-arrow');
+        if (arrow) arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
+      });
+    }
+
     // Accordion: Our Products in mobile menu
     const mobileProductsToggle = document.getElementById('mobileProductsToggle');
     const mobileProductsAccordion = document.getElementById('mobileProductsAccordion');
@@ -118,15 +134,17 @@
     if (mobileProductsToggle && mobileProductsAccordion) {
       mobileProductsToggle.addEventListener('click', function (e) {
         e.preventDefault();
+        e.stopPropagation();
         const isOpen = mobileProductsAccordion.classList.contains('open');
         mobileProductsAccordion.classList.toggle('open', !isOpen);
+        mobileProductsToggle.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
         const arrow = mobileProductsToggle.querySelector('.mobile-arrow');
         if (arrow) arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
       });
     }
 
     // Close mobile nav when any menu link is clicked
-    document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle), .mobile-nav-accordion a')
+    document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle):not(#mobileAboutToggle), .mobile-nav-accordion a')
       .forEach(function (link) {
         link.addEventListener('click', closeMobileNav);
       });

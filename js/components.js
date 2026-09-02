@@ -37,7 +37,37 @@
 
     <ul class="navbar-nav" role="list">
       <li class="nav-item"><a href="${root || '/'}" class="nav-link${a('home')}">Home</a></li>
-      <li class="nav-item"><a href="${root}about/" class="nav-link${a('about')}">About Us</a></li>
+      <li class="nav-item nav-item-dropdown">
+        <a href="${root}about/" class="nav-link${a('about')}" aria-haspopup="true">
+          About Us <span class="nav-arrow">▾</span>
+        </a>
+        <div class="dropdown-menu" role="menu" aria-label="About Us Submenu">
+          <a href="${root}about/#who-we-are" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Who We Are</span>
+            <span class="dropdown-item-desc">Company overview &amp; Delhi HQ</span>
+          </a>
+          <a href="${root}about/#our-mission" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Our Mission</span>
+            <span class="dropdown-item-desc">Core values &amp; quality standards</span>
+          </a>
+          <a href="${root}about/#our-range" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Our Range</span>
+            <span class="dropdown-item-desc">Complete lab equipment &amp; supplies</span>
+          </a>
+          <a href="${root}about/#our-advantage" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Our Advantage</span>
+            <span class="dropdown-item-desc">Why choose Accurion Technologies</span>
+          </a>
+          <a href="${root}about/#our-clients" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Our Clients</span>
+            <span class="dropdown-item-desc">Industries &amp; sectors we serve</span>
+          </a>
+          <a href="${root}about/#our-people" class="dropdown-item" role="menuitem">
+            <span class="dropdown-item-title">Our People</span>
+            <span class="dropdown-item-desc">Leadership &amp; operations team</span>
+          </a>
+        </div>
+      </li>
       <li class="nav-item">
         <a href="${root}products/" class="nav-link${a('products')}" aria-haspopup="true">
           Our Products <span class="nav-arrow">▾</span>
@@ -102,7 +132,22 @@
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <ul class="mobile-nav-list">
     <li class="mobile-nav-item"><a href="${root || '/'}" class="mobile-nav-link">Home</a></li>
-    <li class="mobile-nav-item"><a href="${root}about/" class="mobile-nav-link">About Us</a></li>
+    <li class="mobile-nav-item">
+      <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+        <a href="${root}about/" class="mobile-nav-link" style="flex:1;">About Us</a>
+        <button class="mobile-accordion-btn" id="mobileAboutToggle" aria-label="Toggle About Us sub-links" aria-expanded="false">
+          <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
+        </button>
+      </div>
+      <div class="mobile-nav-accordion" id="mobileAboutAccordion">
+        <a href="${root}about/#who-we-are">Who We Are</a>
+        <a href="${root}about/#our-mission">Our Mission</a>
+        <a href="${root}about/#our-range">Our Range</a>
+        <a href="${root}about/#our-advantage">Our Advantage</a>
+        <a href="${root}about/#our-clients">Our Clients</a>
+        <a href="${root}about/#our-people">Our People</a>
+      </div>
+    </li>
     <li class="mobile-nav-item">
       <a href="javascript:void(0)" class="mobile-nav-link" id="mobileProductsToggle">
         Our Products <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
