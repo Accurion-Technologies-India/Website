@@ -42,30 +42,10 @@
           About Us <span class="nav-arrow">▾</span>
         </a>
         <div class="dropdown-menu" role="menu" aria-label="About Us Submenu">
-          <a href="${root}about/#who-we-are" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Who We Are</span>
-            <span class="dropdown-item-desc">Company overview &amp; Delhi HQ</span>
-          </a>
-          <a href="${root}about/#our-mission" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Our Mission</span>
-            <span class="dropdown-item-desc">Core values &amp; quality standards</span>
-          </a>
-          <a href="${root}about/#our-range" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Our Range</span>
-            <span class="dropdown-item-desc">Complete lab equipment &amp; supplies</span>
-          </a>
-          <a href="${root}about/#our-advantage" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Our Advantage</span>
-            <span class="dropdown-item-desc">Why choose Accurion Technologies</span>
-          </a>
-          <a href="${root}about/#our-clients" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Our Clients</span>
-            <span class="dropdown-item-desc">Industries &amp; sectors we serve</span>
-          </a>
-          <a href="${root}about/#our-people" class="dropdown-item" role="menuitem">
-            <span class="dropdown-item-title">Our People</span>
-            <span class="dropdown-item-desc">Leadership &amp; operations team</span>
-          </a>
+          <a href="${root}about/#who-we-are" class="dropdown-item" role="menuitem">Who We Are</a>
+          <a href="${root}about/#our-advantage" class="dropdown-item" role="menuitem">Our Advantage</a>
+          <a href="${root}about/#our-clients" class="dropdown-item" role="menuitem">Our Clients</a>
+          <a href="${root}about/#our-certifications" class="dropdown-item" role="menuitem">Our Certifications</a>
         </div>
       </li>
       <li class="nav-item">
@@ -80,7 +60,17 @@
             <a href="${root}products/soil-testing/">Soil Testing</a>
             <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
             <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
-            <a href="${root}products/ndt-equipment/">NDT Equipment</a>
+            <div class="mega-subitem-wrap">
+              <a href="${root}products/ndt-equipment/" class="mega-subitem-trigger">
+                <span>NDT Equipment</span>
+                <span class="sub-arrow">▸</span>
+              </a>
+              <div class="mega-submenu" role="menu" aria-label="NDT Equipment Submenu">
+                <a href="${root}products/ndt-equipment/rebound-hammers/" role="menuitem">Rebound Hammers</a>
+                <a href="${root}products/ndt-equipment/upv-testers/" role="menuitem">UPV Testers</a>
+                <a href="${root}products/ndt-equipment/rebar-detectors/" role="menuitem">Rebar Detectors</a>
+              </div>
+            </div>
           </div>
           <div class="mega-menu-group">
             <h4>Water &amp; Chemicals</h4>
@@ -141,11 +131,9 @@
       </div>
       <div class="mobile-nav-accordion" id="mobileAboutAccordion">
         <a href="${root}about/#who-we-are">Who We Are</a>
-        <a href="${root}about/#our-mission">Our Mission</a>
-        <a href="${root}about/#our-range">Our Range</a>
         <a href="${root}about/#our-advantage">Our Advantage</a>
         <a href="${root}about/#our-clients">Our Clients</a>
-        <a href="${root}about/#our-people">Our People</a>
+        <a href="${root}about/#our-certifications">Our Certifications</a>
       </div>
     </li>
     <li class="mobile-nav-item">
@@ -159,7 +147,12 @@
         <a href="${root}products/soil-testing/">Soil Testing</a>
         <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
         <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
-        <a href="${root}products/ndt-equipment/">NDT Equipment</a>
+        <a href="${root}products/ndt-equipment/" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;">
+          <span>NDT Equipment</span>
+        </a>
+        <a href="${root}products/ndt-equipment/rebound-hammers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebound Hammers</a>
+        <a href="${root}products/ndt-equipment/upv-testers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ UPV Testers</a>
+        <a href="${root}products/ndt-equipment/rebar-detectors/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebar Detectors</a>
         <p class="mobile-nav-accordion-heading">Water &amp; Chemicals</p>
         <a href="${root}products/water-testing/">Water Testing</a>
         <a href="${root}products/lab-chemicals/">Lab Chemicals</a>
@@ -244,6 +237,7 @@
         <li><a href="${root}products/concrete-testing/">Concrete Testing</a></li>
         <li><a href="${root}products/soil-testing/">Soil Testing</a></li>
         <li><a href="${root}products/bitumen-testing/">Bitumen Testing</a></li>
+        <li><a href="${root}products/ndt-equipment/rebound-hammers/">Rebound Hammers</a></li>
         <li><a href="${root}products/metrology-gauges/">Metrology &amp; Gauges</a></li>
         <li><a href="${root}products/sampling-tools/">Sampling Tools</a></li>
         <li><a href="${root}products/compression-machines/">Compression Machines</a></li>
@@ -271,8 +265,8 @@
       <div class="footer-contact-item">
         <span class="footer-contact-icon">✉️</span>
         <span>
-          <a href="mailto:accuriontechnologies@gmail.com">accuriontechnologies@gmail.com</a><br>
-          <a href="mailto:sales.accuriontechnologies@gmail.com">sales.accuriontechnologies@gmail.com</a>
+          <a href="mailto:info@accuriontechnologies.com">info@accuriontechnologies.com</a><br>
+          <a href="mailto:sales@accuriontechnologies.com">sales@accuriontechnologies.com</a>
         </span>
       </div>
     </div>

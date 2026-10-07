@@ -18,6 +18,8 @@
 
   function applyTheme(theme) {
     html.setAttribute('data-theme', theme);
+    const isDark = theme === 'dark';
+    html.style.setProperty('--nav-link-color', isDark ? '#f9fafb' : '#111827');
     const toggle = document.getElementById('themeToggle');
     if (toggle) {
       toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
@@ -160,12 +162,35 @@
       const INTERVAL = 3000;
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+      function updateAmbientLighting(slide) {
+        if (!slide) return;
+        const rgb = slide.getAttribute('data-ambient-rgb') || '196, 18, 23';
+        const glow = document.getElementById('heroAmbientGlow');
+        if (glow) {
+          glow.style.setProperty('--ambient-color', rgb);
+        }
+        // Seamlessly propagate ambient color to the header/navigation and entire document
+        document.documentElement.style.setProperty('--ambient-color', rgb);
+
+        // Contrast-aware text adaptation:
+        const parts = rgb.split(',').map(function (s) { return parseInt(s.trim(), 10); });
+        if (parts.length === 3 && !isNaN(parts[0])) {
+          var lum = (0.2126 * parts[0] + 0.7152 * parts[1] + 0.0722 * parts[2]) / 255;
+          document.documentElement.style.setProperty('--ambient-lum', lum.toFixed(2));
+          var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+          // Ensure navigation text contrast remains crystal-clear
+          var navColor = isDark ? '#f9fafb' : '#111827';
+          document.documentElement.style.setProperty('--nav-link-color', navColor);
+        }
+      }
+
       function goToSlide(index) {
         slides[current].classList.remove('active');
         if (dots[current]) dots[current].classList.remove('active');
         current = (index + slides.length) % slides.length;
         slides[current].classList.add('active');
         if (dots[current]) dots[current].classList.add('active');
+        updateAmbientLighting(slides[current]);
       }
 
       function startAutoPlay() {
@@ -203,6 +228,7 @@
       if (slides.length > 0) {
         slides[0].classList.add('active');
         if (dots[0]) dots[0].classList.add('active');
+        updateAmbientLighting(slides[0]);
         startAutoPlay();
       }
     }

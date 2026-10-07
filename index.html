@@ -4,7 +4,8 @@
 <base href="/"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Accurion Technologies — Civil Lab Equipment &amp; NABL Calibration Services</title>
+<title>Accurion Technologies</title>
+<link rel="preload" as="image" href="images/cqe-image.webp" type="image/webp" fetchpriority="high"/>
 <meta content="Manufacturer, supplier and service provider of Civil Quality Laboratory Equipment and NABL-accredited calibration solutions across India. Concrete, soil, cement, bitumen, and NDT testing." name="description"/>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;"/>
 <meta name="referrer" content="strict-origin-when-cross-origin"/>
@@ -47,7 +48,7 @@
   "logo": "https://www.accuriontechnologies.com/assets/logo/icon-512x512.png",
   "description": "Manufacturer, supplier and service provider of Civil Quality Laboratory Equipment and NABL-accredited calibration solutions across India.",
   "telephone": "+918383851980",
-  "email": "accuriontechnologies@gmail.com",
+  "email": "info@accuriontechnologies.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar",
@@ -120,7 +121,7 @@
   "logo": "https://www.accuriontechnologies.com/assets/logo/accurion-logo.png",
   "url": "https://www.accuriontechnologies.com/",
   "telephone": "+918383851980",
-  "email": "accuriontechnologies@gmail.com",
+  "email": "info@accuriontechnologies.com",
   "priceRange": "₹₹",
   "address": {
     "@type": "PostalAddress",
@@ -176,30 +177,10 @@
               About Us <span class="nav-arrow">▾</span>
             </a>
             <div class="dropdown-menu" role="menu" aria-label="About Us Submenu">
-              <a href="about/#who-we-are" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Who We Are</span>
-                <span class="dropdown-item-desc">Company overview &amp; Delhi HQ</span>
-              </a>
-              <a href="about/#our-mission" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Our Mission</span>
-                <span class="dropdown-item-desc">Core values &amp; quality standards</span>
-              </a>
-              <a href="about/#our-range" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Our Range</span>
-                <span class="dropdown-item-desc">Complete lab equipment &amp; supplies</span>
-              </a>
-              <a href="about/#our-advantage" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Our Advantage</span>
-                <span class="dropdown-item-desc">Why choose Accurion Technologies</span>
-              </a>
-              <a href="about/#our-clients" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Our Clients</span>
-                <span class="dropdown-item-desc">Industries &amp; sectors we serve</span>
-              </a>
-              <a href="about/#our-people" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item-title">Our People</span>
-                <span class="dropdown-item-desc">Leadership &amp; operations team</span>
-              </a>
+              <a href="about/#who-we-are" class="dropdown-item" role="menuitem">Who We Are</a>
+              <a href="about/#our-advantage" class="dropdown-item" role="menuitem">Our Advantage</a>
+              <a href="about/#our-clients" class="dropdown-item" role="menuitem">Our Clients</a>
+              <a href="about/#our-certifications" class="dropdown-item" role="menuitem">Our Certifications</a>
             </div>
           </li>
           <li class="nav-item">
@@ -214,7 +195,17 @@
                 <a href="products/soil-testing/">Soil Testing</a>
                 <a href="products/bitumen-testing/">Bitumen Testing</a>
                 <a href="products/aggregate-testing/">Aggregate Testing</a>
-                <a href="products/ndt-equipment/">NDT Equipment</a>
+                <div class="mega-subitem-wrap">
+                  <a href="products/ndt-equipment/" class="mega-subitem-trigger">
+                    <span>NDT Equipment</span>
+                    <span class="sub-arrow">▸</span>
+                  </a>
+                  <div class="mega-submenu" role="menu" aria-label="NDT Equipment Submenu">
+                    <a href="products/ndt-equipment/rebound-hammers/" role="menuitem">Rebound Hammers</a>
+                    <a href="products/ndt-equipment/upv-testers/" role="menuitem">UPV Testers</a>
+                    <a href="products/ndt-equipment/rebar-detectors/" role="menuitem">Rebar Detectors</a>
+                  </div>
+                </div>
               </div>
               <div class="mega-menu-group">
                 <h4>Water &amp; Chemicals</h4>
@@ -267,11 +258,9 @@
       </div>
       <div class="mobile-nav-accordion" id="mobileAboutAccordion">
         <a href="about/#who-we-are">Who We Are</a>
-        <a href="about/#our-mission">Our Mission</a>
-        <a href="about/#our-range">Our Range</a>
         <a href="about/#our-advantage">Our Advantage</a>
         <a href="about/#our-clients">Our Clients</a>
-        <a href="about/#our-people">Our People</a>
+        <a href="about/#our-certifications">Our Certifications</a>
       </div>
     </li>
     <li class="mobile-nav-item">
@@ -285,7 +274,12 @@
         <a href="products/soil-testing/">Soil Testing</a>
         <a href="products/bitumen-testing/">Bitumen Testing</a>
         <a href="products/aggregate-testing/">Aggregate Testing</a>
-        <a href="products/ndt-equipment/">NDT Equipment</a>
+        <a href="products/ndt-equipment/" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;">
+          <span>NDT Equipment</span>
+        </a>
+        <a href="products/ndt-equipment/rebound-hammers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebound Hammers</a>
+        <a href="products/ndt-equipment/upv-testers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ UPV Testers</a>
+        <a href="products/ndt-equipment/rebar-detectors/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebar Detectors</a>
         <p class="mobile-nav-accordion-heading">Water &amp; Chemicals</p>
         <a href="products/water-testing/">Water Testing</a>
         <a href="products/lab-chemicals/">Lab Chemicals</a>
@@ -314,9 +308,11 @@
 <!-- ═══════════════════════════════════════════════════════
        HERO CAROUSEL
   ═══════════════════════════════════════════════════════ -->
+<div class="hero-ambient-container" id="heroAmbientContainer">
+<div class="hero-ambient-glow" id="heroAmbientGlow" aria-hidden="true"></div>
 <section aria-label="Product showcase" class="hero-carousel" id="heroCarousel">
 <!-- Slide 1: Civil Quality Lab Equipment -->
-<div class="hero-slide" style="background-image:url('images/cqe-image.jpeg');">
+<div class="hero-slide" data-ambient-rgb="196, 18, 23" style="background-image:url('images/cqe-image.webp');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -331,7 +327,7 @@
 </div>
 </div>
 <!-- Slide 2: Soil Testing -->
-<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="180, 83, 9" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -346,7 +342,7 @@
 </div>
 </div>
 <!-- Slide 3: Bitumen Testing -->
-<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="217, 119, 6" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -361,7 +357,7 @@
 </div>
 </div>
 <!-- Slide 4: Cement Testing -->
-<div class="hero-slide" style="background-image:url('images/products/cement/cement-testing-hero.jpg');">
+<div class="hero-slide" data-ambient-rgb="59, 130, 246" style="background-image:url('images/products/cement/cement-testing-hero.jpg');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -376,7 +372,7 @@
 </div>
 </div>
 <!-- Slide 5: NDT Equipment -->
-<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="2, 132, 199" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -391,7 +387,7 @@
 </div>
 </div>
 <!-- Slide 6: Lab Instruments -->
-<div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="13, 148, 136" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
@@ -418,6 +414,7 @@
 <button aria-label="Slide 6" class="hero-dot" role="tab"></button>
 </div>
 </section>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════
        ABOUT SNIPPET
@@ -819,6 +816,7 @@ Scroll
           <li><a href="products/concrete-testing/">Concrete Testing</a></li>
           <li><a href="products/soil-testing/">Soil Testing</a></li>
           <li><a href="products/bitumen-testing/">Bitumen Testing</a></li>
+          <li><a href="products/ndt-equipment/rebound-hammers/">Rebound Hammers</a></li>
           <li><a href="products/metrology-gauges/">Metrology &amp; Gauges</a></li>
           <li><a href="products/sampling-tools/">Sampling Tools</a></li>
           <li><a href="products/compression-machines/">Compression Machines</a></li>
@@ -846,8 +844,8 @@ Scroll
         <div class="footer-contact-item">
           <span class="footer-contact-icon">✉️</span>
           <span>
-            <a href="mailto:accuriontechnologies@gmail.com">accuriontechnologies@gmail.com</a><br>
-            <a href="mailto:sales.accuriontechnologies@gmail.com">sales.accuriontechnologies@gmail.com</a>
+            <a href="mailto:info@accuriontechnologies.com">info@accuriontechnologies.com</a><br>
+            <a href="mailto:sales@accuriontechnologies.com">sales@accuriontechnologies.com</a>
           </span>
         </div>
       </div>
