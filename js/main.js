@@ -146,20 +146,21 @@
     }
 
     // Accordion: NDT Equipment nested in mobile menu
-    const mobileNdtToggle = document.getElementById('mobileNdtToggle');
-    const mobileNdtAccordion = document.getElementById('mobileNdtAccordion');
-
-    if (mobileNdtToggle && mobileNdtAccordion) {
-      mobileNdtToggle.addEventListener('click', function (e) {
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('#mobileNdtToggle');
+      if (btn) {
         e.preventDefault();
         e.stopPropagation();
-        const isOpen = mobileNdtAccordion.classList.contains('open');
-        mobileNdtAccordion.classList.toggle('open', !isOpen);
-        mobileNdtToggle.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-        const arrow = mobileNdtToggle.querySelector('.mobile-arrow');
-        if (arrow) arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
-      });
-    }
+        const accordion = document.getElementById('mobileNdtAccordion');
+        if (accordion) {
+          const isOpen = accordion.classList.contains('open');
+          accordion.classList.toggle('open', !isOpen);
+          btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+          const arrow = btn.querySelector('.mobile-arrow');
+          if (arrow) arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
+        }
+      }
+    });
 
     // Close mobile nav when any menu link is clicked
     document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle):not(#mobileAboutToggle):not(#mobileNdtToggle), .mobile-nav-accordion a, .mobile-nav-subaccordion a')
@@ -184,19 +185,6 @@
         const glow = document.getElementById('heroAmbientGlow');
         if (glow) {
           glow.style.setProperty('--ambient-color', rgb);
-        }
-        // Seamlessly propagate ambient color to the header/navigation and entire document
-        document.documentElement.style.setProperty('--ambient-color', rgb);
-
-        // Contrast-aware text adaptation:
-        const parts = rgb.split(',').map(function (s) { return parseInt(s.trim(), 10); });
-        if (parts.length === 3 && !isNaN(parts[0])) {
-          var lum = (0.2126 * parts[0] + 0.7152 * parts[1] + 0.0722 * parts[2]) / 255;
-          document.documentElement.style.setProperty('--ambient-lum', lum.toFixed(2));
-          var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-          // Ensure navigation text contrast remains crystal-clear
-          var navColor = isDark ? '#f9fafb' : '#111827';
-          document.documentElement.style.setProperty('--nav-link-color', navColor);
         }
       }
 

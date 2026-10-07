@@ -55,11 +55,6 @@
         <div class="mega-menu" role="menu">
           <div class="mega-menu-group">
             <h4>Civil Testing</h4>
-            <a href="${root}products/concrete-testing/">Concrete Testing</a>
-            <a href="${root}products/cement-testing/">Cement Testing</a>
-            <a href="${root}products/soil-testing/">Soil Testing</a>
-            <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
-            <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
             <div class="mega-subitem-wrap">
               <a href="${root}products/ndt-equipment/" class="mega-subitem-trigger">
                 <span>NDT Equipment</span>
@@ -71,6 +66,11 @@
                 <a href="${root}products/ndt-equipment/rebar-detectors/" role="menuitem">Rebar Detectors</a>
               </div>
             </div>
+            <a href="${root}products/concrete-testing/">Concrete Testing</a>
+            <a href="${root}products/cement-testing/">Cement Testing</a>
+            <a href="${root}products/soil-testing/">Soil Testing</a>
+            <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
+            <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
           </div>
           <div class="mega-menu-group">
             <h4>Water &amp; Chemicals</h4>
@@ -142,14 +142,9 @@
       </a>
       <div class="mobile-nav-accordion" id="mobileProductsAccordion">
         <p class="mobile-nav-accordion-heading">Civil Testing</p>
-        <a href="${root}products/concrete-testing/">Concrete Testing</a>
-        <a href="${root}products/cement-testing/">Cement Testing</a>
-        <a href="${root}products/soil-testing/">Soil Testing</a>
-        <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
-        <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
         <div class="mobile-submenu-header">
           <a href="${root}products/ndt-equipment/" class="mobile-submenu-title">NDT Equipment</a>
-          <button class="mobile-accordion-btn" id="mobileNdtToggle" aria-label="Toggle NDT Equipment categories" aria-expanded="false">
+          <button class="mobile-accordion-btn" id="mobileNdtToggle" aria-label="Toggle NDT Equipment categories" aria-expanded="false" type="button">
             <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
           </button>
         </div>
@@ -158,6 +153,11 @@
           <a href="${root}products/ndt-equipment/upv-testers/">UPV Testers</a>
           <a href="${root}products/ndt-equipment/rebar-detectors/">Rebar Detectors</a>
         </div>
+        <a href="${root}products/concrete-testing/">Concrete Testing</a>
+        <a href="${root}products/cement-testing/">Cement Testing</a>
+        <a href="${root}products/soil-testing/">Soil Testing</a>
+        <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
+        <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
         <p class="mobile-nav-accordion-heading">Water &amp; Chemicals</p>
         <a href="${root}products/water-testing/">Water Testing</a>
         <a href="${root}products/lab-chemicals/">Lab Chemicals</a>
