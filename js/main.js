@@ -145,8 +145,24 @@
       });
     }
 
+    // Accordion: NDT Equipment nested in mobile menu
+    const mobileNdtToggle = document.getElementById('mobileNdtToggle');
+    const mobileNdtAccordion = document.getElementById('mobileNdtAccordion');
+
+    if (mobileNdtToggle && mobileNdtAccordion) {
+      mobileNdtToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = mobileNdtAccordion.classList.contains('open');
+        mobileNdtAccordion.classList.toggle('open', !isOpen);
+        mobileNdtToggle.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+        const arrow = mobileNdtToggle.querySelector('.mobile-arrow');
+        if (arrow) arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
+      });
+    }
+
     // Close mobile nav when any menu link is clicked
-    document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle):not(#mobileAboutToggle), .mobile-nav-accordion a')
+    document.querySelectorAll('.mobile-nav-link:not(#mobileProductsToggle):not(#mobileAboutToggle):not(#mobileNdtToggle), .mobile-nav-accordion a, .mobile-nav-subaccordion a')
       .forEach(function (link) {
         link.addEventListener('click', closeMobileNav);
       });

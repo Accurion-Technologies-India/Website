@@ -147,12 +147,17 @@
         <a href="${root}products/soil-testing/">Soil Testing</a>
         <a href="${root}products/bitumen-testing/">Bitumen Testing</a>
         <a href="${root}products/aggregate-testing/">Aggregate Testing</a>
-        <a href="${root}products/ndt-equipment/" style="font-weight:600;display:flex;justify-content:space-between;align-items:center;">
-          <span>NDT Equipment</span>
-        </a>
-        <a href="${root}products/ndt-equipment/rebound-hammers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebound Hammers</a>
-        <a href="${root}products/ndt-equipment/upv-testers/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ UPV Testers</a>
-        <a href="${root}products/ndt-equipment/rebar-detectors/" style="padding-left:26px;font-size:0.85rem;color:var(--color-text-secondary);">↳ Rebar Detectors</a>
+        <div class="mobile-submenu-header">
+          <a href="${root}products/ndt-equipment/" class="mobile-submenu-title">NDT Equipment</a>
+          <button class="mobile-accordion-btn" id="mobileNdtToggle" aria-label="Toggle NDT Equipment categories" aria-expanded="false">
+            <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
+          </button>
+        </div>
+        <div class="mobile-nav-subaccordion" id="mobileNdtAccordion">
+          <a href="${root}products/ndt-equipment/rebound-hammers/">Rebound Hammers</a>
+          <a href="${root}products/ndt-equipment/upv-testers/">UPV Testers</a>
+          <a href="${root}products/ndt-equipment/rebar-detectors/">Rebar Detectors</a>
+        </div>
         <p class="mobile-nav-accordion-heading">Water &amp; Chemicals</p>
         <a href="${root}products/water-testing/">Water Testing</a>
         <a href="${root}products/lab-chemicals/">Lab Chemicals</a>
