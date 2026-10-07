@@ -31,69 +31,73 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Accurion Technologies",
-  "url": "https://www.accuriontechnologies.com/",
-  "logo": "https://www.accuriontechnologies.com/assets/logo/accurion-logo.png",
-  "description": "Manufacturer, supplier and service provider of Civil Quality Laboratory Equipment and NABL-accredited calibration solutions across India.",
-  "telephone": "+918383851980",
-  "email": "info@accuriontechnologies.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar",
-    "addressLocality": "Delhi",
-    "postalCode": "110094",
-    "addressCountry": "IN"
-  },
-  "sameAs": [
-    "https://facebook.com/accuriontechnologies",
-    "https://instagram.com/accuriontechnologies",
-    "https://linkedin.com/company/accuriontechnologies",
-    "https://youtube.com/@accuriontechnologies"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Accurion Technologies",
-  "image": "https://www.accuriontechnologies.com/images/og-image.jpg",
-  "logo": "https://www.accuriontechnologies.com/assets/logo/accurion-logo.png",
-  "url": "https://www.accuriontechnologies.com/",
-  "telephone": "+918383851980",
-  "email": "info@accuriontechnologies.com",
-  "priceRange": "₹₹",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar",
-    "addressLocality": "Delhi",
-    "postalCode": "110094",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "28.6946",
-    "longitude": "77.2891"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
-    "opens": "10:00",
-    "closes": "18:00"
-  },
-  "sameAs": [
-    "https://facebook.com/accuriontechnologies",
-    "https://instagram.com/accuriontechnologies",
-    "https://linkedin.com/company/accuriontechnologies",
-    "https://youtube.com/@accuriontechnologies"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.accuriontechnologies.com/#website",
+      "url": "https://www.accuriontechnologies.com/",
+      "name": "Accurion Technologies",
+      "alternateName": [
+        "Accurion",
+        "Accurion Technologies India"
+      ],
+      "publisher": {
+        "@id": "https://www.accuriontechnologies.com/#organization"
+      }
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.accuriontechnologies.com/contact/#webpage",
+      "url": "https://www.accuriontechnologies.com/contact/",
+      "name": "Contact Us — Accurion Technologies",
+      "isPartOf": {
+        "@id": "https://www.accuriontechnologies.com/#website"
+      },
+      "description": "Contact Accurion Technologies for civil laboratory testing equipment, NABL-traceable calibration quotes, and laboratory setup consultations."
+    },
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://www.accuriontechnologies.com/#organization",
+      "name": "Accurion Technologies",
+      "url": "https://www.accuriontechnologies.com/",
+      "image": "https://www.accuriontechnologies.com/images/og-image.jpg",
+      "logo": "https://www.accuriontechnologies.com/assets/logo/accurion-logo.png",
+      "description": "Manufacturer, supplier and service provider of Civil Quality Laboratory Equipment and NABL-accredited calibration solutions across India.",
+      "telephone": "+918383851980",
+      "email": "info@accuriontechnologies.com",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar",
+        "addressLocality": "Delhi",
+        "postalCode": "110094",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.6946",
+        "longitude": "77.2891"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://facebook.com/accuriontechnologies",
+        "https://instagram.com/accuriontechnologies",
+        "https://linkedin.com/company/accuriontechnologies",
+        "https://youtube.com/@accuriontechnologies"
+      ]
+    }
   ]
 }
 </script>
