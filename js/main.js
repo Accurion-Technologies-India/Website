@@ -248,9 +248,17 @@
             revealObserver.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+      }, { threshold: 0.01, rootMargin: '0px 0px 80px 0px' });
 
-      revealElements.forEach(function (el) { revealObserver.observe(el); });
+      revealElements.forEach(function (el) {
+        revealObserver.observe(el);
+        // Immediately make visible any elements that are already within or just below viewport
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 80) {
+          el.classList.add('visible');
+          revealObserver.unobserve(el);
+        }
+      });
     } else {
       revealElements.forEach(function (el) { el.classList.add('visible'); });
     }

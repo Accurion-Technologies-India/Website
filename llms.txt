@@ -31,3 +31,5 @@ Accurion Technologies is an engineering laboratory equipment manufacturer based 
 - [How to Set Up a Complete Civil Quality Laboratory](https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab/): Roadmap for setting up on-site and central civil testing laboratories under IS standards.
 - [Understanding NABL Calibration](https://www.accuriontechnologies.com/blog/understanding-nabl-calibration/): Explanation of ISO/IEC 17025 traceability and audit compliance.
 - [Importance of Quality Testing in Modern Construction](https://www.accuriontechnologies.com/blog/importance-of-quality-testing/): Why rigorous material testing prevents structural failures.
+- [Langry RH225-A Rebound Hammer Guide](https://www.accuriontechnologies.com/blog/langry-rh225-a-rebound-hammer/): Specifications, IS 13311 & ASTM standards, calibration anvil verification, and concrete strength testing procedures.
+

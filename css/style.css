@@ -3406,14 +3406,14 @@ img.uploaded-product-img {
    NDT Equipment Category Portal — Curved Rectangular Cards
    ============================================================ */
 .ndt-portal-section {
-  padding: 40px 0 80px;
+  padding: 24px 0 72px;
 }
 
 .ndt-portal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
 .ndt-portal-card {
