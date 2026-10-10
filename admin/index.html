@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accurion Technologies — Product Catalogue &amp; Site Manager</title>
+  <link rel="icon" href="../favicon.ico" sizes="48x48" />
+  <link rel="icon" href="../assets/logo/favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cms-theme.css?v=20261010_1" />
+  <style>
+    /* ── Critical Overrides to Guarantee Zero Overlap & Full Contrast ── */
+    body {
+      padding-top: 42px !important;
+      box-sizing: border-box !important;
+    }
+    #cms-accurion-nav {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      height: 42px !important;
+      background: #0f172a !important;
+      border-bottom: 1px solid #1e293b !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 0 20px !important;
+      box-sizing: border-box !important;
+      z-index: 99999 !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    }
+    /* Collections sidebar search & Modal search inputs */
+    div[class*="InputContainer"] input,
+    input[class*="SearchInput"],
+    input[type="text"][class*="SearchInput"],
+    input[placeholder*="Search" i] {
+      padding: 9px 14px 9px 40px !important;
+      box-sizing: border-box !important;
+    }
+    div[class*="InputContainer"] span[class*="IconWrapper"],
+    span[class*="IconWrapper"] {
+      left: 12px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      pointer-events: none !important;
+      z-index: 10 !important;
+    }
+    /* Media Library Upload Button Visibility */
+    .nc-fileUploadButton,
+    label[class*="UploadButton"],
+    button[class*="UploadButton"],
+    div[class*="MediaLibraryHeader"] label {
+      background-color: #c41217 !important;
+      color: #ffffff !important;
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      border-radius: 8px !important;
+      padding: 8px 20px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      cursor: pointer !important;
+      box-shadow: 0 2px 8px rgba(196, 18, 23, 0.35) !important;
+      border: 1px solid #9e0e12 !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    .nc-fileUploadButton span,
+    label[class*="UploadButton"] span,
+    div[class*="MediaLibraryHeader"] label span {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 13px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="nc-root"></div>
+
+  <!-- Enable Manual Init for Sandbox Mode Switcher -->
+  <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
+  <!-- Load Decap CMS & YAML parser inside body where document.body exists -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
+
+  <!-- ── Custom Decap CMS Previews & Style Injections ── -->
+  <script>
+    if (window.CMS) {
+      // Inject site stylesheet into CMS preview iframe
+      CMS.registerPreviewStyle('../css/style.css');
+
+      // Custom Live Product Preview Component
+      const ProductPreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+          const name = entry.getIn(['data', 'name']) || 'Product Name';
+          const code = entry.getIn(['data', 'code']) || 'Model Code';
+          const category = entry.getIn(['data', 'category']) || 'NDT Equipment';
+          const subcategory = entry.getIn(['data', 'subcategory']) || 'Testing Equipment';
+          const shortDesc = entry.getIn(['data', 'short_description']) || 'Short description will appear here...';
+          const image = this.props.getAsset(entry.getIn(['data', 'featured_image']));
+          const specs = entry.getIn(['data', 'specifications']);
+          const features = entry.getIn(['data', 'key_features']);
+
+          return h('div', { style: { padding: '24px 20px', maxWidth: '840px', margin: '0 auto', fontFamily: 'Inter, sans-serif', color: '#0f172a' } },
+            // Card Preview Banner
+            h('div', { style: { fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700', color: '#94a3b8', marginBottom: '10px' } }, 'Live Equipment Card Preview'),
+            h('div', { style: { border: '1px solid #e2e8f0', borderRadius: '16px', overflow: 'hidden', background: '#ffffff', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', marginBottom: '32px' } },
+              // Smart-Canvas image container
+              h('div', { style: { background: '#f8fafc', height: '260px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px', borderBottom: '1px solid #e2e8f0' } },
+                image ? h('img', { src: image.toString(), alt: name, style: { maxHeight: '228px', maxWidth: '100%', objectFit: 'contain' } })
+                      : h('div', { style: { color: '#94a3b8', fontSize: '13px', fontWeight: '500' } }, '📷 Select a Featured Image')
+              ),
+              h('div', { style: { padding: '24px' } },
+                h('div', { style: { fontSize: '12px', fontWeight: '700', color: '#c41217', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' } },
+                  `${category} • ${subcategory} • Model ${code}`
+                ),
+                h('h2', { style: { fontSize: '22px', fontWeight: '800', margin: '0 0 12px', color: '#0f172a', lineHeight: '1.3' } }, name),
+                h('p', { style: { fontSize: '14px', color: '#475569', lineHeight: '1.6', margin: '0 0 20px' } }, shortDesc),
+                // Key features list
+                features && features.size > 0 ? h('div', { style: { marginBottom: '20px' } },
+                  h('div', { style: { fontSize: '12px', fontWeight: '700', color: '#0f172a', marginBottom: '8px', textTransform: 'uppercase' } }, 'Key Features'),
+                  h('ul', { style: { listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '6px' } },
+                    features.map(function(item, index) {
+                      const featText = typeof item === 'string' ? item : item.get('feature');
+                      return h('li', { key: index, style: { fontSize: '13px', color: '#334155', display: 'flex', alignItems: 'center', gap: '8px' } },
+                        h('span', { style: { color: '#16a34a', fontWeight: 'bold' } }, '✓'),
+                        featText
+                      );
+                    })
+                  )
+                ) : null,
+                // Specifications table preview
+                specs && specs.size > 0 ? h('div', { style: { marginTop: '16px' } },
+                  h('div', { style: { fontSize: '12px', fontWeight: '700', color: '#0f172a', marginBottom: '8px', textTransform: 'uppercase' } }, 'Technical Specifications'),
+                  h('table', { style: { width: '100%', borderCollapse: 'collapse', fontSize: '13px', border: '1px solid #e2e8f0', borderRadius: '8px', overflow: 'hidden' } },
+                    h('tbody', null,
+                      specs.map(function(spec, idx) {
+                        return h('tr', { key: idx, style: { background: idx % 2 === 0 ? '#f8fafc' : '#ffffff', borderBottom: '1px solid #e2e8f0' } },
+                          h('td', { style: { padding: '8px 12px', fontWeight: '600', color: '#475569', width: '45%' } }, spec.get('parameter')),
+                          h('td', { style: { padding: '8px 12px', color: '#0f172a', fontWeight: '500' } }, spec.get('value'))
+                        );
+                      })
+                    )
+                  )
+                ) : null
+              )
+            ),
+            // Full description preview
+            h('div', { style: { borderTop: '2px solid #e2e8f0', paddingTop: '24px' } },
+              h('h3', { style: { fontSize: '18px', fontWeight: '800', marginBottom: '12px', color: '#0f172a' } }, 'Full Description Preview'),
+              h('div', { style: { fontSize: '14px', lineHeight: '1.7', color: '#334155' } }, this.props.widgetFor('description'))
+            )
+          );
+        }
+      });
+      CMS.registerPreviewTemplate('products', ProductPreview);
+
+      // Custom Live Service Preview Component
+      const ServicePreview = createClass({
+        render: function() {
+          const entry = this.props.entry;
+          const title = entry.getIn(['data', 'title']) || 'Service Title';
+          const num = entry.getIn(['data', 'service_number']) || 'SERVICE 01';
+          const shortDesc = entry.getIn(['data', 'short_description']) || 'Short description of service...';
+          const fullDesc = entry.getIn(['data', 'full_description']) || '';
+          const standards = entry.getIn(['data', 'applicable_standards']) || '';
+          const image = this.props.getAsset(entry.getIn(['data', 'featured_image']));
+          const features = entry.getIn(['data', 'features']);
+          const ctaText = entry.getIn(['data', 'cta_text']) || 'Request Quotation';
+
+          return h('div', { style: { padding: '24px 20px', maxWidth: '840px', margin: '0 auto', fontFamily: 'Inter, sans-serif', color: '#0f172a' } },
+            h('div', { style: { fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700', color: '#94a3b8', marginBottom: '10px' } }, 'Live Service Card & Detail Preview'),
+            h('div', { style: { border: '1px solid #e2e8f0', borderRadius: '16px', overflow: 'hidden', background: '#ffffff', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', padding: '32px' } },
+              h('div', { style: { display: 'inline-block', background: 'rgba(196,18,23,0.08)', color: '#c41217', fontSize: '12px', fontWeight: '800', letterSpacing: '0.05em', padding: '4px 12px', borderRadius: '20px', marginBottom: '12px' } }, num),
+              h('h2', { style: { fontSize: '26px', fontWeight: '800', margin: '0 0 12px', color: '#0f172a' } }, title),
+              h('div', { style: { width: '40px', height: '3px', background: '#c41217', marginBottom: '18px' } }),
+              h('p', { style: { fontSize: '15px', color: '#334155', lineHeight: '1.7', marginBottom: '14px' } }, shortDesc),
+              fullDesc ? h('p', { style: { fontSize: '14.5px', color: '#64748b', lineHeight: '1.7', marginBottom: '20px' } }, fullDesc) : null,
+              standards ? h('div', { style: { background: '#f8fafc', border: '1px solid #e2e8f0', padding: '10px 14px', borderRadius: '8px', fontSize: '13px', color: '#475569', marginBottom: '20px' } },
+                h('strong', null, 'Applicable Standards: '), standards
+              ) : null,
+              features && features.size > 0 ? h('div', { style: { marginBottom: '24px' } },
+                h('div', { style: { fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', color: '#0f172a', marginBottom: '10px' } }, 'Service Capabilities'),
+                h('ul', { style: { listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' } },
+                  features.map(function(item, idx) {
+                    const featText = typeof item === 'string' ? item : item.get('feature');
+                    return h('li', { key: idx, style: { fontSize: '13.5px', color: '#334155', display: 'flex', alignItems: 'center', gap: '10px' } },
+                      h('span', { style: { color: '#16a34a', fontWeight: 'bold' } }, '✓'),
+                      featText
+                    );
+                  })
+                )
+              ) : null,
+              image ? h('div', { style: { borderRadius: '12px', overflow: 'hidden', marginBottom: '24px' } },
+                h('img', { src: image.toString(), alt: title, style: { width: '100%', maxHeight: '360px', objectFit: 'cover' } })
+              ) : null,
+              h('div', { style: { paddingTop: '16px', borderTop: '1px solid #e2e8f0' } },
+                h('span', { style: { display: 'inline-block', background: '#c41217', color: '#ffffff', fontWeight: '700', fontSize: '14px', padding: '10px 22px', borderRadius: '8px' } }, `${ctaText} →`)
+              )
+            )
+          );
+        }
+      });
+      CMS.registerPreviewTemplate('services', ServicePreview);
+
+      // Initialize Decap CMS when DOM is ready
+      async function initAdminCMS() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const isSandbox = urlParams.get('sandbox') === 'true' || urlParams.get('test') === 'true' || (isLocalhost && urlParams.get('oauth') !== 'true');
+
+        if (isSandbox) {
+          // Pre-populate mock user for test-repo so dashboard loads directly without white screen or login friction
+          try {
+            if (!localStorage.getItem('decap-cms-user')) {
+              localStorage.setItem('decap-cms-user', JSON.stringify({ name: 'Accurion Admin (Demo)', login: 'accurion-admin', token: 'mock-sandbox-token' }));
+            }
+          } catch (_) {}
+
+          CMS.init({
+            config: {
+              backend: { name: 'test-repo' },
+              local_backend: false
+            }
+          });
+        } else {
+          // If entering OAuth mode, ensure any demo/mock user is cleared so Decap prompts for real GitHub OAuth login!
+          try {
+            const savedUser = localStorage.getItem('decap-cms-user');
+            if (savedUser && savedUser.includes('mock-sandbox-token')) {
+              localStorage.removeItem('decap-cms-user');
+            }
+          } catch (_) {}
+
+          CMS.init();
+        }
+
+        // Add dedicated top utility header bar above Decap CMS (zero overlap)
+        if (!document.getElementById('cms-accurion-nav')) {
+          const navBar = document.createElement('div');
+          navBar.id = 'cms-accurion-nav';
+          
+          const modeBadge = isSandbox
+            ? `<a href="?oauth=true" title="Currently in offline Sandbox Mode. Click to connect via GitHub OAuth" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #166534; background: #dcfce7; border: 1px solid #86efac; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>⚡</span> Sandbox Mode <span style="font-size: 10.5px; opacity: 0.8; font-weight: 500;">(Click for GitHub OAuth)</span>
+               </a>`
+            : `<a href="?sandbox=true" title="Currently in live GitHub OAuth mode. Click to switch to offline Sandbox Mode" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>🔒</span> GitHub OAuth <span style="font-size: 10.5px; opacity: 0.8; font-weight: 500;">(Click for Sandbox)</span>
+               </a>`;
+
+          navBar.innerHTML = `
+            <div class="nav-brand">
+              <span class="nav-brand-title">
+                <span class="nav-brand-dot"></span>
+                Accurion Technologies
+              </span>
+              <span style="color: #475569; font-size: 13px;">|</span>
+              <span class="nav-brand-sub">Site &amp; Catalogue Portal</span>
+            </div>
+            <div class="nav-actions">
+              ${modeBadge}
+              <a href="enquiries/" style="font-size: 12px; font-weight: 700; color: #ffffff; background: #c41217; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(196,18,23,0.35);">
+                <span>📋</span> Enquiries CRM
+              </a>
+              <a href="guide/" target="_blank" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>📖</span> Guide
+              </a>
+              <a href="../" target="_blank" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>🌐</span> View Site ↗
+              </a>
+            </div>
+          `;
+          document.body.prepend(navBar);
+        }
+
+        let attempts = 0;
+        const checkLoginInterval = setInterval(function() {
+          attempts++;
+          const loginBtn = document.querySelector('button');
+          if (loginBtn && !document.getElementById('cms-oauth-helper') && loginBtn.textContent.toLowerCase().includes('github')) {
+            const helper = document.createElement('div');
+            helper.id = 'cms-oauth-helper';
+            helper.style.cssText = 'max-width: 380px; margin: 18px auto 0; text-align: center; font-family: Inter, sans-serif;';
+            helper.innerHTML = `
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; text-align: left; font-size: 12px; color: #475569; line-height: 1.5;">
+                <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                  <span>🔒</span> GitHub OAuth Authentication
+                </div>
+                Connects directly to repository <code>Accurion-Technologies-India/Website</code> (branch: <code>main</code>). Click above to authorize with your GitHub account.
+              </div>
+              <a href="?sandbox=true" style="font-size: 12.5px; color: #c41217; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; border-radius: 6px; background: rgba(196, 18, 23, 0.08); border: 1px solid rgba(196, 18, 23, 0.2); transition: background 0.2s;">
+                <span>⚡</span> Or Open Offline Sandbox Mode (1-Click Access)
+              </a>
+            `;
+            loginBtn.parentNode.insertBefore(helper, loginBtn.nextSibling);
+            clearInterval(checkLoginInterval);
+          }
+          if (attempts > 30) clearInterval(checkLoginInterval);
+        }, 200);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initAdminCMS);
+      } else {
+        initAdminCMS();
+      }
+    }
+  </script>
+
+  <!-- ── Smart Hover Tooltips Engine (~45ms Micro-Interaction) ── -->
+  <script>
+    (function () {
+      'use strict';
+
+      // Knowledge base of technical explanations
+      const technicalGuidance = {
+        'search engine summary': {
+          title: 'Search Result Snippet',
+          tag: '<meta name="description">',
+          desc: 'This 140–160 character snippet appears directly under your Google search result link and controls what users see when shared on WhatsApp or LinkedIn.'
+        },
+        'meta description': {
+          title: 'Meta Description',
+          tag: '<meta name="description">',
+          desc: 'Search engine preview text. Write a crisp 1–2 sentence summary incorporating key equipment search terms.'
+        },
+        'seo title': {
+          title: 'Document Title Tag',
+          tag: '<title> & OG:Title',
+          desc: 'Primary browser tab title and search ranking anchor. Ideal format: Equipment Name — Accurion Technologies.'
+        },
+        'article heading': {
+          title: 'Primary Heading',
+          tag: '<h1> Document Header',
+          desc: 'The single most authoritative headline on the page used by Googlebot for indexing core search topics.'
+        },
+        'product name': {
+          title: 'Product Title',
+          tag: 'schema.org/Product name',
+          desc: 'Official commercial equipment name. Formats automatically into product schema and catalogue cards.'
+        },
+        'product code / sku': {
+          title: 'Unique Stock Keeping Unit',
+          tag: 'schema.org/sku',
+          desc: 'Industry model identifier (e.g. RH225-A). Used in official quotations, calibration sheets, and dispatch tracking.'
+        },
+        'category': {
+          title: 'Catalogue Taxonomy Route',
+          tag: 'Breadcrumb & Directory URL',
+          desc: 'Determines the category directory (/products/[category]/) and associates testing standards with the equipment.'
+        },
+        'subcategory': {
+          title: 'Sub-Discipline Taxonomy',
+          tag: 'Subfolder Filter',
+          desc: 'Specific equipment group (e.g. Rebound Hammers or UPV Testers) for refined search filtering.'
+        },
+        'url slug': {
+          title: 'Permanent Web Address',
+          tag: 'URL path / [slug]',
+          desc: 'The clean URL permalink on the web. Keep lowercase with hyphens (e.g. langry-rh225-a).'
+        },
+        'featured image': {
+          title: 'Primary Visual Asset',
+          tag: '<meta property="og:image">',
+          desc: 'Main equipment photograph. Automatically framed via the 4-layer system so machines are never clipped.'
+        },
+        'technical specifications': {
+          title: 'Structured Parameter Schema',
+          tag: 'HTML <table> & JSON-LD',
+          desc: 'Typed key-value data rendered into engineering tables and rich Google snippets.'
+        },
+        'key features': {
+          title: 'Feature List Repeater',
+          tag: '<ul> Bullet List',
+          desc: 'Highlight points rendered with green checkmarks on product pages to emphasize key advantages.'
+        },
+        'datasheet / brochure': {
+          title: 'Downloadable PDF Asset',
+          tag: 'application/pdf',
+          desc: 'Links to the "Download Datasheet" button on the live equipment page for technical buyers.'
+        },
+        'primary brand colour': {
+          title: 'Global Brand Variable',
+          tag: 'CSS var(--color-primary)',
+          desc: 'Primary hex code injected across all buttons, active navbar highlights, and dividers.'
+        },
+        'primary dark hover colour': {
+          title: 'Interactive Hover State',
+          tag: 'CSS var(--color-primary-dark)',
+          desc: 'Darker tint applied when visitors hover over primary action buttons for smooth visual feedback.'
+        },
+        'font family': {
+          title: 'Google Typography Token',
+          tag: 'CSS var(--font-sans)',
+          desc: 'Changes the global site typography dynamically across headers, body text, and tables.'
+        },
+        'display order': {
+          title: 'Catalogue Sorting Weight',
+          tag: 'Sort Index',
+          desc: 'Controls display priority. Lower numbers (1, 2, 3) appear first in category grids.'
+        },
+        'publication status': {
+          title: 'Lifecycle State',
+          tag: 'Draft / Published',
+          desc: 'Draft items remain hidden from public visitors until explicitly published.'
+        }
+      };
+
+      // Dynamic tooltip container creation (persists across React DOM re-renders)
+      function ensureTooltipEl() {
+        let el = document.getElementById('cms-tooltip-container');
+        if (!el) {
+          el = document.createElement('div');
+          el.id = 'cms-tooltip-container';
+          el.className = 'cms-tooltip-box';
+          el.innerHTML = `
+            <div class="cms-tooltip-tag" id="cms-tooltip-tag"></div>
+            <div class="cms-tooltip-title" id="cms-tooltip-title"></div>
+            <div class="cms-tooltip-body" id="cms-tooltip-body"></div>
+          `;
+          document.body.appendChild(el);
+        }
+        return el;
+      }
+
+      let hoverTimer = null;
+      let activeTarget = null;
+
+      function matchExplanation(text) {
+        if (!text) return null;
+        const normalized = text.toLowerCase().trim().replace(/[*:]/g, '');
+        for (const key in technicalGuidance) {
+          if (normalized === key || normalized.includes(key)) {
+            return technicalGuidance[key];
+          }
+        }
+        return null;
+      }
+
+      function showTooltip(target, info) {
+        const tooltipEl = ensureTooltipEl();
+        const tagEl = document.getElementById('cms-tooltip-tag');
+        const titleEl = document.getElementById('cms-tooltip-title');
+        const bodyEl = document.getElementById('cms-tooltip-body');
+
+        if (!tagEl || !titleEl || !bodyEl) return;
+
+        tagEl.textContent = info.tag;
+        titleEl.textContent = info.title;
+        bodyEl.textContent = info.desc;
+
+        const rect = target.getBoundingClientRect();
+        let top = rect.top - tooltipEl.offsetHeight - 10;
+        let left = rect.left;
+
+        // Flip below if too close to top
+        if (top < 10) {
+          top = rect.bottom + 10;
+        }
+
+        // Keep inside horizontal viewport
+        if (left + 330 > window.innerWidth) {
+          left = window.innerWidth - 340;
+        }
+        if (left < 10) left = 10;
+
+        tooltipEl.style.top = top + 'px';
+        tooltipEl.style.left = left + 'px';
+        tooltipEl.classList.add('visible');
+      }
+
+      function hideTooltip() {
+        if (hoverTimer) clearTimeout(hoverTimer);
+        const tooltipEl = document.getElementById('cms-tooltip-container');
+        if (tooltipEl) tooltipEl.classList.remove('visible');
+        activeTarget = null;
+      }
+
+      // Event delegation on mouseover
+      document.addEventListener('mouseover', function (e) {
+        const label = e.target.closest('label, span[class*="Label"], h3, div[class*="ControlPaneLabel"]');
+        if (!label || label === activeTarget) return;
+
+        const text = label.textContent || '';
+        const info = matchExplanation(text);
+        if (!info) return;
+
+        activeTarget = label;
+        if (hoverTimer) clearTimeout(hoverTimer);
+
+        // 45ms micro-interaction delay
+        hoverTimer = setTimeout(function () {
+          if (activeTarget === label) {
+            showTooltip(label, info);
+          }
+        }, 45);
+      }, true);
+
+      document.addEventListener('mouseout', function (e) {
+        const label = e.target.closest('label, span[class*="Label"], h3, div[class*="ControlPaneLabel"]');
+        if (label && label === activeTarget) {
+          hideTooltip();
+        }
+      }, true);
+
+      window.addEventListener('scroll', hideTooltip, true);
+    })();
+  </script>
+</body>
+</html>

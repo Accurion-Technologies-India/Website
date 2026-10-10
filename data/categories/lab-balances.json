@@ -1,0 +1,9 @@
+{
+  "name": "Laboratory Balances",
+  "slug": "lab-balances",
+  "tagline": "Analytical & High-Precision Industrial Scales",
+  "description": "High-precision electronic balances, analytical lab balances (0.1 mg to 0.01 g), heavy-duty platform scales (up to 300 kg), and calibration weights with NABL certification.",
+  "banner_image": "/images/categories/lab-balances.png",
+  "icon": "⚖️",
+  "display_order": 8
+}

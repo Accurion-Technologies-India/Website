@@ -1,0 +1,61 @@
+{
+  "status": "published",
+  "name": "Langry Testing Anvil (GZ Series)",
+  "code": "GZ-I",
+  "slug": "langry-testing-anvil-gz-series",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "High-precision tool steel test anvil hardened to HRC 60 ± 2 for daily calibration verification of concrete test hammers per IS 13311-2 and ASTM C805.",
+  "description": "The **Langry GZ Series Calibration Test Anvil** is an indispensable reference instrument for any lab operating concrete test hammers. Machined from premium high-carbon tool steel and hardened to HRC 60 ± 2, it guarantees accurate daily calibration checks before and after structural inspections.",
+  "featured_image": "/images/products/ndt/langry-rh225b-detail.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh225b-detail.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Manufactured from high-carbon alloy tool steel"
+    },
+    {
+      "feature": "Core surface hardness strictly controlled to HRC 60 ± 2"
+    },
+    {
+      "feature": "Certified nominal calibration value of 80 ± 2 for Type N hammers"
+    },
+    {
+      "feature": "Standard 16 kg heavy benchtop weight ensures stability during test impacts"
+    },
+    {
+      "feature": "Mandatory requirement under IS 13311-2, ASTM C805, and EN 12504-2"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Core Hardness",
+      "value": "HRC 60 ± 2"
+    },
+    {
+      "parameter": "Nominal Rebound Value",
+      "value": "80 ± 2 (Type N)"
+    },
+    {
+      "parameter": "Total Mass",
+      "value": "16 kg (Standard Bench)"
+    },
+    {
+      "parameter": "Applicable Hammers",
+      "value": "RH225-A, RH225-B, RH450-A, RH550-A, RH75-A"
+    },
+    {
+      "parameter": "Compliance",
+      "value": "IS 13311 (Part 2), ASTM C805, EN 12504-2"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": false,
+  "display_order": 7,
+  "seo_title": "Langry Calibration Test Anvil (HRC 60±2) | Accurion Technologies",
+  "seo_description": "Certified Langry steel calibration test anvil (HRC 60 ± 2, 16 kg) for rebound hammer daily verification per IS 13311-2 & ASTM C805."
+}

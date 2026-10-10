@@ -108,7 +108,51 @@
         <p>Industry-standard civil laboratory equipment for every testing requirement</p>
       </div>
 
-      <div class="categories-grid reveal">
+      <!-- ── Instant Catalogue Search & Faceted Filter Toolbar ── -->
+      <div class="reveal" style="max-width: 860px; margin: 0 auto 40px;">
+        <div style="position: relative; margin-bottom: 16px;">
+          <input
+            type="text"
+            id="catalogue-search-input"
+            placeholder="Search equipment by model, SKU, name, or IS standard (e.g. RH225-A, IS 13311, CTM, 2000 kN)..."
+            style="width: 100%; padding: 16px 48px 16px 20px; font-size: 1.05rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); color: var(--color-text); box-shadow: var(--shadow-sm); transition: border-color var(--transition-fast), box-shadow var(--transition-fast);"
+          />
+          <button
+            id="catalogue-search-clear"
+            type="button"
+            style="display: none; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--color-text-secondary); padding: 6px;"
+            aria-label="Clear search"
+          >✕</button>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div id="catalogue-filter-pills" style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: center; margin-bottom: 14px;">
+          <button type="button" data-filter="all" class="btn btn-sm active" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-primary); color: #fff; border: 1px solid var(--color-primary); cursor: pointer;">All Equipment</button>
+          <button type="button" data-filter="ndt-equipment" class="btn btn-sm" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); cursor: pointer;">NDT Equipment</button>
+          <button type="button" data-filter="compression-machines" class="btn btn-sm" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); cursor: pointer;">Compression Machines</button>
+          <button type="button" data-filter="concrete-testing" class="btn btn-sm" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); cursor: pointer;">Concrete Testing</button>
+          <button type="button" data-filter="soil-testing" class="btn btn-sm" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); cursor: pointer;">Soil Testing</button>
+          <button type="button" data-filter="cement-testing" class="btn btn-sm" style="border-radius: 20px; font-size: 0.82rem; padding: 6px 14px; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); cursor: pointer;">Cement Testing</button>
+        </div>
+
+        <!-- Quick Search Suggestion Chips -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: center; font-size: 0.82rem; color: var(--color-text-secondary);">
+          <span>Popular searches:</span>
+          <button type="button" data-quick-search="RH225-A" style="background: var(--color-surface); border: 1px dashed var(--color-border); padding: 3px 10px; border-radius: 12px; cursor: pointer; color: var(--color-primary); font-size: 0.78rem;">RH225-A Mechanical</button>
+          <button type="button" data-quick-search="RH225-B" style="background: var(--color-surface); border: 1px dashed var(--color-border); padding: 3px 10px; border-radius: 12px; cursor: pointer; color: var(--color-primary); font-size: 0.78rem;">RH225-B Digital</button>
+          <button type="button" data-quick-search="2000 kN" style="background: var(--color-surface); border: 1px dashed var(--color-border); padding: 3px 10px; border-radius: 12px; cursor: pointer; color: var(--color-primary); font-size: 0.78rem;">2000 kN CTM</button>
+          <button type="button" data-quick-search="Test Anvil" style="background: var(--color-surface); border: 1px dashed var(--color-border); padding: 3px 10px; border-radius: 12px; cursor: pointer; color: var(--color-primary); font-size: 0.78rem;">Test Anvils</button>
+          <button type="button" data-quick-search="IS 13311" style="background: var(--color-surface); border: 1px dashed var(--color-border); padding: 3px 10px; border-radius: 12px; cursor: pointer; color: var(--color-primary); font-size: 0.78rem;">IS 13311 Standards</button>
+        </div>
+      </div>
+
+      <!-- ── Dynamic Instant Search Results Grid ── -->
+      <div id="catalogue-search-results" style="display: none; margin-bottom: 48px;">
+        <div id="catalogue-results-count" style="margin-bottom: 18px; font-size: 0.95rem; color: var(--color-text-secondary); text-align: center;"></div>
+        <div id="catalogue-results-grid" class="product-grid"></div>
+      </div>
+
+      <div id="default-categories-grid" class="categories-grid reveal">
 
         <a href="products/concrete-testing/" class="category-card">
           <img src="images/categories/concrete-testing.jpg" alt="Concrete Testing Equipment" class="category-card-img" width="400" height="280" loading="lazy" />
@@ -305,5 +349,6 @@
 
   <script src="js/components.js?v=3"></script>
   <script src="js/main.js?v=2"></script>
+  <script src="js/catalogue-search.js?v=1"></script>
 </body>
 </html>

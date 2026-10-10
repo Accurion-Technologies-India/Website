@@ -1,0 +1,20 @@
+{
+  "title": "Complete Civil Quality Lab Setup",
+  "service_number": "SERVICE 02",
+  "slug": "lab-setup",
+  "short_description": "We provide turnkey laboratory setup solutions for civil engineering testing labs — from initial planning and equipment selection to delivery, installation, and commissioning.",
+  "full_description": "Whether you are setting up a new quality lab for a construction project, RMC plant, or educational institution, our team handles everything end-to-end.",
+  "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+  "applicable_standards": "BIS, ASTM, BS EN, MoRTH Specifications",
+  "features": [
+    { "feature": "Lab planning and equipment selection consultation" },
+    { "feature": "Supply of all testing equipment, chemicals, and glassware" },
+    { "feature": "Equipment installation and commissioning" },
+    { "feature": "Staff training on equipment operation" },
+    { "feature": "Documentation and compliance support" },
+    { "feature": "Ongoing after-sales technical support" }
+  ],
+  "cta_text": "Plan Your Lab",
+  "cta_link": "contact/?product=Complete+Civil+Lab+Setup",
+  "display_order": 2
+}

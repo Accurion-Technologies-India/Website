@@ -1,0 +1,20 @@
+{
+  "title": "Repair & Maintenance of Lab Equipment",
+  "service_number": "SERVICE 03",
+  "slug": "repair",
+  "short_description": "Minimise downtime and extend equipment lifespan with our expert repair and preventive maintenance services. We service all major brands of civil laboratory equipment.",
+  "full_description": "Our technicians are experienced in diagnosing and repairing a wide range of instruments, ensuring your laboratory remains productive and compliant.",
+  "featured_image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+  "applicable_standards": "OEM Specifications & Traceable Calibration Protocols",
+  "features": [
+    { "feature": "Repair of CTM, UTM, and testing machines" },
+    { "feature": "Repair of weighing balances and measuring instruments" },
+    { "feature": "Preventive maintenance contracts available" },
+    { "feature": "Spare parts supply for major equipment brands" },
+    { "feature": "On-site repair visits across Delhi NCR and India" },
+    { "feature": "Post-repair calibration certificate available" }
+  ],
+  "cta_text": "Book a Service",
+  "cta_link": "contact/?product=Equipment+Repair+and+Maintenance",
+  "display_order": 3
+}

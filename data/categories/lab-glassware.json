@@ -1,0 +1,9 @@
+{
+  "name": "Laboratory Glassware",
+  "slug": "lab-glassware",
+  "tagline": "Class A Calibrated Borosilicate Glassware",
+  "description": "Certified BOROSIL and high-grade borosilicate 3.3 laboratory glassware — graduated cylinders, beakers, volumetric flasks, burettes, and pipettes.",
+  "banner_image": "/images/categories/lab-glassware.jpg",
+  "icon": "🫙",
+  "display_order": 10
+}

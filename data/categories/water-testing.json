@@ -1,0 +1,9 @@
+{
+  "name": "Water Testing Equipment",
+  "slug": "water-testing",
+  "tagline": "Construction Water Quality & Chemical Analysis",
+  "description": "Aquasol testing kits, digital turbidity meters, benchtop pH meters, TDS/EC conductivity meters, and laboratory BOD/COD incubators conforming to IS 3025.",
+  "banner_image": "/images/categories/water-testing.jpg",
+  "icon": "💧",
+  "display_order": 7
+}

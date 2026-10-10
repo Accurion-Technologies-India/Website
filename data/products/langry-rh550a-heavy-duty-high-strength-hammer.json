@@ -1,0 +1,69 @@
+{
+  "status": "published",
+  "name": "Langry RH550-A Heavy-Duty High-Strength Hammer",
+  "code": "RH550-A",
+  "slug": "langry-rh550a-heavy-duty-high-strength-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "Maximum impact energy (5.400 J) hammer for mass concrete installations, dams, tunnel linings, and ultra-high-strength concrete (UHPC) up to 120 MPa.",
+  "description": "The **Langry RH550-A Heavy-Duty Concrete Test Hammer** delivers the highest nominal impact energy in the Langry series at 5.400 Joules. It is engineered for ultra-high-strength concrete (UHPC), hydraulic dam spillways, nuclear containment vessels, and massive foundation rafts reaching compressive strengths up to 120 MPa.",
+  "featured_image": "/images/products/ndt/langry-rh550a-high.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh550a-high.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Maximum 5.400 Joules impact energy for ultra-dense concrete"
+    },
+    {
+      "feature": "Extended measuring capacity from 60 to 120 MPa"
+    },
+    {
+      "feature": "Ultra-rugged hardened structural components for heavy field abuse"
+    },
+    {
+      "feature": "Impact spring stiffness of 1000 ± 50 N/m"
+    },
+    {
+      "feature": "Calibrated against heavy-duty steel anvil producing 88 ± 2 index"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Impact Energy",
+      "value": "5.400 J"
+    },
+    {
+      "parameter": "Measuring Range",
+      "value": "60 – 120 MPa"
+    },
+    {
+      "parameter": "Spring Stiffness",
+      "value": "1000 ± 50 N/m"
+    },
+    {
+      "parameter": "Operating Spring Length",
+      "value": "110 ± 0.5 mm"
+    },
+    {
+      "parameter": "Spherical Radius of Tip",
+      "value": "35 ± 1.0 mm"
+    },
+    {
+      "parameter": "Calibration on Test Anvil",
+      "value": "88 ± 2"
+    },
+    {
+      "parameter": "Net Weight",
+      "value": "1.5 kg"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": false,
+  "display_order": 4,
+  "seo_title": "Langry RH550-A Heavy-Duty Rebound Hammer (120 MPa) | Accurion",
+  "seo_description": "Langry RH550-A heavy-duty 5.4 J rebound hammer for mass concrete, dams, and UHPC testing up to 120 MPa. Available across India from Accurion Technologies."
+}

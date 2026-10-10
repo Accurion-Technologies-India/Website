@@ -3,5 +3,6 @@ Allow: /
 Disallow: /content/
 Disallow: /Miscellaneous/
 Disallow: /.bob/
+Disallow: /admin/
 
 Sitemap: https://www.accuriontechnologies.com/sitemap.xml

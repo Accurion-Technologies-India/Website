@@ -1,0 +1,38 @@
+{
+  "status": "published",
+  "name": "Langry RH225-A Mechanical Concrete Test Hammer",
+  "code": "RH225-A",
+  "slug": "langry-rh225-a-mechanical-rebound-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "The industry-standard mechanical rebound hammer for non-destructive compressive strength estimation of normal structural concrete from 10 to 60 MPa.",
+  "description": "The **Langry RH225-A Mechanical Concrete Test Hammer** (Type N) is a rugged, precision engineering instrument engineered for non-destructive assessment of in-situ compressive strength in hardened concrete, precast members, pavements, and massive civil infrastructure. Built with an ultra-hard aluminum alloy casing and calibrated internal precision springs, it delivers repeatable rebound measurement according to IS 13311 (Part 2), ASTM C805, and EN 12504-2.",
+  "featured_image": "/images/products/ndt/langry-rh225a-mech.jpg",
+  "gallery": [
+    { "image": "/images/products/ndt/langry-rh225a-mech.jpg" },
+    { "image": "/images/products/ndt/langry-rh225b-digital.jpg" }
+  ],
+  "key_features": [
+    { "feature": "Standard Type N nominal impact energy of 2.207 Joules (0.225 kgf·m)" },
+    { "feature": "Wide testing measuring range covering 10 to 60 MPa compressive strength" },
+    { "feature": "Aerospace-grade hardened aluminum housing resistant to harsh jobsite conditions" },
+    { "feature": "Precision pointer slider with uniform 0.65 ± 0.15 N friction index" },
+    { "feature": "Calibrated against certified steel test anvil yielding 80 ± 2 rebound index" }
+  ],
+  "specifications": [
+    { "parameter": "Impact Energy", "value": "2.207 J (Type N)" },
+    { "parameter": "Measuring Range", "value": "10 – 60 MPa" },
+    { "parameter": "Pointer Friction", "value": "0.65 ± 0.15 N" },
+    { "parameter": "Spring Stiffness", "value": "785.0 ± 30.0 N/m" },
+    { "parameter": "Impact Spring Working Length", "value": "61.5 ± 0.3 mm" },
+    { "parameter": "Calibration on Test Anvil", "value": "80 ± 2" },
+    { "parameter": "Spherical Radius of Tip", "value": "25 ± 1.0 mm" },
+    { "parameter": "Applicable Standards", "value": "IS 13311-2, ASTM C805, BS 1881-202, EN 12504-2" }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": true,
+  "display_order": 1,
+  "seo_title": "Langry RH225-A Mechanical Rebound Hammer | Accurion Technologies",
+  "seo_description": "Official supplier of Langry RH225-A mechanical concrete test hammer (2.207 J). IS 13311-2 & ASTM C805 compliant non-destructive testing instrument across India."
+}

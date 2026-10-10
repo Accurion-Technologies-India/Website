@@ -1,0 +1,65 @@
+{
+  "status": "published",
+  "name": "Langry RH20-A Mortar Rebound Hammer",
+  "code": "RH20-A",
+  "slug": "langry-rh20a-mortar-rebound-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "Ultra-low impact energy (0.196 J) rebound hammer for evaluating compressive strength of masonry bed joint mortar and external wall plaster.",
+  "description": "The **Langry RH20-A Mortar Rebound Hammer** (Type M) delivers an ultra-gentle impact energy of 0.196 Joules, making it the premier instrument for evaluating joint mortar and wall rendering in masonry buildings without damaging heritage brickwork.",
+  "featured_image": "/images/products/ndt/langry-rh20a-mortar.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh20a-mortar.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Type M ultra-low impact energy of 0.196 Joules"
+    },
+    {
+      "feature": "Measuring range for soft mortars: 1.0 to 25.0 MPa"
+    },
+    {
+      "feature": "Special tip radius for narrow masonry joint testing"
+    },
+    {
+      "feature": "Delicate spring system with 100 ± 5 N/m stiffness"
+    },
+    {
+      "feature": "Anvil verification standard: 60 ± 2"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Impact Energy",
+      "value": "0.196 J (Type M)"
+    },
+    {
+      "parameter": "Measuring Range",
+      "value": "1.0 – 25.0 MPa"
+    },
+    {
+      "parameter": "Spring Stiffness",
+      "value": "100 ± 5 N/m"
+    },
+    {
+      "parameter": "Operating Spring Length",
+      "value": "75.0 ± 0.3 mm"
+    },
+    {
+      "parameter": "Calibration on Test Anvil",
+      "value": "60 ± 2"
+    },
+    {
+      "parameter": "Net Weight",
+      "value": "0.8 kg"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": false,
+  "display_order": 6,
+  "seo_title": "Langry RH20-A Mortar Rebound Hammer (0.196 J) | Accurion Technologies",
+  "seo_description": "Langry RH20-A ultra-low energy (0.196 J) rebound hammer for testing masonry joint mortar and wall plaster strength from 1 to 25 MPa."
+}

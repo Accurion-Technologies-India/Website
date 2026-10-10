@@ -1,0 +1,69 @@
+{
+  "status": "published",
+  "name": "Langry RH450-A High-Strength Concrete Test Hammer",
+  "code": "RH450-A",
+  "slug": "langry-rh450a-high-strength-concrete-test-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "High impact energy (4.500 J) test hammer engineered specifically for testing high-strength concrete elements (60 to 100 MPa) in tall buildings and mega bridges.",
+  "description": "The **Langry RH450-A High-Strength Concrete Test Hammer** is designed to overcome saturation issues encountered when standard 2.207 J hammers test concrete above 60 MPa. With a rated impact energy of 4.5 Joules, it accurately measures compressive strengths up to 100 MPa in high-rise building pillars, pre-stressed highway girders, and heavy infrastructure projects.",
+  "featured_image": "/images/products/ndt/langry-rh450a-high.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh450a-high.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Elevated nominal impact energy of 4.500 Joules for high-strength concrete"
+    },
+    {
+      "feature": "Linear measuring range from 60 to 100 MPa compressive strength"
+    },
+    {
+      "feature": "Heavy-duty hardened alloy construction resistant to jobsite wear"
+    },
+    {
+      "feature": "Special impact spring with 900 ± 40 N/m stiffness"
+    },
+    {
+      "feature": "Calibrated against certified high-energy steel test anvils (88 ± 2)"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Impact Energy",
+      "value": "4.500 J"
+    },
+    {
+      "parameter": "Measuring Range",
+      "value": "60 – 100 MPa"
+    },
+    {
+      "parameter": "Spring Stiffness",
+      "value": "900 ± 40 N/m"
+    },
+    {
+      "parameter": "Operating Spring Length",
+      "value": "106 ± 0.5 mm"
+    },
+    {
+      "parameter": "Spherical Radius of Tip",
+      "value": "35 ± 1.0 mm"
+    },
+    {
+      "parameter": "Calibration on Test Anvil",
+      "value": "88 ± 2"
+    },
+    {
+      "parameter": "Net Weight",
+      "value": "1.3 kg"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": false,
+  "display_order": 3,
+  "seo_title": "Langry RH450-A High-Strength Concrete Hammer (60-100 MPa) | Accurion",
+  "seo_description": "Langry RH450-A high impact energy (4.5 J) concrete test hammer for 60 to 100 MPa high-strength concrete. Pan-India supply with official GST billing."
+}

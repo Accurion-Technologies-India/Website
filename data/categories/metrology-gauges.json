@@ -1,0 +1,9 @@
+{
+  "name": "Metrology & Precision Gauges",
+  "slug": "metrology-gauges",
+  "tagline": "Micrometers, Vernier Calipers & Coating Thickness",
+  "description": "Digital & analog outside micrometers, vernier calipers, depth gauges, feeler gauges, dial indicators, angle blocks, and dry film thickness (DFT) gauges.",
+  "banner_image": "/images/products/metrology/digital-micrometer.jpg",
+  "icon": "📏",
+  "display_order": 15
+}

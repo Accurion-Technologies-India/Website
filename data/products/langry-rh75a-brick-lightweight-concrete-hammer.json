@@ -1,0 +1,65 @@
+{
+  "status": "published",
+  "name": "Langry RH75-A Brick & Lightweight Concrete Hammer",
+  "code": "RH75-A",
+  "slug": "langry-rh75a-brick-lightweight-concrete-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "Low impact energy (0.735 J) hammer for testing solid clay bricks, lightweight aggregate concrete, AAC blocks, and thin structural components.",
+  "description": "The **Langry RH75-A Test Hammer** (Type L) features a reduced impact energy of 0.735 Joules specifically calibrated for solid clay bricks, AAC lightweight blocks, and mortar joints without shattering delicate masonry surfaces.",
+  "featured_image": "/images/products/ndt/langry-rh75a-light.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh75a-light.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Type L reduced impact energy: 0.735 Joules to prevent crushing masonry"
+    },
+    {
+      "feature": "Measuring range: 10 to 50 MPa"
+    },
+    {
+      "feature": "Ideal for solid clay bricks, hollow concrete blocks, and AAC lightweight blocks"
+    },
+    {
+      "feature": "Precision pointer slider and calibrated return spring"
+    },
+    {
+      "feature": "Calibration verification on steel test anvil (74 ± 2)"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Impact Energy",
+      "value": "0.735 J (Type L)"
+    },
+    {
+      "parameter": "Measuring Range",
+      "value": "10 – 50 MPa"
+    },
+    {
+      "parameter": "Spring Stiffness",
+      "value": "260 ± 15 N/m"
+    },
+    {
+      "parameter": "Operating Spring Length",
+      "value": "75.0 ± 0.3 mm"
+    },
+    {
+      "parameter": "Calibration on Test Anvil",
+      "value": "74 ± 2"
+    },
+    {
+      "parameter": "Net Weight",
+      "value": "1.0 kg"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": false,
+  "display_order": 5,
+  "seo_title": "Langry RH75-A Brick & Lightweight Concrete Hammer | Accurion",
+  "seo_description": "Langry RH75-A Type L (0.735 J) rebound hammer for non-destructive testing of clay bricks, AAC blocks, and lightweight concrete structures."
+}

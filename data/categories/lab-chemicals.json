@@ -1,0 +1,9 @@
+{
+  "name": "Laboratory Chemicals",
+  "slug": "lab-chemicals",
+  "tagline": "Analytical Reagents & Industrial Water Treatment",
+  "description": "High-purity laboratory chemicals from Fisher, MERCK, and CDH. STP, ETP, RO, and DM plant cleaning chemicals, descalants, and chemical spares.",
+  "banner_image": "/images/categories/lab-chemicals.jpg",
+  "icon": "🧫",
+  "display_order": 9
+}

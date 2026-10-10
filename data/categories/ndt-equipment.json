@@ -1,0 +1,9 @@
+{
+  "name": "NDT Equipment",
+  "slug": "ndt-equipment",
+  "tagline": "Non-Destructive Concrete Strength & Integrity Testing",
+  "description": "Authorized supplier of Langry rebound hammers, Ultrasonic Pulse Velocity (UPV) testers, rebar locators, carbonation depth kits, and crack depth gauges per IS 13311.",
+  "banner_image": "/images/categories/ndt-equipment.jpg",
+  "icon": "🔬",
+  "display_order": 6
+}

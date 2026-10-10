@@ -32,6 +32,28 @@
         }
       }
     }
+  /* ── 1b. Save Enquiry to Local CRM Storage ────────────────── */
+  function saveLocalEnquiry(formData) {
+    try {
+      var enquiries = JSON.parse(localStorage.getItem('accurion_enquiries') || '[]');
+      var randomSuffix = Math.floor(1000 + Math.random() * 9000);
+      var newEntry = {
+        id: 'ENQ-' + randomSuffix,
+        date: new Date().toISOString(),
+        name: formData.get('name') || '',
+        company: formData.get('company') || 'Direct / Individual',
+        phone: formData.get('phone') || '',
+        email: formData.get('email') || '',
+        subject: formData.get('subject') || 'General Equipment Enquiry',
+        message: formData.get('message') || '',
+        status: 'New',
+        notes: ''
+      };
+      enquiries.unshift(newEntry);
+      localStorage.setItem('accurion_enquiries', JSON.stringify(enquiries));
+    } catch (err) {
+      console.warn('Could not store enquiry locally:', err);
+    }
   }
 
   /* ── 2. Contact Form Submission ─────────────────────────── */
@@ -81,10 +103,13 @@
 
       var succeeded = false;
 
+      var formData = new FormData(form);
+      saveLocalEnquiry(formData);
+
       try {
         var response = await fetch(form.action, {
           method: 'POST',
-          body: new FormData(form),
+          body: formData,
           headers: { 'Accept': 'application/json' }
         });
 

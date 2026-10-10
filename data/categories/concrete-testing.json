@@ -1,0 +1,9 @@
+{
+  "name": "Concrete Testing Equipment",
+  "slug": "concrete-testing",
+  "tagline": "Cube Moulds, CTM & Concrete Workability",
+  "description": "Cube moulds, compression testing machines, slump cones, vibrating tables, concrete mixers, and air entrainment meters conforming to IS 516 and IS 1199.",
+  "banner_image": "/images/categories/concrete-testing.jpg",
+  "icon": "🧱",
+  "display_order": 1
+}

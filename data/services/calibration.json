@@ -1,0 +1,20 @@
+{
+  "title": "NABL Accredited Calibration Services",
+  "service_number": "SERVICE 01",
+  "slug": "calibration",
+  "short_description": "Our NABL-accredited calibration services ensure that your testing instruments deliver accurate, traceable, and reliable results — meeting national and international quality standards.",
+  "full_description": "We calibrate a wide range of civil laboratory equipment on-site or at our facility, providing comprehensive calibration certificates with full uncertainty analysis.",
+  "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+  "applicable_standards": "ISO/IEC 17025, NABL Guidelines, IS 516, IS 14858",
+  "features": [
+    { "feature": "Calibration for CTM, UTM, and compression testing machines" },
+    { "feature": "Weighing balances and precision instruments" },
+    { "feature": "Temperature measuring instruments" },
+    { "feature": "Dimensional measuring equipment" },
+    { "feature": "NABL certificate provided with each calibration" },
+    { "feature": "On-site calibration available across India" }
+  ],
+  "cta_text": "Request Calibration",
+  "cta_link": "contact/?product=NABL+Calibration+Service",
+  "display_order": 1
+}

@@ -1,0 +1,471 @@
+backend:
+  name: github
+  repo: Accurion-Technologies-India/Website
+  branch: main
+  base_url: https://auth.decapcms.org
+  auth_endpoint: auth
+
+# Enable local backend proxy for local testing via npx decap-server (disabled by default)
+local_backend: false
+
+publish_mode: simple
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://www.accuriontechnologies.com"
+display_url: "https://www.accuriontechnologies.com"
+logo_url: "/assets/logo/accurion-logo.png"
+
+collections:
+  # ── 1. PRODUCT CATALOGUE MANAGEMENT (P0) ──────────────────
+  - name: "products"
+    label: "Equipment Catalogue"
+    label_singular: "Equipment"
+    folder: "data/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "name"
+    summary: "{{name}} [{{code}}] ({{status}})"
+    sortable_fields: ["name", "code", "display_order", "category"]
+    fields:
+      - label: "Publication Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Published (Visible on Website)", value: "published" }
+          - { label: "Draft (Saved Internally)", value: "draft" }
+          - { label: "Archived (Hidden from Catalogue)", value: "archived" }
+        default: "published"
+        hint: "Choose whether this instrument is live on the public website or a saved draft."
+
+      - label: "Product Name"
+        name: "name"
+        widget: "string"
+        hint: "Commercial equipment title (e.g. Langry RH225-A Mechanical Concrete Test Hammer)."
+
+      - label: "Product Code / SKU"
+        name: "code"
+        widget: "string"
+        hint: "Official equipment model / SKU identifier (e.g. RH225-A or ACC-CTM-2000)."
+
+      - label: "URL Slug"
+        name: "slug"
+        widget: "string"
+        hint: "Web address identifier (e.g. langry-rh225-a). Use lowercase letters and hyphens only."
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "NDT Equipment", value: "ndt-equipment" }
+          - { label: "Concrete Testing", value: "concrete-testing" }
+          - { label: "Compression Testing Machines (CTM)", value: "compression-machines" }
+          - { label: "Aggregate Testing", value: "aggregate-testing" }
+          - { label: "Bitumen Testing", value: "bitumen-testing" }
+          - { label: "Cement Testing", value: "cement-testing" }
+          - { label: "Soil Testing", value: "soil-testing" }
+          - { label: "Water Testing", value: "water-testing" }
+          - { label: "Lab Balances & Scales", value: "lab-balances" }
+          - { label: "Lab Moulds", value: "lab-moulds" }
+          - { label: "Metrology & Gauges", value: "metrology-gauges" }
+          - { label: "Sieves & Shakers", value: "sieves-shakers" }
+          - { label: "General Lab Equipment", value: "general-lab" }
+          - { label: "Lab Chemicals & Reagents", value: "lab-chemicals" }
+          - { label: "Lab Glassware", value: "lab-glassware" }
+          - { label: "Lab Consumables", value: "lab-consumables" }
+          - { label: "Sampling Tools", value: "sampling-tools" }
+        default: "ndt-equipment"
+        hint: "Primary testing discipline taxonomy."
+
+      - label: "Subcategory"
+        name: "subcategory"
+        widget: "string"
+        default: "rebound-hammers"
+        hint: "Specific equipment group (e.g. rebound-hammers, upv-testers, cube-moulds)."
+
+      - label: "Short Summary"
+        name: "short_description"
+        widget: "text"
+        hint: "Crisp 2-sentence summary specifically styled for catalogue cards."
+
+      - label: "Full Technical Description"
+        name: "description"
+        widget: "markdown"
+        hint: "Engineering details, working principles, and test standard compliance."
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        hint: "Primary equipment photo. Handled by the 4-layer system so machines are never cut off."
+
+      - label: "Product Images Gallery"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field:
+          label: "Gallery Image"
+          name: "image"
+          widget: "image"
+        hint: "Additional high-resolution photographs and angle shots."
+
+      - label: "Key Features"
+        name: "key_features"
+        widget: "list"
+        field:
+          label: "Feature Bullet"
+          name: "feature"
+          widget: "string"
+        hint: "Bullet points highlighted with checkmarks on the product page."
+
+      - label: "Technical Specifications"
+        name: "specifications"
+        widget: "list"
+        fields:
+          - label: "Parameter Name"
+            name: "parameter"
+            widget: "string"
+            hint: "e.g. Impact Energy, Measuring Range, Platen Size"
+          - label: "Value / Specification"
+            name: "value"
+            widget: "string"
+            hint: "e.g. 2.207 Joules, 10–60 MPa, 80 ± 2"
+        hint: "Structured engineering parameters rendered into technical data tables."
+
+      - label: "Datasheet / Brochure"
+        name: "brochure"
+        widget: "file"
+        required: false
+        hint: "Downloadable PDF brochure or technical datasheet."
+
+      - label: "Demonstration Video URL"
+        name: "video_url"
+        widget: "string"
+        required: false
+        hint: "Optional YouTube or Vimeo demonstration video link."
+
+      - label: "Featured Product"
+        name: "featured"
+        widget: "boolean"
+        default: false
+        hint: "Toggle on to feature this instrument on the home page."
+
+      - label: "Display Order"
+        name: "display_order"
+        widget: "number"
+        default: 10
+        value_type: "int"
+        min: 1
+        hint: "Sorting priority. Lower numbers (1, 2, 3) appear first in catalogue grids."
+
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        required: false
+        hint: "Custom title tag for Google. Leave blank to auto-generate."
+
+      - label: "Search Engine Summary"
+        name: "seo_description"
+        widget: "text"
+        required: false
+        hint: "Meta description for Google search previews and WhatsApp sharing (140–160 characters)."
+
+  # ── 2. CATEGORY HIERARCHY MANAGEMENT (P0) ─────────────────
+  - name: "categories"
+    label: "Equipment Categories"
+    label_singular: "Category"
+    folder: "data/categories"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "name"
+    summary: "{{name}} ({{slug}})"
+    fields:
+      - label: "Category Name"
+        name: "name"
+        widget: "string"
+        hint: "Official name of the testing discipline (e.g. NDT Equipment)."
+
+      - label: "URL Slug"
+        name: "slug"
+        widget: "string"
+        hint: "URL folder name (e.g. ndt-equipment)."
+
+      - label: "Category Tagline"
+        name: "tagline"
+        widget: "string"
+        required: false
+        hint: "Brief tagline (e.g. Non-Destructive Testing Instruments)."
+
+      - label: "Category Description"
+        name: "description"
+        widget: "text"
+        hint: "Overview of equipment covered under this category."
+
+      - label: "Banner Image"
+        name: "banner_image"
+        widget: "image"
+        required: false
+        hint: "Header banner image."
+
+      - label: "Display Order"
+        name: "display_order"
+        widget: "number"
+        default: 10
+        value_type: "int"
+
+  # ── 3. TECHNICAL GUIDES & BLOG ────────────────────────────
+  - name: "blogs"
+    label: "Technical Guides & Blog"
+    label_singular: "Article"
+    folder: "data/blogs"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    summary: "{{title}} ({{date}})"
+    fields:
+      - label: "Article Title"
+        name: "title"
+        widget: "string"
+        hint: "Headline of the technical guide or company update."
+
+      - label: "URL Slug"
+        name: "slug"
+        widget: "string"
+        hint: "Web permalink (e.g. langry-rh225-a-rebound-hammer)."
+
+      - label: "Publication Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "Accurion Technical Team"
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        hint: "Article banner photo."
+
+      - label: "Summary Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "Card summary for the blog listing page."
+
+      - label: "Article Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Complete technical article content."
+
+      - label: "Search Engine Summary"
+        name: "seo_description"
+        widget: "text"
+        required: false
+        hint: "Meta description for Google search previews."
+
+  # ── 4. SERVICES MANAGEMENT (P1) ──────────────────────────
+  - name: "services"
+    label: "Services"
+    label_singular: "Service"
+    folder: "data/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    summary: "{{service_number}}: {{title}}"
+    sortable_fields: ["display_order", "title"]
+    fields:
+      - label: "Service Title"
+        name: "title"
+        widget: "string"
+        hint: "Commercial service name (e.g. NABL Accredited Calibration Services)."
+
+      - label: "Service Number"
+        name: "service_number"
+        widget: "string"
+        default: "SERVICE 01"
+        hint: "Display badge (e.g. SERVICE 01, SERVICE 02, SERVICE 03)."
+
+      - label: "URL Slug / Anchor ID"
+        name: "slug"
+        widget: "string"
+        hint: "Anchor ID (e.g. calibration, lab-setup, repair)."
+
+      - label: "Short Description"
+        name: "short_description"
+        widget: "text"
+        hint: "Primary overview paragraph highlighting accuracy, standards, and customer assurance."
+
+      - label: "Full Scope Description"
+        name: "full_description"
+        widget: "text"
+        hint: "Extended description of technical capabilities, methodology, and on-site coverage."
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        hint: "Photographic illustration of technicians or testing laboratory."
+
+      - label: "Applicable Standards & Certifications"
+        name: "applicable_standards"
+        widget: "string"
+        hint: "Standards followed (e.g. ISO/IEC 17025, NABL Guidelines, IS 516, IS 14858)."
+
+      - label: "Key Deliverables & Capabilities"
+        name: "features"
+        widget: "list"
+        summary: "{{fields.feature}}"
+        fields:
+          - label: "Capability / Scope Item"
+            name: "feature"
+            widget: "string"
+
+      - label: "CTA Button Text"
+        name: "cta_text"
+        widget: "string"
+        default: "Request Quotation"
+
+      - label: "CTA Button Link"
+        name: "cta_link"
+        widget: "string"
+        default: "contact/?product=Service+Enquiry"
+
+      - label: "Display Order"
+        name: "display_order"
+        widget: "number"
+        value_type: "int"
+        default: 1
+
+  # ── 5. SITE & BRAND SETTINGS (P0) ─────────────────────────
+  - name: "settings"
+    label: "Site & Brand Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Company & Contact Information"
+        name: "company"
+        file: "data/settings/company.json"
+        fields:
+          - label: "Company Legal Name"
+            name: "name"
+            widget: "string"
+            default: "Accurion Technologies"
+
+          - label: "Primary Phone"
+            name: "phone"
+            widget: "string"
+            default: "+91 83838 51980"
+
+          - label: "WhatsApp Number"
+            name: "whatsapp"
+            widget: "string"
+            default: "+91 83838 51980"
+
+          - label: "General Inquiries Email"
+            name: "email"
+            widget: "string"
+            default: "info@accuriontechnologies.com"
+
+          - label: "Sales Email"
+            name: "sales_email"
+            widget: "string"
+            default: "sales@accuriontechnologies.com"
+
+          - label: "Office Address"
+            name: "address"
+            widget: "text"
+            default: "E-43, 3rd Floor, St. No. 1, Parshuram Gali, West Jyoti Nagar, Delhi - 110094, India"
+
+          - label: "GSTIN Number"
+            name: "gstin"
+            widget: "string"
+            default: "07AAHCA0000A1Z5"
+
+          - label: "Company Logo"
+            name: "logo"
+            widget: "image"
+            default: "/assets/logo/accurion-logo.png"
+
+          - label: "LinkedIn URL"
+            name: "linkedin"
+            widget: "string"
+            required: false
+
+          - label: "YouTube URL"
+            name: "youtube"
+            widget: "string"
+            required: false
+
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "data/settings/homepage.json"
+        fields:
+          - label: "Hero Headline"
+            name: "hero_title"
+            widget: "string"
+            default: "Civil Quality Laboratory Equipment & NABL Calibration"
+
+          - label: "Hero Subheadline"
+            name: "hero_subtitle"
+            widget: "text"
+            default: "Authorized suppliers of Langry NDT instruments, compression testing machines, and precision testing apparatus across India."
+
+          - label: "Hero Background Image"
+            name: "hero_image"
+            widget: "image"
+            default: "/images/hero/hero-bg.webp"
+
+          - label: "Primary CTA Text"
+            name: "hero_cta_text"
+            widget: "string"
+            default: "Explore Equipment"
+
+          - label: "Primary CTA Link"
+            name: "hero_cta_link"
+            widget: "string"
+            default: "products/"
+
+          - label: "Secondary CTA Text"
+            name: "hero_secondary_cta_text"
+            widget: "string"
+            default: "Request a Quote"
+
+          - label: "Secondary CTA Link"
+            name: "hero_secondary_cta_link"
+            widget: "string"
+            default: "contact"
+
+      - label: "Theme & Typography"
+        name: "theme"
+        file: "data/settings/theme.json"
+        fields:
+          - label: "Primary Brand Colour"
+            name: "primary_color"
+            widget: "color"
+            default: "#c41217"
+
+          - label: "Primary Dark Hover Colour"
+            name: "primary_dark_color"
+            widget: "color"
+            default: "#9e0e12"
+
+          - label: "Font Family"
+            name: "font_family"
+            widget: "select"
+            options:
+              - "Inter"
+              - "Roboto"
+              - "Outfit"
+              - "Poppins"
+            default: "Inter"

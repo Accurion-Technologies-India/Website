@@ -1,0 +1,87 @@
+{
+  "status": "published",
+  "name": "Langry RH225-B Integrated Digital Rebound Hammer",
+  "code": "RH225-B",
+  "slug": "langry-rh225b-integrated-digital-rebound-hammer",
+  "category": "ndt-equipment",
+  "subcategory": "rebound-hammers",
+  "short_description": "Advanced patented digital concrete hammer featuring non-contact electromagnetic sensor technology, integrated 2.8\" OLED display, voice prompt reporting, and 1,000 component memory.",
+  "description": "The **Langry RH225-B Integrated Digital Rebound Hammer** combines mechanical rebound precision with digital data capture. Designed for rapid evaluation of compressive strength in concrete structures, it eliminates human reading errors through a contactless metal grating sensor. Measurements are displayed instantly on a 2.8-inch high-contrast OLED screen, broadcast via human voice prompts, and logged into onboard memory with Bluetooth field printing capability.",
+  "featured_image": "/images/products/ndt/langry-rh225b-digital.jpg",
+  "gallery": [
+    {
+      "image": "/images/products/ndt/langry-rh225b-digital.jpg"
+    },
+    {
+      "image": "/images/products/ndt/langry-rh225b-detail.jpg"
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "Patented integrated design: mechanical pointer and digital sensor in one housing"
+    },
+    {
+      "feature": "High-contrast 2.8-inch OLED dot matrix display (256x64 resolution)"
+    },
+    {
+      "feature": "Multi-language voice broadcast prompts for hands-free site operation"
+    },
+    {
+      "feature": "Massive internal storage: logs 1,000 test components and over 100,000 measurement points"
+    },
+    {
+      "feature": "Built-in Bluetooth communication for wireless on-site thermal printers"
+    },
+    {
+      "feature": "Long-life 3.7V / 3200 mAh rechargeable lithium-ion battery (over 10 hours continuous operation)"
+    }
+  ],
+  "specifications": [
+    {
+      "parameter": "Impact Energy",
+      "value": "2.207 J (Type N)"
+    },
+    {
+      "parameter": "Measuring Range",
+      "value": "10 – 60 MPa"
+    },
+    {
+      "parameter": "Pointer Friction",
+      "value": "0.65 ± 0.15 N"
+    },
+    {
+      "parameter": "Spring Stiffness",
+      "value": "785.0 ± 30.0 N/m"
+    },
+    {
+      "parameter": "Operating Spring Length",
+      "value": "61.5 ± 0.3 mm"
+    },
+    {
+      "parameter": "Calibration on Steel Anvil",
+      "value": "80 ± 2"
+    },
+    {
+      "parameter": "Display Screen",
+      "value": "2.8-inch OLED (256 x 64 pixels)"
+    },
+    {
+      "parameter": "Power Supply",
+      "value": "3.7V / 3200 mAh Rechargeable Li-ion Battery"
+    },
+    {
+      "parameter": "Operating Temperature",
+      "value": "-10°C to +40°C"
+    },
+    {
+      "parameter": "Applicable Standards",
+      "value": "IS 13311-2, ASTM C805, EN 12504-2, JGJ/T 23"
+    }
+  ],
+  "brochure": "/assets/documents/GST_Accurion Technologies.pdf",
+  "video_url": "",
+  "featured": true,
+  "display_order": 2,
+  "seo_title": "Langry RH225-B Digital Rebound Hammer | Accurion Technologies",
+  "seo_description": "Buy Langry RH225-B integrated digital rebound hammer (2.207 J) with OLED screen and voice prompts. Authorized supplier across India with NABL calibration support."
+}

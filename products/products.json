@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Digital Compression Testing Machine 2000 kN",
+    "code": "ACC-CTM-2000D",
+    "slug": "digital-compression-testing-machine-2000kn",
+    "category": "compression-machines",
+    "subcategory": "compression-testing-machines",
+    "short_description": "Heavy-duty 2000 kN digital compression testing machine with microprocessor pace rate controller and peak load retention for concrete cube and cylinder testing.",
+    "featured_image": "/images/categories/compression-machines.jpg",
+    "url": "products/compression-machines/digital-compression-testing-machine-2000kn/",
+    "featured": true,
+    "display_order": 1,
+    "specifications": [
+      {
+        "parameter": "Maximum Capacity",
+        "value": "2000 kN (200 Tonnes)"
+      },
+      {
+        "parameter": "Measuring Accuracy",
+        "value": "Class 1 (± 1% of indicated load)"
+      },
+      {
+        "parameter": "Piston Stroke",
+        "value": "50 mm"
+      },
+      {
+        "parameter": "Platen Dimensions",
+        "value": "220 mm diameter"
+      },
+      {
+        "parameter": "Vertical Clearance",
+        "value": "320 mm"
+      },
+      {
+        "parameter": "Electric Power",
+        "value": "415 V, 3-Phase, 50 Hz, 1.5 kW"
+      },
+      {
+        "parameter": "Applicable Standards",
+        "value": "IS 516, IS 14858, BS 1881-115, EN 12390-4"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH20-A Mortar Rebound Hammer",
+    "code": "RH20-A",
+    "slug": "langry-rh20a-mortar-rebound-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Ultra-low impact energy (0.196 J) rebound hammer for evaluating compressive strength of masonry bed joint mortar and external wall plaster.",
+    "featured_image": "/images/products/ndt/langry-rh20a-mortar.jpg",
+    "url": "products/ndt-equipment/langry-rh20a-mortar-rebound-hammer/",
+    "featured": false,
+    "display_order": 6,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "0.196 J (Type M)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "1.0 – 25.0 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "100 ± 5 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "75.0 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "60 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "0.8 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH225-A Mechanical Concrete Test Hammer",
+    "code": "RH225-A",
+    "slug": "langry-rh225-a-mechanical-rebound-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "The industry-standard mechanical rebound hammer for non-destructive compressive strength estimation of normal structural concrete from 10 to 60 MPa.",
+    "featured_image": "/images/products/ndt/langry-rh225a-mech.jpg",
+    "url": "products/ndt-equipment/langry-rh225-a-mechanical-rebound-hammer/",
+    "featured": true,
+    "display_order": 1,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "2.207 J (Type N)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "10 – 60 MPa"
+      },
+      {
+        "parameter": "Pointer Friction",
+        "value": "0.65 ± 0.15 N"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "785.0 ± 30.0 N/m"
+      },
+      {
+        "parameter": "Impact Spring Working Length",
+        "value": "61.5 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "80 ± 2"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "25 ± 1.0 mm"
+      },
+      {
+        "parameter": "Applicable Standards",
+        "value": "IS 13311-2, ASTM C805, BS 1881-202, EN 12504-2"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH225-B Integrated Digital Rebound Hammer",
+    "code": "RH225-B",
+    "slug": "langry-rh225b-integrated-digital-rebound-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Advanced patented digital concrete hammer featuring non-contact electromagnetic sensor technology, integrated 2.8\" OLED display, voice prompt reporting, and 1,000 component memory.",
+    "featured_image": "/images/products/ndt/langry-rh225b-digital.jpg",
+    "url": "products/ndt-equipment/langry-rh225b-integrated-digital-rebound-hammer/",
+    "featured": true,
+    "display_order": 2,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "2.207 J (Type N)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "10 – 60 MPa"
+      },
+      {
+        "parameter": "Pointer Friction",
+        "value": "0.65 ± 0.15 N"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "785.0 ± 30.0 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "61.5 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Steel Anvil",
+        "value": "80 ± 2"
+      },
+      {
+        "parameter": "Display Screen",
+        "value": "2.8-inch OLED (256 x 64 pixels)"
+      },
+      {
+        "parameter": "Power Supply",
+        "value": "3.7V / 3200 mAh Rechargeable Li-ion Battery"
+      },
+      {
+        "parameter": "Operating Temperature",
+        "value": "-10°C to +40°C"
+      },
+      {
+        "parameter": "Applicable Standards",
+        "value": "IS 13311-2, ASTM C805, EN 12504-2, JGJ/T 23"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH450-A High-Strength Concrete Test Hammer",
+    "code": "RH450-A",
+    "slug": "langry-rh450a-high-strength-concrete-test-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "High impact energy (4.500 J) test hammer engineered specifically for testing high-strength concrete elements (60 to 100 MPa) in tall buildings and mega bridges.",
+    "featured_image": "/images/products/ndt/langry-rh450a-high.jpg",
+    "url": "products/ndt-equipment/langry-rh450a-high-strength-concrete-test-hammer/",
+    "featured": false,
+    "display_order": 3,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "4.500 J"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "60 – 100 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "900 ± 40 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "106 ± 0.5 mm"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "35 ± 1.0 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "88 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "1.3 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH550-A Heavy-Duty High-Strength Hammer",
+    "code": "RH550-A",
+    "slug": "langry-rh550a-heavy-duty-high-strength-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Maximum impact energy (5.400 J) hammer for mass concrete installations, dams, tunnel linings, and ultra-high-strength concrete (UHPC) up to 120 MPa.",
+    "featured_image": "/images/products/ndt/langry-rh550a-high.jpg",
+    "url": "products/ndt-equipment/langry-rh550a-heavy-duty-high-strength-hammer/",
+    "featured": false,
+    "display_order": 4,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "5.400 J"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "60 – 120 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "1000 ± 50 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "110 ± 0.5 mm"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "35 ± 1.0 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "88 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "1.5 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH75-A Brick & Lightweight Concrete Hammer",
+    "code": "RH75-A",
+    "slug": "langry-rh75a-brick-lightweight-concrete-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Low impact energy (0.735 J) hammer for testing solid clay bricks, lightweight aggregate concrete, AAC blocks, and thin structural components.",
+    "featured_image": "/images/products/ndt/langry-rh75a-light.jpg",
+    "url": "products/ndt-equipment/langry-rh75a-brick-lightweight-concrete-hammer/",
+    "featured": false,
+    "display_order": 5,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "0.735 J (Type L)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "10 – 50 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "260 ± 15 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "75.0 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "74 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "1.0 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry Testing Anvil (GZ Series)",
+    "code": "GZ-I",
+    "slug": "langry-testing-anvil-gz-series",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "High-precision tool steel test anvil hardened to HRC 60 ± 2 for daily calibration verification of concrete test hammers per IS 13311-2 and ASTM C805.",
+    "featured_image": "/images/products/ndt/langry-rh225b-detail.jpg",
+    "url": "products/ndt-equipment/langry-testing-anvil-gz-series/",
+    "featured": false,
+    "display_order": 7,
+    "specifications": [
+      {
+        "parameter": "Core Hardness",
+        "value": "HRC 60 ± 2"
+      },
+      {
+        "parameter": "Nominal Rebound Value",
+        "value": "80 ± 2 (Type N)"
+      },
+      {
+        "parameter": "Total Mass",
+        "value": "16 kg (Standard Bench)"
+      },
+      {
+        "parameter": "Applicable Hammers",
+        "value": "RH225-A, RH225-B, RH450-A, RH550-A, RH75-A"
+      },
+      {
+        "parameter": "Compliance",
+        "value": "IS 13311 (Part 2), ASTM C805, EN 12504-2"
+      }
+    ]
+  }
+]

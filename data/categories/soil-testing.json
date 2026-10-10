@@ -1,0 +1,9 @@
+{
+  "name": "Soil Testing Equipment",
+  "slug": "soil-testing",
+  "tagline": "Compaction, CBR & Geotechnical Analysis",
+  "description": "Proctor compaction moulds, Atterberg limits Casagrande apparatus, California Bearing Ratio (CBR) apparatus, consolidation test sets, and direct shear boxes per IS 2720.",
+  "banner_image": "/images/categories/soil-testing.jpg",
+  "icon": "🏗️",
+  "display_order": 3
+}

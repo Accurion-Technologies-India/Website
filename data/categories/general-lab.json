@@ -1,0 +1,9 @@
+{
+  "name": "General Lab Equipment",
+  "slug": "general-lab",
+  "tagline": "Hot Air Ovens, Water Baths & Environmental Meters",
+  "description": "Thermostatically controlled laboratory drying ovens, constant temperature water baths, digital lux meters, sound level meters, and infrared thermometers.",
+  "banner_image": "/images/categories/general-lab.jpg",
+  "icon": "🌡️",
+  "display_order": 14
+}
