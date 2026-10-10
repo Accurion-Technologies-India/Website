@@ -321,6 +321,125 @@
     document.body.appendChild(btn);
   }
 
+  /* ── In-Category Instant Search Toolbar ───────────────────── */
+  function initCategorySearch() {
+    var productGrid = document.querySelector('.product-grid');
+    var path = window.location.pathname.replace(/\\/g, '/');
+    var isMainProducts = path === '/products/' || path === '/products' || path.endsWith('/products/index.html');
+
+    if (!productGrid || isMainProducts || document.getElementById('category-search-container')) {
+      return;
+    }
+
+    var cards = Array.from(productGrid.querySelectorAll('.product-card'));
+    if (cards.length === 0) return;
+
+    var pageH1 = document.querySelector('h1');
+    var catTitle = pageH1 ? pageH1.textContent.replace('Equipment', '').trim() : 'this category';
+
+    var searchWrap = document.createElement('div');
+    searchWrap.id = 'category-search-container';
+    searchWrap.className = 'category-search-wrap';
+    searchWrap.innerHTML = `
+      <div class="category-search-inner">
+        <div class="category-search-input-box">
+          <span class="category-search-icon">🔍</span>
+          <input type="text" id="categorySearchInput" class="category-search-input" placeholder="Search within ${catTitle} (e.g. model, SKU, name, IS standard)..." aria-label="Search within this category" />
+          <button type="button" id="categorySearchClear" class="category-search-clear" style="display:none;" aria-label="Clear search">✕</button>
+        </div>
+        <div class="category-search-status-bar">
+          <span id="categorySearchCount" class="category-search-count">Showing all <strong>${cards.length}</strong> items in this category</span>
+          <a href="products/" class="category-search-global-link">Search full catalogue across all categories →</a>
+        </div>
+      </div>
+      <div id="categorySearchNoResults" class="category-search-empty" style="display: none;">
+        <div style="font-size: 2rem; margin-bottom: 8px;">🔍</div>
+        <h4 style="margin: 0 0 6px; font-weight: 700; color: var(--color-text); font-size: 1.15rem;">No matching equipment found in this category</h4>
+        <p style="margin: 0 0 16px; font-size: 0.9rem; color: var(--color-text-secondary);">Looking for instruments in other testing disciplines?</p>
+        <a id="categorySearchFallbackBtn" href="products/" class="btn btn-primary btn-sm">Search All Categories in Full Catalogue →</a>
+      </div>
+    `;
+
+    productGrid.parentNode.insertBefore(searchWrap, productGrid);
+
+    var input = document.getElementById('categorySearchInput');
+    var clear = document.getElementById('categorySearchClear');
+    var count = document.getElementById('categorySearchCount');
+    var noRes = document.getElementById('categorySearchNoResults');
+    var fallbackBtn = document.getElementById('categorySearchFallbackBtn');
+
+    var CATEGORY_SYNONYMS = {
+      'la': 'los angeles',
+      'ctm': 'compression',
+      'utm': 'universal',
+      'cbr': 'bearing',
+      'ndt': 'rebound'
+    };
+
+    function filterCards() {
+      var query = (input.value || '').toLowerCase().trim();
+      if (query.length > 0) {
+        clear.style.display = 'block';
+      } else {
+        clear.style.display = 'none';
+      }
+
+      var tokens = query.replace(/[\u00d7\u00d7]/g, 'x').split(/\s+/).filter(Boolean);
+      var visibleCount = 0;
+
+      cards.forEach(function (card) {
+        var cardText = (card.textContent || '').toLowerCase().replace(/[\u00d7\u00d7]/g, 'x');
+        var cardTags = (card.getAttribute('data-category') || '').toLowerCase();
+        var fullText = cardText + ' ' + cardTags;
+        var normText = fullText.replace(/[^a-z0-9]/g, '');
+
+        var isMatch = true;
+        if (tokens.length > 0) {
+          isMatch = tokens.every(function (token) {
+            if (fullText.indexOf(token) !== -1) return true;
+            var syn = CATEGORY_SYNONYMS[token];
+            if (syn && fullText.indexOf(syn) !== -1) return true;
+            var normToken = token.replace(/[^a-z0-9]/g, '');
+            if (normToken && normText.indexOf(normToken) !== -1) return true;
+            return false;
+          });
+        }
+
+        if (isMatch) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        productGrid.style.display = 'none';
+        noRes.style.display = 'block';
+        count.innerHTML = `Found <strong>0</strong> matching instruments`;
+        if (fallbackBtn) {
+          fallbackBtn.href = 'products/?q=' + encodeURIComponent(query);
+          fallbackBtn.textContent = `Search all categories for "${query}" →`;
+        }
+      } else {
+        productGrid.style.display = '';
+        noRes.style.display = 'none';
+        if (query) {
+          count.innerHTML = `Showing <strong>${visibleCount}</strong> of ${cards.length} instruments matching "<em>${query}</em>"`;
+        } else {
+          count.innerHTML = `Showing all <strong>${cards.length}</strong> items in this category`;
+        }
+      }
+    }
+
+    input.addEventListener('input', filterCards);
+    clear.addEventListener('click', function () {
+      input.value = '';
+      filterCards();
+      input.focus();
+    });
+  }
+
   /* ── Init ───────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function () {
     buildNavbar();
@@ -328,6 +447,7 @@
     buildFooter();
     buildWhatsApp();
     buildBackToTop();
+    initCategorySearch();
   });
 
 })();

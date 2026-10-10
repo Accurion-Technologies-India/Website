@@ -31,6 +31,25 @@
       if (response.ok) {
         productsIndex = await response.json();
         isLoaded = true;
+
+        // Check URL search parameters (e.g. ?q=cube+mould or ?category=concrete-testing)
+        const urlParams = new URLSearchParams(window.location.search);
+        const qParam = urlParams.get('q') || urlParams.get('search');
+        const catParam = urlParams.get('category');
+        if (catParam) {
+          activeCategory = catParam;
+          if (filterPillsContainer) {
+            const targetBtn = filterPillsContainer.querySelector(`[data-filter="${catParam}"]`);
+            if (targetBtn) {
+              filterPillsContainer.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+              targetBtn.classList.add('active');
+            }
+          }
+        }
+        if (qParam) {
+          searchInput.value = qParam;
+          runSearch();
+        }
       }
     } catch (err) {
       console.warn('Could not load products search index:', err);
@@ -42,9 +61,18 @@
   searchInput.addEventListener('mouseenter', loadIndex);
   window.addEventListener('DOMContentLoaded', loadIndex);
 
+  // Common abbreviation dictionary for civil lab equipment
+  const CIVIL_SYNONYMS = {
+    'la': 'los angeles',
+    'ctm': 'compression',
+    'utm': 'universal testing',
+    'cbr': 'california bearing',
+    'ndt': 'rebound'
+  };
+
   // Normalize string for fuzzy match
   function normalize(str) {
-    return (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    return (str || '').toLowerCase().replace(/[\u00d7\u00d7]/g, 'x').replace(/[^a-z0-9]/g, '');
   }
 
   function matchesItem(item, query, catFilter) {
@@ -57,44 +85,35 @@
       return true;
     }
 
-    const q = query.toLowerCase().trim();
-    const qNorm = normalize(query);
+    const rawQ = (query || '').toLowerCase().trim();
+    // Build comprehensive searchable corpus for this product
+    const specsStr = (item.specifications || []).map(s => (s.parameter || '') + ' ' + (s.value || '')).join(' ');
+    const fullItemText = [
+      item.name || '',
+      item.code || '',
+      item.short_description || '',
+      item.category || '',
+      item.subcategory || '',
+      specsStr
+    ].join(' ').toLowerCase().replace(/[\u00d7\u00d7]/g, 'x');
 
-    // Exact or normalized SKU / Code match (Highest priority)
-    if (item.code && (item.code.toLowerCase().includes(q) || normalize(item.code).includes(qNorm))) {
-      return true;
-    }
+    const normItemText = fullItemText.replace(/[^a-z0-9]/g, '');
 
-    // Name match
-    if (item.name && item.name.toLowerCase().includes(q)) {
-      return true;
-    }
+    // Multi-token search: every word separated by space must match
+    const tokens = rawQ.replace(/[\u00d7\u00d7]/g, 'x').split(/\s+/).filter(Boolean);
+    const allTokensMatch = tokens.every(token => {
+      // Direct substring
+      if (fullItemText.includes(token)) return true;
+      // Civil domain synonym
+      const syn = CIVIL_SYNONYMS[token];
+      if (syn && fullItemText.includes(syn)) return true;
+      // Punctuation-stripped match (e.g. RH-225 matches RH225, 100x100 matches 100×100)
+      const normToken = token.replace(/[^a-z0-9]/g, '');
+      if (normToken && normItemText.includes(normToken)) return true;
+      return false;
+    });
 
-    // Short description match
-    if (item.short_description && item.short_description.toLowerCase().includes(q)) {
-      return true;
-    }
-
-    // Category / subcategory match
-    if (item.category && item.category.toLowerCase().includes(q)) {
-      return true;
-    }
-    if (item.subcategory && item.subcategory.toLowerCase().includes(q)) {
-      return true;
-    }
-
-    // Specifications search (e.g. "IS 13311", "2.207 J", "2000 kN", "OLED", "Bluetooth")
-    if (item.specifications && Array.isArray(item.specifications)) {
-      for (const spec of item.specifications) {
-        const p = (spec.parameter || '').toLowerCase();
-        const v = (spec.value || '').toLowerCase();
-        if (p.includes(q) || v.includes(q)) {
-          return true;
-        }
-      }
-    }
-
-    return false;
+    return allTokensMatch;
   }
 
   function highlightMatch(text, query) {

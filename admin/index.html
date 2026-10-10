@@ -80,6 +80,58 @@
       font-weight: 700 !important;
       font-size: 13px !important;
     }
+    /* Fix Decap CMS Editor Toolbar Cutoff */
+    div[class*="EditorContainer"] {
+      top: 42px !important;
+      height: calc(100vh - 42px) !important;
+      box-sizing: border-box !important;
+    }
+    div[class*="EditorToolbar"],
+    div[class*="ToolbarContainer"] {
+      top: 42px !important;
+    }
+    /* Fix Authentication / Login Screen Logo & Button */
+    div[class*="AuthenticationPage"],
+    div[class*="LoginPage"] {
+      padding-top: 60px !important;
+      box-sizing: border-box !important;
+    }
+    div[class*="AuthenticationPage"] img,
+    div[class*="LoginPage"] img,
+    img[src*="accurion-logo"] {
+      max-width: 260px !important;
+      max-height: 80px !important;
+      width: auto !important;
+      height: auto !important;
+      object-fit: contain !important;
+      margin: 0 auto 24px !important;
+      display: block !important;
+    }
+    div[class*="AuthenticationPage"] button,
+    button[class*="LoginButton"] {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      line-height: 1 !important;
+    }
+    div[class*="AuthenticationPage"] button svg,
+    button[class*="LoginButton"] svg {
+      float: none !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      position: static !important;
+      top: 0 !important;
+      margin: 0 !important;
+    }
+    a[class*="SidebarNavLink"] svg,
+    a[class*="CollectionTopLink"] svg {
+      vertical-align: middle !important;
+      display: inline-block !important;
+      position: relative !important;
+      top: 0 !important;
+      margin-right: 8px !important;
+    }
   </style>
 </head>
 <body>
@@ -291,19 +343,53 @@
           if (loginBtn && !document.getElementById('cms-oauth-helper') && loginBtn.textContent.toLowerCase().includes('github')) {
             const helper = document.createElement('div');
             helper.id = 'cms-oauth-helper';
-            helper.style.cssText = 'max-width: 380px; margin: 18px auto 0; text-align: center; font-family: Inter, sans-serif;';
+            helper.style.cssText = 'max-width: 440px; margin: 20px auto 0; text-align: center; font-family: Inter, sans-serif;';
             helper.innerHTML = `
-              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; text-align: left; font-size: 12px; color: #475569; line-height: 1.5;">
-                <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
-                  <span>🔒</span> GitHub OAuth Authentication
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; text-align: left; font-size: 13px; color: #334155; line-height: 1.5; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+                <div style="font-weight: 700; color: #0f172a; margin-bottom: 6px; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+                  <span>🔑</span> Connect Live via GitHub Token
                 </div>
-                Connects directly to repository <code>Accurion-Technologies-India/Website</code> (branch: <code>main</code>). Click above to authorize with your GitHub account.
+                <p style="font-size: 12px; color: #64748b; margin: 0 0 10px;">
+                  Paste a GitHub Personal Access Token (PAT with <code>repo</code> scope) to publish live commits directly to GitHub without needing an OAuth proxy server:
+                </p>
+                <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+                  <input type="password" id="cms-pat-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" style="flex: 1; padding: 8px 12px; font-size: 13px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: monospace;" />
+                  <button type="button" id="cms-pat-btn" style="background: #c41217; color: #fff; font-weight: 700; font-size: 13px; border: none; border-radius: 6px; padding: 8px 16px; cursor: pointer; white-space: nowrap;">Connect</button>
+                </div>
+                <div style="font-size: 11.5px; color: #64748b;">
+                  <a href="https://github.com/settings/tokens/new?scopes=repo&description=Accurion+Technologies+Website+CMS" target="_blank" style="color: #c41217; text-decoration: underline; font-weight: 600;">Generate GitHub Token on GitHub (1-Click) ↗</a>
+                </div>
               </div>
-              <a href="?sandbox=true" style="font-size: 12.5px; color: #c41217; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; border-radius: 6px; background: rgba(196, 18, 23, 0.08); border: 1px solid rgba(196, 18, 23, 0.2); transition: background 0.2s;">
-                <span>⚡</span> Or Open Offline Sandbox Mode (1-Click Access)
-              </a>
+
+              <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+                <a href="?sandbox=true" style="font-size: 13px; color: #166534; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; border-radius: 8px; background: #dcfce7; border: 1px solid #86efac; transition: background 0.2s;">
+                  <span>⚡</span> Or Open 1-Click Sandbox Mode (No Login Required)
+                </a>
+                <div style="font-size: 11.5px; color: #94a3b8;">
+                  Note: The default "Login with GitHub" button relies on auth.decapcms.org (which is currently down). Use the Token login above or deploy the Cloudflare Worker in <code>admin/oauth-worker.js</code>.
+                </div>
+              </div>
             `;
             loginBtn.parentNode.insertBefore(helper, loginBtn.nextSibling);
+
+            const patBtn = document.getElementById('cms-pat-btn');
+            if (patBtn) {
+              patBtn.addEventListener('click', function() {
+                const patVal = (document.getElementById('cms-pat-input').value || '').trim();
+                if (!patVal) {
+                  alert('Please paste a GitHub Personal Access Token (starts with ghp_ or github_pat_)');
+                  return;
+                }
+                try {
+                  localStorage.setItem('decap-cms-user', JSON.stringify({ token: patVal, backendName: 'github' }));
+                  window.location.href = window.location.pathname + '#/';
+                  window.location.reload();
+                } catch(e) {
+                  alert('Error saving token: ' + e.message);
+                }
+              });
+            }
+
             clearInterval(checkLoginInterval);
           }
           if (attempts > 30) clearInterval(checkLoginInterval);

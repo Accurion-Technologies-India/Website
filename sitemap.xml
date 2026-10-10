@@ -49,73 +49,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/general-lab/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/lab-glassware/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/water-testing/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.accuriontechnologies.com/products/aggregate-testing/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/lab-chemicals/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/compression-machines/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/sieves-shakers/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/lab-moulds/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/metrology-gauges/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/sampling-tools/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/lab-balances/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -133,7 +67,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/lab-consumables/</loc>
+    <loc>https://www.accuriontechnologies.com/products/compression-machines/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -145,19 +79,79 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.accuriontechnologies.com/products/general-lab/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/lab-balances/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/lab-chemicals/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/lab-consumables/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/lab-glassware/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/lab-moulds/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/metrology-gauges/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/sampling-tools/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/sieves-shakers/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.accuriontechnologies.com/products/soil-testing/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab/</loc>
+    <loc>https://www.accuriontechnologies.com/products/water-testing/</loc>
     <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/blog/understanding-nabl-calibration/</loc>
+    <loc>https://www.accuriontechnologies.com/blog/how-to-setup-civil-quality-lab/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -175,25 +169,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh550a-heavy-duty-high-strength-hammer/</loc>
+    <loc>https://www.accuriontechnologies.com/blog/understanding-nabl-calibration/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh450a-high-strength-concrete-test-hammer/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-testing-anvil-gz-series/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh225b-integrated-digital-rebound-hammer/</loc>
+    <loc>https://www.accuriontechnologies.com/products/compression-machines/digital-compression-testing-machine-2000kn/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -205,19 +187,37 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh75a-brick-lightweight-concrete-hammer/</loc>
-    <lastmod>2026-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh225-a-mechanical-rebound-hammer/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.accuriontechnologies.com/products/compression-machines/digital-compression-testing-machine-2000kn/</loc>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh225b-integrated-digital-rebound-hammer/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh450a-high-strength-concrete-test-hammer/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh550a-heavy-duty-high-strength-hammer/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-rh75a-brick-lightweight-concrete-hammer/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.accuriontechnologies.com/products/ndt-equipment/langry-testing-anvil-gz-series/</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

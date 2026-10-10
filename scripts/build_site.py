@@ -335,25 +335,10 @@ def render_product_page(prod, cat_data, all_prods_in_cat):
     return page_html
 
 def generate_products_json(published_products):
-    search_index = []
-    for p in published_products:
-        search_index.append({
-            "name": p.get("name", ""),
-            "code": p.get("code", ""),
-            "slug": p.get("slug", ""),
-            "category": p.get("category", ""),
-            "subcategory": p.get("subcategory", ""),
-            "short_description": p.get("short_description", ""),
-            "featured_image": p.get("featured_image", ""),
-            "url": f"products/{p.get('category', '')}/{p.get('slug', '')}/",
-            "featured": p.get("featured", False),
-            "display_order": p.get("display_order", 10),
-            "specifications": p.get("specifications", [])
-        })
-    out_path = os.path.join(ROOT_DIR, "products", "products.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(search_index, f, indent=2, ensure_ascii=False)
-    print(f"Generated search index at: products/products.json ({len(search_index)} items)")
+    sys.path.insert(0, os.path.dirname(__file__))
+    import compile_all_products
+    all_prods = compile_all_products.build_complete_catalogue()
+    print(f"Generated search index at: products/products.json ({len(all_prods)} items)")
 
 def update_sitemap(published_products, categories, blogs):
     sitemap_path = os.path.join(ROOT_DIR, "sitemap.xml")

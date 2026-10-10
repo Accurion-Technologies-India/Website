@@ -176,7 +176,7 @@
       const dots = heroCarousel.querySelectorAll('.hero-dot');
       let current = 0;
       let autoPlayTimer = null;
-      const INTERVAL = 3000;
+      const INTERVAL = 5000;
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       function updateAmbientLighting(slide) {
@@ -187,6 +187,7 @@
           glow.style.setProperty('--ambient-color', rgb);
         }
       }
+      if (slides.length > 0) updateAmbientLighting(slides[0]);
 
       function goToSlide(index) {
         slides[current].classList.remove('active');

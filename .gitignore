@@ -3,3 +3,6 @@
 PLAN.md
 content/
 Miscellaneous/
+__pycache__/
+*.pyc
+scripts/__pycache__/

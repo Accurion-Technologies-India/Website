@@ -1,119 +1,1355 @@
 [
   {
-    "name": "Langry RH550-A Heavy-Duty High-Strength Hammer",
-    "code": "RH550-A",
-    "slug": "langry-rh550a-heavy-duty-high-strength-hammer",
-    "category": "ndt-equipment",
-    "subcategory": "rebound-hammers",
-    "short_description": "Maximum impact energy (5.400 J) hammer for mass concrete installations, dams, tunnel linings, and ultra-high-strength concrete (UHPC) up to 120 MPa.",
-    "featured_image": "/images/products/ndt/langry-rh550a-high.jpg",
-    "url": "products/ndt-equipment/langry-rh550a-heavy-duty-high-strength-hammer/",
+    "name": "Aggregate Crushing Value Apparatus",
+    "code": "",
+    "slug": "aggregate-crushing-value-apparatus",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determination of aggregate crushing value as per IS 2386 Part 4. Complete with cylindrical container, plunger, and base plate.",
+    "featured_image": "/images/products/aggregate/aggregate-crushing-value-apparatus.jpg",
+    "url": "products/aggregate-testing/#aggregate-crushing-value-apparatus",
     "featured": false,
-    "display_order": 4,
+    "specifications": []
+  },
+  {
+    "name": "Aggregate Impact Value Apparatus",
+    "code": "",
+    "slug": "aggregate-impact-value-apparatus",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determining impact value of aggregates as per IS 2386 Part 4. Complete with container, plunger, and standard hammer.",
+    "featured_image": "/images/products/aggregate/aggregate-impact-tester.jpg",
+    "url": "products/aggregate-testing/#aggregate-impact-value-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Flakiness & Elongation Index Gauges",
+    "code": "",
+    "slug": "flakiness-elongation-index-gauges",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determining flakiness and elongation index of aggregates as per IS 2386 Part 1. Set of gauges with slot sizes.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/aggregate-testing/#flakiness-elongation-index-gauges",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Los Angeles Abrasion Machine",
+    "code": "",
+    "slug": "los-angeles-abrasion-machine",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determining abrasion value of aggregates as per IS 2386 Part 4. Drum diameter: 700 mm, motor operated with revolution counter.",
+    "featured_image": "/images/products/aggregate/los-angeles-abrasion.jpg",
+    "url": "products/aggregate-testing/#los-angeles-abrasion-machine",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Pycnometer (Specific Gravity Jar) — 1 litre",
+    "code": "",
+    "slug": "pycnometer-specific-gravity-jar-1-litre",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determining specific gravity and water absorption of aggregates as per IS 2386 Part 3. Glass jar with brass cone and screw cap.",
+    "featured_image": "/images/products/aggregate/pycnometer-bottle.jpg",
+    "url": "products/aggregate-testing/#pycnometer-specific-gravity-jar-1-litre",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Ten Percent Fines Value Apparatus",
+    "code": "",
+    "slug": "ten-percent-fines-value-apparatus",
+    "category": "aggregate-testing",
+    "subcategory": "",
+    "short_description": "For determination of 10% fines value of aggregates to classify their strength as per BS 812. Complete set.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/aggregate-testing/#ten-percent-fines-value-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Bitumen Extraction Apparatus (Centrifuge)",
+    "code": "",
+    "slug": "bitumen-extraction-apparatus-centrifuge",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "Centrifuge type bitumen extraction apparatus for recovering bitumen from bituminous mix as per IS 1201. Motor operated.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/bitumen-testing/#bitumen-extraction-apparatus-centrifuge",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Ductility Testing Machine (Motorised)",
+    "code": "",
+    "slug": "ductility-testing-machine-motorised",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "Motorised ductility apparatus for bitumen and tar as per IS 1208. Pull rate: 50 mm/min, water bath with temperature control.",
+    "featured_image": "/images/products/bitumen/ductility-mould.jpg",
+    "url": "products/bitumen-testing/#ductility-testing-machine-motorised",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Flash & Fire Point Apparatus (Cleveland)",
+    "code": "",
+    "slug": "flash-fire-point-apparatus-cleveland",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "Cleveland open cup method for flash and fire point of bitumen as per IS 1209. Complete with cup, burner, and flame deflector.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/bitumen-testing/#flash-fire-point-apparatus-cleveland",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Marshall Stability Testing Machine",
+    "code": "",
+    "slug": "marshall-stability-testing-machine",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "For Marshall stability and flow value determination of bituminous mix specimens as per ASTM D 1559. Capacity: 25 kN.",
+    "featured_image": "/images/products/bitumen/marshall-mould.png",
+    "url": "products/bitumen-testing/#marshall-stability-testing-machine",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Penetration Apparatus (Bitumen)",
+    "code": "",
+    "slug": "penetration-apparatus-bitumen",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "For determining penetration value of bitumen as per IS 1203. Complete with standard needle, water bath, and transfer dish.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/bitumen-testing/#penetration-apparatus-bitumen",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Softening Point Apparatus (Ring & Ball)",
+    "code": "",
+    "slug": "softening-point-apparatus-ring-ball",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "Ring and ball method apparatus for determining softening point of bitumen and tar as per IS 1205. Includes stirrer and thermometer.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/bitumen-testing/#softening-point-apparatus-ring-ball",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Specific Gravity Bottle (50 mL)",
+    "code": "50",
+    "slug": "specific-gravity-bottle-50-ml",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "For determination of specific gravity of bitumen as per IS 1202. Borosilicate glass, precision ground stopper.",
+    "featured_image": "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&q=75",
+    "url": "products/bitumen-testing/#specific-gravity-bottle-50-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Tar Viscometer (Standard Tar Viscometer)",
+    "code": "",
+    "slug": "tar-viscometer-standard-tar-viscometer",
+    "category": "bitumen-testing",
+    "subcategory": "",
+    "short_description": "For determination of viscosity of tar and bituminous materials as per IS 1206. Complete with water bath and thermometer.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/bitumen-testing/#tar-viscometer-standard-tar-viscometer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Autoclave Expansion Apparatus",
+    "code": "",
+    "slug": "autoclave-expansion-apparatus",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "For determination of soundness of Portland cement by autoclave method as per ASTM C 151. With pressure gauge and safety valve.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/cement-testing/#autoclave-expansion-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Blaine Air Permeability Apparatus",
+    "code": "",
+    "slug": "blaine-air-permeability-apparatus",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "For determining fineness of cement by air permeability method as per IS 4031 Part 2. Complete with manometer, cell, and accessories.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/cement-testing/#blaine-air-permeability-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Cement Mortar Cube Mould (70.7 mm)",
+    "code": "70",
+    "slug": "cement-mortar-cube-mould-70-7-mm",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "Three gang cast iron mould for casting cement mortar cubes as per IS 4031 Part 6. For compressive strength testing of cement.",
+    "featured_image": "/images/products/concrete/cube-mould-isi.jpg",
+    "url": "products/cement-testing/#cement-mortar-cube-mould-70-7-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Le Chatelier Soundness Apparatus",
+    "code": "",
+    "slug": "le-chatelier-soundness-apparatus",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "Moulds and water bath for determination of soundness of cement as per IS 4031 Part 3. Set of 2 moulds with water bath.",
+    "featured_image": "/images/products/cement/le-chatelier-mould.jpg",
+    "url": "products/cement-testing/#le-chatelier-soundness-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Motorised Mortar Mixer",
+    "code": "",
+    "slug": "motorised-mortar-mixer",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "Bowl type motorised mixer for preparing cement mortar specimens as per IS 4031. Bowl capacity: 5 litres, stainless steel bowl.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/cement-testing/#motorised-mortar-mixer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Vicat Apparatus (with Mould & Base Plate)",
+    "code": "",
+    "slug": "vicat-apparatus-with-mould-base-plate",
+    "category": "cement-testing",
+    "subcategory": "",
+    "short_description": "For determining consistency and setting time of cement as per IS 4031. Includes standard plunger, initial and final needles.",
+    "featured_image": "/images/products/cement/vicat-apparatus.png",
+    "url": "products/cement-testing/#vicat-apparatus-with-mould-base-plate",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Calibration Proving Rings (1 kN to 3000 kN)",
+    "code": "3000",
+    "slug": "calibration-proving-rings-1-kn-to-3000-kn",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "High-precision forged alloy steel proving rings conforming to IS 4169 for load verification and calibration of CTM, UTM, and load cells. Fitted with sensitive dial gauge.",
+    "featured_image": "/images/products/compression/proving-rings.jpg",
+    "url": "products/compression-machines/#calibration-proving-rings-1-kn-to-3000-kn",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital CTM — 1000 kN Capacity",
+    "code": "CTM",
+    "slug": "digital-ctm-1000-kn-capacity",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "Digital compression testing machine for 100×100 mm cube and 150×150 mm cube testing. Dual range, accuracy ±1%.",
+    "featured_image": "/images/products/compression/digital-ctm-2000kn.jpg",
+    "url": "products/compression-machines/#digital-ctm-1000-kn-capacity",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital CTM — 2000 kN Capacity",
+    "code": "CTM",
+    "slug": "digital-ctm-2000-kn-capacity",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "Microprocessor-based digital CTM for concrete cube testing. Capacity: 2000 kN. Accuracy: ±1%. PC interface and printer output.",
+    "featured_image": "/images/products/compression/digital-ctm-2000kn.jpg",
+    "url": "products/compression-machines/#digital-ctm-2000-kn-capacity",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital CTM — 500 kN Capacity",
+    "code": "CTM",
+    "slug": "digital-ctm-500-kn-capacity",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "Compact digital CTM for testing cement mortar cubes, brick, tiles, and small concrete specimens. Capacity: 500 kN.",
+    "featured_image": "/images/products/compression/digital-ctm-2000kn.jpg",
+    "url": "products/compression-machines/#digital-ctm-500-kn-capacity",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Compression Testing Machine 2000 kN",
+    "code": "ACC-CTM-2000D",
+    "slug": "digital-compression-testing-machine-2000kn",
+    "category": "compression-machines",
+    "subcategory": "compression-testing-machines",
+    "short_description": "Heavy-duty 2000 kN digital compression testing machine with microprocessor pace rate controller and peak load retention for concrete cube and cylinder testing.",
+    "featured_image": "/images/categories/compression-machines.jpg",
+    "url": "products/compression-machines/digital-compression-testing-machine-2000kn/",
+    "featured": true,
+    "display_order": 1,
     "specifications": [
       {
-        "parameter": "Impact Energy",
-        "value": "5.400 J"
+        "parameter": "Maximum Capacity",
+        "value": "2000 kN (200 Tonnes)"
       },
       {
-        "parameter": "Measuring Range",
-        "value": "60 – 120 MPa"
+        "parameter": "Measuring Accuracy",
+        "value": "Class 1 (± 1% of indicated load)"
       },
       {
-        "parameter": "Spring Stiffness",
-        "value": "1000 ± 50 N/m"
+        "parameter": "Piston Stroke",
+        "value": "50 mm"
       },
       {
-        "parameter": "Operating Spring Length",
-        "value": "110 ± 0.5 mm"
+        "parameter": "Platen Dimensions",
+        "value": "220 mm diameter"
       },
       {
-        "parameter": "Spherical Radius of Tip",
-        "value": "35 ± 1.0 mm"
+        "parameter": "Vertical Clearance",
+        "value": "320 mm"
       },
       {
-        "parameter": "Calibration on Test Anvil",
-        "value": "88 ± 2"
+        "parameter": "Electric Power",
+        "value": "415 V, 3-Phase, 50 Hz, 1.5 kW"
       },
       {
-        "parameter": "Net Weight",
-        "value": "1.5 kg"
+        "parameter": "Applicable Standards",
+        "value": "IS 516, IS 14858, BS 1881-115, EN 12390-4"
       }
     ]
   },
   {
-    "name": "Langry RH450-A High-Strength Concrete Test Hammer",
-    "code": "RH450-A",
-    "slug": "langry-rh450a-high-strength-concrete-test-hammer",
-    "category": "ndt-equipment",
-    "subcategory": "rebound-hammers",
-    "short_description": "High impact energy (4.500 J) test hammer engineered specifically for testing high-strength concrete elements (60 to 100 MPa) in tall buildings and mega bridges.",
-    "featured_image": "/images/products/ndt/langry-rh450a-high.jpg",
-    "url": "products/ndt-equipment/langry-rh450a-high-strength-concrete-test-hammer/",
+    "name": "Flexural Testing Machine — 100 kN",
+    "code": "100",
+    "slug": "flexural-testing-machine-100-kn",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "For testing flexural strength of concrete beams as per IS 516. Third point loading configuration. Digital display.",
+    "featured_image": "/images/products/moulds/beam-mould.jpg",
+    "url": "products/compression-machines/#flexural-testing-machine-100-kn",
     "featured": false,
-    "display_order": 3,
+    "specifications": []
+  },
+  {
+    "name": "Split Tensile Test Jig (for CTM)",
+    "code": "CTM",
+    "slug": "split-tensile-test-jig-for-ctm",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "Accessory jig for conducting split tensile strength test of concrete cylinders using a standard CTM as per IS 5816.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/compression-machines/#split-tensile-test-jig-for-ctm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Universal Testing Machine (UTM) — 100 kN",
+    "code": "UTM",
+    "slug": "universal-testing-machine-utm-100-kn",
+    "category": "compression-machines",
+    "subcategory": "",
+    "short_description": "Floor-mounted UTM for tensile, compressive, and flexural testing. Capacity: 100 kN. Digital load and displacement display.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/compression-machines/#universal-testing-machine-utm-100-kn",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Air Entrainment Meter (Pressure Type)",
+    "code": "",
+    "slug": "air-entrainment-meter-pressure-type",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Pressure type air entrainment meter for measuring air content in fresh concrete as per IS 1199. Complete with accessories.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/concrete-testing/#air-entrainment-meter-pressure-type",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Compression Testing Machine (CTM) — 2000 kN",
+    "code": "CTM",
+    "slug": "compression-testing-machine-ctm-2000-kn",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Digital CTM for testing compressive strength of concrete cubes, cylinders, and blocks. Capacity: 2000 kN, accuracy ±1%.",
+    "featured_image": "/images/products/compression/digital-ctm-2000kn.jpg",
+    "url": "products/concrete-testing/#compression-testing-machine-ctm-2000-kn",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Concrete Dial / Long Stem Thermometer",
+    "code": "",
+    "slug": "concrete-dial-long-stem-thermometer",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Heavy-duty stainless steel long probe dial thermometer for measuring temperature of freshly mixed concrete and asphalt as per ASTM C1064.",
+    "featured_image": "/images/products/concrete/concrete-thermometer.png",
+    "url": "products/concrete-testing/#concrete-dial-long-stem-thermometer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Concrete Pan Mixer (Range 40L)",
+    "code": "40L",
+    "slug": "concrete-pan-mixer-range-40l",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Forced-action motorized pan mixer for uniform, intensive mixing of fresh concrete, mortar, and semi-dry mix batches per IS 1199.",
+    "featured_image": "/images/products/concrete/concrete-pan-mixer.jpeg",
+    "url": "products/concrete-testing/#concrete-pan-mixer-range-40l",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Cube Mould 100×100×100 mm (CI)",
+    "code": "100",
+    "slug": "cube-mould-100-100-100-mm-ci",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Cast iron cube mould for smaller concrete specimens as per IS 516. Three gang configuration.",
+    "featured_image": "/images/products/concrete/cube-mould-isi.jpg",
+    "url": "products/concrete-testing/#cube-mould-100-100-100-mm-ci",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Cube Mould 150×150×150 mm (CI)",
+    "code": "150",
+    "slug": "cube-mould-150-150-150-mm-ci",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Cast iron cube mould for preparing concrete specimens as per IS 516. Three gang mould for simultaneous casting.",
+    "featured_image": "/images/products/concrete/cast-iron-cube-mould.jpg",
+    "url": "products/concrete-testing/#cube-mould-150-150-150-mm-ci",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Curing Tank (MS, 4×2×1.5 ft)",
+    "code": "MS",
+    "slug": "curing-tank-ms-4-2-1-5-ft",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Mild steel water curing tank for 28-day curing of concrete specimens. Rust-proof coated inside, with water outlet.",
+    "featured_image": "/images/products/concrete/digital-curing-tank.png",
+    "url": "products/concrete-testing/#curing-tank-ms-4-2-1-5-ft",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Cylindrical Mould 150×300 mm",
+    "code": "150",
+    "slug": "cylindrical-mould-150-300-mm",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Cast iron split cylindrical mould for preparing concrete cylinder specimens for splitting tensile and compressive strength tests.",
+    "featured_image": "/images/products/concrete/cylindrical-mould.jpg",
+    "url": "products/concrete-testing/#cylindrical-mould-150-300-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Flow Table Apparatus (Range 900×900 mm)",
+    "code": "900",
+    "slug": "flow-table-apparatus-range-900-900-mm",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Heavy-duty steel flow table for determining workability and flow of high-fluidity concrete and self-compacting concrete as per IS 9103 / BS EN 12350-5.",
+    "featured_image": "/images/products/sampling-tools/flow-table.jpeg",
+    "url": "products/concrete-testing/#flow-table-apparatus-range-900-900-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Laboratory Concrete Mixer (Tilting Type)",
+    "code": "",
+    "slug": "laboratory-concrete-mixer-tilting-type",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Tilting drum type lab concrete mixer for mixing concrete specimens. Drum capacity: 0.05 m³, motorised operation.",
+    "featured_image": "/images/products/concrete/baby-concrete-mixer.jpeg",
+    "url": "products/concrete-testing/#laboratory-concrete-mixer-tilting-type",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Slump Cone Apparatus",
+    "code": "",
+    "slug": "slump-cone-apparatus",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Standard slump cone set as per IS 1199 — includes cone, tamping rod, base plate, and graduated scale.",
+    "featured_image": "/images/products/concrete/slump-cone-with-tamping-rod.jpg",
+    "url": "products/concrete-testing/#slump-cone-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Vibrating Table",
+    "code": "",
+    "slug": "vibrating-table",
+    "category": "concrete-testing",
+    "subcategory": "",
+    "short_description": "Electric vibrating table for compaction of concrete specimens in moulds. Table size: 500×500 mm, frequency: 50 Hz.",
+    "featured_image": "/images/products/concrete/vibrating-table.jpg",
+    "url": "products/concrete-testing/#vibrating-table",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Lux Meter",
+    "code": "",
+    "slug": "digital-lux-meter",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Digital illuminance meter for measuring light intensity in construction areas and laboratories. Range: 0-200,000 Lux. Memory function.",
+    "featured_image": "/images/products/general/digital-lux-meter.jpg",
+    "url": "products/general-lab/#digital-lux-meter",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Sound Level Meter",
+    "code": "",
+    "slug": "digital-sound-level-meter",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Handheld digital sound level meter for noise measurement at construction sites. Range: 30-130 dB. Data logging with PC output.",
+    "featured_image": "/images/products/general/digital-sound-level-meter.jpg",
+    "url": "products/general-lab/#digital-sound-level-meter",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Thermometer (Probe Type)",
+    "code": "",
+    "slug": "digital-thermometer-probe-type",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Precision digital thermometer with stainless steel probe. Range: -50°C to +300°C, accuracy ±0.5°C. With carrying case.",
+    "featured_image": "/images/products/general/digital-thermometer-wire.jpg",
+    "url": "products/general-lab/#digital-thermometer-probe-type",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Ultrasonic Humidifier",
+    "code": "",
+    "slug": "digital-ultrasonic-humidifier",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "High-capacity commercial humidifier with digital humidistat for maintaining standard humidity levels (90%+ RH) in concrete curing rooms and cement testing chambers.",
+    "featured_image": "/images/products/general/digital-humidifier.jpg",
+    "url": "products/general-lab/#digital-ultrasonic-humidifier",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Electric Hot Plate (Single / Double Burner)",
+    "code": "",
+    "slug": "electric-hot-plate-single-double-burner",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Laboratory hot plate with cast iron heating surface. Temperature: up to 400°C. Available in single and double burner configurations.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/general-lab/#electric-hot-plate-single-double-burner",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Gas-Filled Dial & Glass Thermometers",
+    "code": "-F",
+    "slug": "gas-filled-dial-glass-thermometers",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Industrial stainless steel dial thermometers with capillary tubing and precision mercury/spirit filled glass thermometers (-10°C to 360°C) per IS 4825.",
+    "featured_image": "/images/products/general/gas-filled-dial-thermometer.jpg",
+    "url": "products/general-lab/#gas-filled-dial-glass-thermometers",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Hot Air Oven (100 litre)",
+    "code": "100",
+    "slug": "hot-air-oven-100-litre",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Thermostatically controlled drying oven for lab specimens. Capacity: 100 litres, range: ambient to 250°C. SS interior, double walled.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/general-lab/#hot-air-oven-100-litre",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "K-Type Thermocouple with Digital Indicator",
+    "code": "K-T",
+    "slug": "k-type-thermocouple-with-digital-indicator",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Wide-range temperature measurement system (-50°C to 1300°C) with rugged thermocouple probe and backlit digital display unit for asphalt, ovens, and furnaces.",
+    "featured_image": "/images/products/sensors/k-type-thermocouple.jpg",
+    "url": "products/general-lab/#k-type-thermocouple-with-digital-indicator",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Muffle Furnace (5 litre)",
+    "code": "",
+    "slug": "muffle-furnace-5-litre",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "High-temperature muffle furnace for sample ashing and calcination. Range: ambient to 1100°C. Programmable temperature controller.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/general-lab/#muffle-furnace-5-litre",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "RTD Pt100 Temperature Sensors",
+    "code": "RTD",
+    "slug": "rtd-pt100-temperature-sensors",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Class A 3-wire platinum resistance temperature detector (Pt100) sensors with stainless steel protective sheaths for temperature calibration baths and curing tanks.",
+    "featured_image": "/images/products/sensors/rtd-sensors.png",
+    "url": "products/general-lab/#rtd-pt100-temperature-sensors",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Thermohygrometer (Testo 608-H1)",
+    "code": "608-H1",
+    "slug": "thermohygrometer-testo-608-h1",
+    "category": "general-lab",
+    "subcategory": "",
+    "short_description": "Precision digital thermo-hygrometer for continuous ambient temperature and relative humidity monitoring in civil quality laboratories and clean rooms.",
+    "featured_image": "/images/products/general/thermohygrometer-testo.jpg",
+    "url": "products/general-lab/#thermohygrometer-testo-608-h1",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Analytical Balance (0.0001g)",
+    "code": "0001",
+    "slug": "analytical-balance-0-0001g",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "High-precision analytical balance with 0.1 mg readability. Capacity: 220g. Internal calibration, draft shield, RS-232 interface.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/lab-balances/#analytical-balance-0-0001g",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Bulk Density Measure Buckets (3L, 15L, 30L)",
+    "code": "3L",
+    "slug": "bulk-density-measure-buckets-3l-15l-30l",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Calibrated cylindrical metal measures conforming to IS 2386 Part 3 for determining bulk density and voids in aggregates. Fitted with handles.",
+    "featured_image": "/images/products/balances/bulk-density-bucket.jpg",
+    "url": "products/lab-balances/#bulk-density-measure-buckets-3l-15l-30l",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Crane/Hanging Scale (500 kg)",
+    "code": "500",
+    "slug": "digital-crane-hanging-scale-500-kg",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Heavy-duty digital crane scale for industrial weighing. Capacity: 500 kg, readability: 200g. Backlit LCD display.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/lab-balances/#digital-crane-hanging-scale-500-kg",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Industrial Platform Scale (150 kg)",
+    "code": "150",
+    "slug": "industrial-platform-scale-150-kg",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Heavy-duty industrial platform scale with 150 kg capacity and 50g readability. Stainless steel pan, RS-232 output.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/lab-balances/#industrial-platform-scale-150-kg",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Milligram Balance (0.001g)",
+    "code": "001",
+    "slug": "milligram-balance-0-001g",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Semi-micro balance with 1 mg readability. Capacity: 120g. Auto-calibration, draft shield, stainless steel pan.",
+    "featured_image": "/images/products/balances/buoyancy-balance.png",
+    "url": "products/lab-balances/#milligram-balance-0-001g",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Moisture Analyser / Moisture Balance",
+    "code": "",
+    "slug": "moisture-analyser-moisture-balance",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Halogen moisture analyser for rapid moisture content determination. Temperature range: up to 200°C, readability: 0.001g.",
+    "featured_image": "/images/products/balances/rapid-moisture-meter.jpg",
+    "url": "products/lab-balances/#moisture-analyser-moisture-balance",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Precision Balance (0.01g)",
+    "code": "01",
+    "slug": "precision-balance-0-01g",
+    "category": "lab-balances",
+    "subcategory": "",
+    "short_description": "Precision balance with 0.01g readability. Capacity: 3000g. Internal calibration, large display, USB output.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/lab-balances/#precision-balance-0-01g",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "CDH Laboratory Chemicals",
+    "code": "CDH",
+    "slug": "cdh-laboratory-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "CDH brand analytical, laboratory, and reagent grade chemicals. Wide range of inorganic and organic chemicals available in stock.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/lab-chemicals/#cdh-laboratory-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "DM Plant Regeneration Chemicals",
+    "code": "DM",
+    "slug": "dm-plant-regeneration-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "HCl, NaOH, and other regeneration chemicals for demineralisation (DM) water treatment plants. Bulk supply available.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/lab-chemicals/#dm-plant-regeneration-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Fisher Scientific Chemicals",
+    "code": "",
+    "slug": "fisher-scientific-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "Fisher Scientific laboratory chemicals for analytical and research grade applications. Custom ordering available for bulk quantities.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/lab-chemicals/#fisher-scientific-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "MERCK Laboratory Chemicals",
+    "code": "MERCK",
+    "slug": "merck-laboratory-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "Authorised supply of MERCK analytical and laboratory grade chemicals for civil, construction, and material testing applications.",
+    "featured_image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=600&q=75",
+    "url": "products/lab-chemicals/#merck-laboratory-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "RO Plant Cleaning Chemicals",
+    "code": "RO",
+    "slug": "ro-plant-cleaning-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "Antiscalants, biocides, and membrane cleaning chemicals for RO water treatment plants. Available in 1 kg, 5 kg, 25 kg packs.",
+    "featured_image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=75",
+    "url": "products/lab-chemicals/#ro-plant-cleaning-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "STP/ETP Treatment Chemicals",
+    "code": "STP",
+    "slug": "stp-etp-treatment-chemicals",
+    "category": "lab-chemicals",
+    "subcategory": "",
+    "short_description": "Coagulants, flocculants, defoamers, and disinfectants for sewage treatment plants (STP) and effluent treatment plants (ETP).",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/lab-chemicals/#stp-etp-treatment-chemicals",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Disposable Nitrile & Latex Lab Gloves",
+    "code": "",
+    "slug": "disposable-nitrile-latex-lab-gloves",
+    "category": "lab-consumables",
+    "subcategory": "",
+    "short_description": "Powder-free, chemical resistant examination gloves offering superior tactile sensitivity and barrier protection for concrete, bitumen, and chemical testing.",
+    "featured_image": "/images/products/consumables/disposable-hand-gloves.jpg",
+    "url": "products/lab-consumables/#disposable-nitrile-latex-lab-gloves",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Moisture Determination Tin Containers",
+    "code": "",
+    "slug": "moisture-determination-tin-containers",
+    "category": "lab-consumables",
+    "subcategory": "",
+    "short_description": "Seamless spun aluminium moisture boxes with tight-fitting slip-on lids for soil moisture content determination by oven drying method as per IS 2720.",
+    "featured_image": "/images/products/consumables/moisture-tin-container.jpg",
+    "url": "products/lab-consumables/#moisture-determination-tin-containers",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Quantitative & Qualitative Filter Papers",
+    "code": "",
+    "slug": "quantitative-qualitative-filter-papers",
+    "category": "lab-consumables",
+    "subcategory": "",
+    "short_description": "High-grade ashless and qualitative filter paper circles (Grade 1, Grade 40, 41, 42) for soil leaching, water filtration, and chemical sample preparation.",
+    "featured_image": "/images/products/consumables/filter-paper.jpg",
+    "url": "products/lab-consumables/#quantitative-qualitative-filter-papers",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Standard Testing Sand (Ennore Sand)",
+    "code": "",
+    "slug": "standard-testing-sand-ennore-sand",
+    "category": "lab-consumables",
+    "subcategory": "",
+    "short_description": "Certified standard testing sand as per IS 650 for testing compressive strength of cement. Available in Grade I, Grade II, and Grade III (25 kg bags).",
+    "featured_image": "/images/products/cement/standard-sand-bag.jpg",
+    "url": "products/lab-consumables/#standard-testing-sand-ennore-sand",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "pH Indicator Paper Strips (Full Range 1–14)",
+    "code": "14",
+    "slug": "ph-indicator-paper-strips-full-range-1-14",
+    "category": "lab-consumables",
+    "subcategory": "",
+    "short_description": "Universal pH indicator test paper strips with four-colour comparison scale for instantaneous pH measurement of site water, admixtures, and soil extract.",
+    "featured_image": "/images/products/consumables/ph-paper.png",
+    "url": "products/lab-consumables/#ph-indicator-paper-strips-full-range-1-14",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "BOROSIL Beakers (50 mL to 5000 mL)",
+    "code": "BOROSIL",
+    "slug": "borosil-beakers-50-ml-to-5000-ml",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "Low form borosilicate glass beakers with spout. Available in sizes 50, 100, 150, 250, 500, 1000, 2000, 5000 mL.",
+    "featured_image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=75",
+    "url": "products/lab-glassware/#borosil-beakers-50-ml-to-5000-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Burette (Amber / Clear — 25 mL, 50 mL)",
+    "code": "25",
+    "slug": "burette-amber-clear-25-ml-50-ml",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "BOROSIL borosilicate glass burettes with Teflon key. Class A accuracy. Available in 25 mL and 50 mL sizes.",
+    "featured_image": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=600&q=75",
+    "url": "products/lab-glassware/#burette-amber-clear-25-ml-50-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Conical Flasks (Erlenmeyer) — 100 mL to 2000 mL",
+    "code": "100",
+    "slug": "conical-flasks-erlenmeyer-100-ml-to-2000-ml",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "BOROSIL borosilicate glass Erlenmeyer conical flasks. Available in 100, 250, 500, 1000, 2000 mL capacities.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/lab-glassware/#conical-flasks-erlenmeyer-100-ml-to-2000-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Measuring Cylinders — 10 mL to 2000 mL",
+    "code": "10",
+    "slug": "measuring-cylinders-10-ml-to-2000-ml",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "Borosilicate glass graduated measuring cylinders with hexagonal base. Class A accuracy. Full size range available.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/lab-glassware/#measuring-cylinders-10-ml-to-2000-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Petri Dishes (Glass & Plastic)",
+    "code": "",
+    "slug": "petri-dishes-glass-plastic",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "Borosilicate glass and polystyrene petri dishes. Standard sizes: 60 mm, 90 mm, 100 mm diameter. Glass or disposable plastic.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/lab-glassware/#petri-dishes-glass-plastic",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Volumetric Flasks — 25 mL to 2000 mL",
+    "code": "25",
+    "slug": "volumetric-flasks-25-ml-to-2000-ml",
+    "category": "lab-glassware",
+    "subcategory": "",
+    "short_description": "BOROSIL Class A volumetric flasks with plastic stopper. Accurate to ±0.025 mL at 20°C. Full size range available.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/lab-glassware/#volumetric-flasks-25-ml-to-2000-ml",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "CBR Mould (6 inch dia)",
+    "code": "CBR",
+    "slug": "cbr-mould-6-inch-dia",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Cast iron CBR test mould as per IS 2720 Part 16. 150 mm diameter, 175 mm height. Complete with perforated base plate and collar.",
+    "featured_image": "/images/products/moulds/cbr-mould.png",
+    "url": "products/lab-moulds/#cbr-mould-6-inch-dia",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Concrete Cube Mould Set (150 mm & 100 mm)",
+    "code": "150",
+    "slug": "concrete-cube-mould-set-150-mm-100-mm",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Complete set of cast iron cube moulds in 150×150×150 mm and 100×100×100 mm sizes. Three gang configuration each.",
+    "featured_image": "/images/products/moulds/cast-iron-cube-mould.jpg",
+    "url": "products/lab-moulds/#concrete-cube-mould-set-150-mm-100-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Consolidation Rings (Brass — 75 mm dia)",
+    "code": "75",
+    "slug": "consolidation-rings-brass-75-mm-dia",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Brass consolidation rings for oedometer consolidation test as per IS 2720 Part 15. Diameter: 75 mm, height: 20 mm. Set of 3.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/lab-moulds/#consolidation-rings-brass-75-mm-dia",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Flexural Test Beam Mould (500×100×100 mm)",
+    "code": "500",
+    "slug": "flexural-test-beam-mould-500-100-100-mm",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Cast iron beam mould for flexural strength testing of concrete as per IS 516. Size: 500×100×100 mm. Single and double gang.",
+    "featured_image": "/images/products/moulds/beam-mould.jpg",
+    "url": "products/lab-moulds/#flexural-test-beam-mould-500-100-100-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "High-Impact Plastic Cube Mould (150 mm)",
+    "code": "-I",
+    "slug": "high-impact-plastic-cube-mould-150-mm",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "One-piece virgin polyurethane/plastic mould for 150×150×150 mm concrete cubes as per IS 516. Lightweight and air-ejection ready.",
+    "featured_image": "/images/products/moulds/plastic-cube-mould.jpg",
+    "url": "products/lab-moulds/#high-impact-plastic-cube-mould-150-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "PVC Cylindrical Mould (150×300 mm)",
+    "code": "PVC",
+    "slug": "pvc-cylindrical-mould-150-300-mm",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Lightweight, impact-resistant virgin PVC split cylindrical mould for preparing concrete test specimens. Easy demoulding and corrosion proof.",
+    "featured_image": "/images/products/concrete/pvc-cylindrical-mould.jpg",
+    "url": "products/lab-moulds/#pvc-cylindrical-mould-150-300-mm",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Proctor Compaction Mould (1000 cc & 2250 cc)",
+    "code": "1000",
+    "slug": "proctor-compaction-mould-1000-cc-2250-cc",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "Standard and modified Proctor compaction moulds as per IS 2720. Available in 1000 cc and 2250 cc capacities with collar and base.",
+    "featured_image": "/images/products/moulds/proctor-mould-rammer.jpg",
+    "url": "products/lab-moulds/#proctor-compaction-mould-1000-cc-2250-cc",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Shrinkage Bar Mould",
+    "code": "",
+    "slug": "shrinkage-bar-mould",
+    "category": "lab-moulds",
+    "subcategory": "",
+    "short_description": "For casting mortar or concrete prism specimens for drying shrinkage and linear expansion tests as per IS 2720 / IS 4031. Fitted with stainless steel gauge studs.",
+    "featured_image": "/images/products/moulds/shrinkage-bar-mould.jpg",
+    "url": "products/lab-moulds/#shrinkage-bar-mould",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Analog Mechanical Micrometer",
+    "code": "",
+    "slug": "analog-mechanical-micrometer",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Standard external micrometer with 0.01 mm graduation. Satin chrome finish, positive locking lever, and hardened measuring anvils.",
+    "featured_image": "/images/products/metrology/analog-micrometer.jpg",
+    "url": "products/metrology-gauges/#analog-mechanical-micrometer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Angle Gauge Block Set",
+    "code": "",
+    "slug": "angle-gauge-block-set",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Precision hardened alloy steel angle gauge blocks for angular calibration, inspection, and high-accuracy tool setting. Supplied in fitted wooden case.",
+    "featured_image": "/images/products/metrology/angle-gauge-block-set.jpg",
+    "url": "products/metrology-gauges/#angle-gauge-block-set",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Certified Calibration Thickness Foils",
+    "code": "",
+    "slug": "certified-calibration-thickness-foils",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Precision calibration shim foil set for calibrating and verifying dry film thickness (DFT) gauges and ultrasonic thickness meters.",
+    "featured_image": "/images/products/metrology/thickness-foil.png",
+    "url": "products/metrology-gauges/#certified-calibration-thickness-foils",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Coating Thickness Gauge (DFT Meter)",
+    "code": "DFT",
+    "slug": "digital-coating-thickness-gauge-dft-meter",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Dual-purpose F/NF probe coating thickness meter for measuring non-magnetic coatings on steel and insulating coatings on non-ferrous metals.",
+    "featured_image": "/images/products/metrology/dft-meter-thickness-gauge.png",
+    "url": "products/metrology-gauges/#digital-coating-thickness-gauge-dft-meter",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Depth Gauge",
+    "code": "",
+    "slug": "digital-depth-gauge",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Electronic depth gauge with large LCD display. Resolution: 0.01 mm. Hardened ground base and measuring pin for holes, slots, and recess depth.",
+    "featured_image": "/images/products/metrology/digital-depth-gauge.jpg",
+    "url": "products/metrology-gauges/#digital-depth-gauge",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Outside Micrometer",
+    "code": "",
+    "slug": "digital-outside-micrometer",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "High-precision digital micrometer with 0.001 mm / 0.00005\" resolution. Carbide measuring faces, ratchet thimble, and zero-setting function.",
+    "featured_image": "/images/products/metrology/digital-micrometer.jpg",
+    "url": "products/metrology-gauges/#digital-outside-micrometer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Manual Vernier Depth Gauge",
+    "code": "",
+    "slug": "manual-vernier-depth-gauge",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Mechanical vernier depth gauge with hardened stainless steel beam and wide base. Fine adjustment thumb roll and locking screw.",
+    "featured_image": "/images/products/metrology/manual-depth-gauge.jpg",
+    "url": "products/metrology-gauges/#manual-vernier-depth-gauge",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Precise Vernier Caliper",
+    "code": "",
+    "slug": "precise-vernier-caliper",
+    "category": "metrology-gauges",
+    "subcategory": "",
+    "short_description": "Hardened stainless steel vernier caliper with 0.02 mm / 0.001\" accuracy. Four-way measurement: internal, external, depth, and step dimensions.",
+    "featured_image": "/images/products/metrology/vernier-caliper-precise.jpg",
+    "url": "products/metrology-gauges/#precise-vernier-caliper",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "LANGRY RS150 (LR-G150) Compact Covermeter",
+    "code": "Langry   RS150 (LR-G150)  Covermeter",
+    "slug": "langry-rs150-lr-g150-compact-covermeter",
+    "category": "ndt-equipment",
+    "subcategory": "rebar-detectors",
+    "short_description": "Ergonomic handheld covermeter utilizing pulsed electromagnetic induction for rapid on-site compliance verification of concrete cover thickness and reinforcement bar locating on building structures.",
+    "featured_image": "/images/products/ndt/langry-rs250.jpg",
+    "url": "products/ndt-equipment/rebar-detectors/#langry-rs150-lr-g150-compact-covermeter",
+    "featured": false,
     "specifications": [
       {
-        "parameter": "Impact Energy",
-        "value": "4.500 J"
+        "parameter": "Measuring Depth Range",
+        "value": "6 mm – 150 mm"
       },
       {
-        "parameter": "Measuring Range",
-        "value": "60 – 100 MPa"
+        "parameter": "Feedback",
+        "value": "Audio buzzer alarm on rebar center proximity"
       },
       {
-        "parameter": "Spring Stiffness",
-        "value": "900 ± 40 N/m"
+        "parameter": "Screen",
+        "value": "High-contrast backlit LCD with real-time signal strength"
       },
       {
-        "parameter": "Operating Spring Length",
-        "value": "106 ± 0.5 mm"
+        "parameter": "Calibration",
+        "value": "One-touch zero calibration on air reference"
       },
       {
-        "parameter": "Spherical Radius of Tip",
-        "value": "35 ± 1.0 mm"
+        "parameter": "Ergonomics",
+        "value": "Lightweight handheld housing with integrated search head"
       },
       {
-        "parameter": "Calibration on Test Anvil",
-        "value": "88 ± 2"
-      },
-      {
-        "parameter": "Net Weight",
-        "value": "1.3 kg"
+        "parameter": "Application",
+        "value": "Cover verification before plastering and fireproofing checks"
       }
     ]
   },
   {
-    "name": "Langry Testing Anvil (GZ Series)",
-    "code": "GZ-I",
-    "slug": "langry-testing-anvil-gz-series",
+    "name": "LANGRY RS250 Digital Rebar Scanner",
+    "code": "Langry   RS250  180 mm Depth",
+    "slug": "langry-rs250-digital-rebar-scanner",
     "category": "ndt-equipment",
-    "subcategory": "rebound-hammers",
-    "short_description": "High-precision tool steel test anvil hardened to HRC 60 ± 2 for daily calibration verification of concrete test hammers per IS 13311-2 and ASTM C805.",
-    "featured_image": "/images/products/ndt/langry-rh225b-detail.jpg",
-    "url": "products/ndt-equipment/langry-testing-anvil-gz-series/",
+    "subcategory": "rebar-detectors",
+    "short_description": "Compact digital electromagnetic rebar scanner with high-resolution graphical display. Provides rapid rebar location, concrete cover depth measurement, and diameter estimation for quality verification on precast and in-situ structures.",
+    "featured_image": "/images/products/ndt/langry-rs250.jpg",
+    "url": "products/ndt-equipment/rebar-detectors/#langry-rs250-digital-rebar-scanner",
     "featured": false,
-    "display_order": 7,
     "specifications": [
       {
-        "parameter": "Core Hardness",
-        "value": "HRC 60 ± 2"
+        "parameter": "Cover Depth Range",
+        "value": "10 mm – 180 mm"
       },
       {
-        "parameter": "Nominal Rebound Value",
-        "value": "80 ± 2 (Type N)"
+        "parameter": "Bar Diameter Range",
+        "value": "Ø6 mm – Ø50 mm"
       },
       {
-        "parameter": "Total Mass",
-        "value": "16 kg (Standard Bench)"
+        "parameter": "Cover Measurement Accuracy",
+        "value": "±1 mm (10–60 mm), ±2 mm (60–120 mm)"
       },
       {
-        "parameter": "Applicable Hammers",
-        "value": "RH225-A, RH225-B, RH450-A, RH550-A, RH75-A"
+        "parameter": "Scan Modes",
+        "value": "Waveform scan, profile grid, direct thickness mode"
       },
       {
-        "parameter": "Compliance",
-        "value": "IS 13311 (Part 2), ASTM C805, EN 12504-2"
+        "parameter": "Memory",
+        "value": "2,000 components / 100,000 test points"
+      },
+      {
+        "parameter": "Data Interface",
+        "value": "High-speed USB export with PC reporting suite"
+      }
+    ]
+  },
+  {
+    "name": "LANGRY RS350 (LR-G300) Multi-Function Rebar Scanner",
+    "code": "Langry   RS350 (LR-G300)  300 mm",
+    "slug": "langry-rs350-lr-g300-multi-function-rebar-scanner",
+    "category": "ndt-equipment",
+    "subcategory": "rebar-detectors",
+    "short_description": "Advanced heavy civil rebar scanning platform capable of 300 mm detection depths. Generates dense cross-sectional profiles and 2D grid reinforcement heatmaps with automated rebar spacing calculation.",
+    "featured_image": "/images/products/ndt/langry-rs250.jpg",
+    "url": "products/ndt-equipment/rebar-detectors/#langry-rs350-lr-g300-multi-function-rebar-scanner",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Maximum Depth Range",
+        "value": "Up to 300 mm deep reinforcement"
+      },
+      {
+        "parameter": "Sensor Cart",
+        "value": "Integrated multi-coil probe with built-in distance encoder wheel"
+      },
+      {
+        "parameter": "Visual Display",
+        "value": "Real-time 2D pseudo-color rebar distribution map"
+      },
+      {
+        "parameter": "Data Processing",
+        "value": "Automatic rebar diameter calculation & boundary profiling"
+      },
+      {
+        "parameter": "Battery",
+        "value": "Built-in rechargeable high-capacity lithium battery pack"
+      },
+      {
+        "parameter": "Standards",
+        "value": "BS 1881-204, DIN 1045, JGJ/T 152"
+      }
+    ]
+  },
+  {
+    "name": "LANGRY UPV2100 Integrated Digital UPV Tester",
+    "code": "Langry   UPV2100  Dual 54 kHz",
+    "slug": "langry-upv2100-integrated-digital-upv-tester",
+    "category": "ndt-equipment",
+    "subcategory": "upv-testers",
+    "short_description": "Rugged portable ultrasonic pulse velocity tester engineered for rapid on-site assessment of structural concrete integrity. High-contrast display, comprehensive diagnostic routines, and straightforward keyboard operation.",
+    "featured_image": "/images/products/ndt/ultrasonic-pulse-velocity.jpg",
+    "url": "products/ndt-equipment/upv-testers/#langry-upv2100-integrated-digital-upv-tester",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Time Range",
+        "value": "0.1 – 9999.9 µs"
+      },
+      {
+        "parameter": "Timing Precision",
+        "value": "±0.05 µs"
+      },
+      {
+        "parameter": "Transducers",
+        "value": "Pair of 54 kHz high-sensitivity probes with BNC leads"
+      },
+      {
+        "parameter": "Testing Modes",
+        "value": "Direct, semi-direct, and indirect surface velocity"
+      },
+      {
+        "parameter": "Storage",
+        "value": "200 components / 4,000 data test points"
+      },
+      {
+        "parameter": "Kit Includes",
+        "value": "Zero-time reference calibration bar, coupling gel, transit case"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH20-A Mortar Rebound Hammer",
+    "code": "RH20-A",
+    "slug": "langry-rh20a-mortar-rebound-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Ultra-low impact energy (0.196 J) rebound hammer for evaluating compressive strength of masonry bed joint mortar and external wall plaster.",
+    "featured_image": "/images/products/ndt/langry-rh20a-mortar.jpg",
+    "url": "products/ndt-equipment/langry-rh20a-mortar-rebound-hammer/",
+    "featured": false,
+    "display_order": 6,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "0.196 J (Type M)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "1.0 – 25.0 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "100 ± 5 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "75.0 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "60 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "0.8 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH225-A Mechanical Concrete Test Hammer",
+    "code": "RH225-A",
+    "slug": "langry-rh225-a-mechanical-rebound-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "The industry-standard mechanical rebound hammer for non-destructive compressive strength estimation of normal structural concrete from 10 to 60 MPa.",
+    "featured_image": "/images/products/ndt/langry-rh225a-mech.jpg",
+    "url": "products/ndt-equipment/langry-rh225-a-mechanical-rebound-hammer/",
+    "featured": true,
+    "display_order": 1,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "2.207 J (Type N)"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "10 – 60 MPa"
+      },
+      {
+        "parameter": "Pointer Friction",
+        "value": "0.65 ± 0.15 N"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "785.0 ± 30.0 N/m"
+      },
+      {
+        "parameter": "Impact Spring Working Length",
+        "value": "61.5 ± 0.3 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "80 ± 2"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "25 ± 1.0 mm"
+      },
+      {
+        "parameter": "Applicable Standards",
+        "value": "IS 13311-2, ASTM C805, BS 1881-202, EN 12504-2"
       }
     ]
   },
@@ -172,40 +1408,86 @@
     ]
   },
   {
-    "name": "Langry RH20-A Mortar Rebound Hammer",
-    "code": "RH20-A",
-    "slug": "langry-rh20a-mortar-rebound-hammer",
+    "name": "Langry RH450-A High-Strength Concrete Test Hammer",
+    "code": "RH450-A",
+    "slug": "langry-rh450a-high-strength-concrete-test-hammer",
     "category": "ndt-equipment",
     "subcategory": "rebound-hammers",
-    "short_description": "Ultra-low impact energy (0.196 J) rebound hammer for evaluating compressive strength of masonry bed joint mortar and external wall plaster.",
-    "featured_image": "/images/products/ndt/langry-rh20a-mortar.jpg",
-    "url": "products/ndt-equipment/langry-rh20a-mortar-rebound-hammer/",
+    "short_description": "High impact energy (4.500 J) test hammer engineered specifically for testing high-strength concrete elements (60 to 100 MPa) in tall buildings and mega bridges.",
+    "featured_image": "/images/products/ndt/langry-rh450a-high.jpg",
+    "url": "products/ndt-equipment/langry-rh450a-high-strength-concrete-test-hammer/",
     "featured": false,
-    "display_order": 6,
+    "display_order": 3,
     "specifications": [
       {
         "parameter": "Impact Energy",
-        "value": "0.196 J (Type M)"
+        "value": "4.500 J"
       },
       {
         "parameter": "Measuring Range",
-        "value": "1.0 – 25.0 MPa"
+        "value": "60 – 100 MPa"
       },
       {
         "parameter": "Spring Stiffness",
-        "value": "100 ± 5 N/m"
+        "value": "900 ± 40 N/m"
       },
       {
         "parameter": "Operating Spring Length",
-        "value": "75.0 ± 0.3 mm"
+        "value": "106 ± 0.5 mm"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "35 ± 1.0 mm"
       },
       {
         "parameter": "Calibration on Test Anvil",
-        "value": "60 ± 2"
+        "value": "88 ± 2"
       },
       {
         "parameter": "Net Weight",
-        "value": "0.8 kg"
+        "value": "1.3 kg"
+      }
+    ]
+  },
+  {
+    "name": "Langry RH550-A Heavy-Duty High-Strength Hammer",
+    "code": "RH550-A",
+    "slug": "langry-rh550a-heavy-duty-high-strength-hammer",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "Maximum impact energy (5.400 J) hammer for mass concrete installations, dams, tunnel linings, and ultra-high-strength concrete (UHPC) up to 120 MPa.",
+    "featured_image": "/images/products/ndt/langry-rh550a-high.jpg",
+    "url": "products/ndt-equipment/langry-rh550a-heavy-duty-high-strength-hammer/",
+    "featured": false,
+    "display_order": 4,
+    "specifications": [
+      {
+        "parameter": "Impact Energy",
+        "value": "5.400 J"
+      },
+      {
+        "parameter": "Measuring Range",
+        "value": "60 – 120 MPa"
+      },
+      {
+        "parameter": "Spring Stiffness",
+        "value": "1000 ± 50 N/m"
+      },
+      {
+        "parameter": "Operating Spring Length",
+        "value": "110 ± 0.5 mm"
+      },
+      {
+        "parameter": "Spherical Radius of Tip",
+        "value": "35 ± 1.0 mm"
+      },
+      {
+        "parameter": "Calibration on Test Anvil",
+        "value": "88 ± 2"
+      },
+      {
+        "parameter": "Net Weight",
+        "value": "1.5 kg"
       }
     ]
   },
@@ -248,91 +1530,664 @@
     ]
   },
   {
-    "name": "Langry RH225-A Mechanical Concrete Test Hammer",
-    "code": "RH225-A",
-    "slug": "langry-rh225-a-mechanical-rebound-hammer",
+    "name": "Langry Testing Anvil (GZ Series)",
+    "code": "GZ-I",
+    "slug": "langry-testing-anvil-gz-series",
     "category": "ndt-equipment",
     "subcategory": "rebound-hammers",
-    "short_description": "The industry-standard mechanical rebound hammer for non-destructive compressive strength estimation of normal structural concrete from 10 to 60 MPa.",
-    "featured_image": "/images/products/ndt/langry-rh225a-mech.jpg",
-    "url": "products/ndt-equipment/langry-rh225-a-mechanical-rebound-hammer/",
-    "featured": true,
-    "display_order": 1,
+    "short_description": "High-precision tool steel test anvil hardened to HRC 60 ± 2 for daily calibration verification of concrete test hammers per IS 13311-2 and ASTM C805.",
+    "featured_image": "/images/products/ndt/langry-rh225b-detail.jpg",
+    "url": "products/ndt-equipment/langry-testing-anvil-gz-series/",
+    "featured": false,
+    "display_order": 7,
     "specifications": [
       {
-        "parameter": "Impact Energy",
-        "value": "2.207 J (Type N)"
+        "parameter": "Core Hardness",
+        "value": "HRC 60 ± 2"
       },
       {
-        "parameter": "Measuring Range",
-        "value": "10 – 60 MPa"
+        "parameter": "Nominal Rebound Value",
+        "value": "80 ± 2 (Type N)"
       },
       {
-        "parameter": "Pointer Friction",
-        "value": "0.65 ± 0.15 N"
+        "parameter": "Total Mass",
+        "value": "16 kg (Standard Bench)"
       },
       {
-        "parameter": "Spring Stiffness",
-        "value": "785.0 ± 30.0 N/m"
+        "parameter": "Applicable Hammers",
+        "value": "RH225-A, RH225-B, RH450-A, RH550-A, RH75-A"
       },
       {
-        "parameter": "Impact Spring Working Length",
-        "value": "61.5 ± 0.3 mm"
-      },
-      {
-        "parameter": "Calibration on Test Anvil",
-        "value": "80 ± 2"
-      },
-      {
-        "parameter": "Spherical Radius of Tip",
-        "value": "25 ± 1.0 mm"
-      },
-      {
-        "parameter": "Applicable Standards",
-        "value": "IS 13311-2, ASTM C805, BS 1881-202, EN 12504-2"
+        "parameter": "Compliance",
+        "value": "IS 13311 (Part 2), ASTM C805, EN 12504-2"
       }
     ]
   },
   {
-    "name": "Digital Compression Testing Machine 2000 kN",
-    "code": "ACC-CTM-2000D",
-    "slug": "digital-compression-testing-machine-2000kn",
-    "category": "compression-machines",
-    "subcategory": "compression-testing-machines",
-    "short_description": "Heavy-duty 2000 kN digital compression testing machine with microprocessor pace rate controller and peak load retention for concrete cube and cylinder testing.",
-    "featured_image": "/images/categories/compression-machines.jpg",
-    "url": "products/compression-machines/digital-compression-testing-machine-2000kn/",
-    "featured": true,
-    "display_order": 1,
+    "name": "Langry Testing Anvil (GZ-I / GZ-II / Portable)",
+    "code": "Langry  GZ Series  HRC 60±2",
+    "slug": "langry-testing-anvil-gz-i-gz-ii-portable",
+    "category": "ndt-equipment",
+    "subcategory": "rebound-hammers",
+    "short_description": "High-precision calibration test anvil manufactured from premium tool steel hardened to HRC 60 ± 2. Mandatory requirement per IS 13311-2 and ASTM C805 for daily calibration verification before and after testing.",
+    "featured_image": "/images/products/ndt/langry-rh225b-detail.jpg",
+    "url": "products/ndt-equipment/rebound-hammers/#langry-testing-anvil-gz-i-gz-ii-portable",
+    "featured": false,
     "specifications": [
       {
-        "parameter": "Maximum Capacity",
-        "value": "2000 kN (200 Tonnes)"
+        "parameter": "Core Hardness",
+        "value": "HRC 60 ± 2 (Tool Alloy Steel)"
       },
       {
-        "parameter": "Measuring Accuracy",
-        "value": "Class 1 (± 1% of indicated load)"
+        "parameter": "Nominal Calibration Value",
+        "value": "80 ± 2 (For Type N Hammers)"
       },
       {
-        "parameter": "Piston Stroke",
-        "value": "50 mm"
+        "parameter": "Weights Available",
+        "value": "16 kg (Standard bench) • Portable versions"
       },
       {
-        "parameter": "Platen Dimensions",
-        "value": "220 mm diameter"
+        "parameter": "Compatibility",
+        "value": "RH225-A, RH225-B, RH450-A, RH550-A, RH75-A"
       },
       {
-        "parameter": "Vertical Clearance",
-        "value": "320 mm"
-      },
-      {
-        "parameter": "Electric Power",
-        "value": "415 V, 3-Phase, 50 Hz, 1.5 kW"
-      },
-      {
-        "parameter": "Applicable Standards",
-        "value": "IS 516, IS 14858, BS 1881-115, EN 12390-4"
+        "parameter": "Requirement",
+        "value": "Calibration check before each test cycle"
       }
     ]
+  },
+  {
+    "name": "MATEST C369N High-Performance UPV Tester",
+    "code": "MATEST   C369N  Digital",
+    "slug": "matest-c369n-high-performance-upv-tester",
+    "category": "ndt-equipment",
+    "subcategory": "upv-testers",
+    "short_description": "Advanced Italian ultrasonic testing instrument featuring graphic waveform display, automatic pulse velocity computation, transit time measurement, and high-capacity internal data logging for on-site concrete diagnostics.",
+    "featured_image": "/images/products/ndt/matest-c369n.jpg",
+    "url": "products/ndt-equipment/upv-testers/#matest-c369n-high-performance-upv-tester",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Transit Time Range",
+        "value": "0.1 to 9999.9 µs"
+      },
+      {
+        "parameter": "Time Resolution",
+        "value": "0.1 µs"
+      },
+      {
+        "parameter": "Transducers",
+        "value": "Pair of 54 kHz piezoelectric probes"
+      },
+      {
+        "parameter": "Display",
+        "value": "High-resolution backlit graphic LCD"
+      },
+      {
+        "parameter": "Transmitter Pulse",
+        "value": "1200V / 2500V selectable excitation"
+      },
+      {
+        "parameter": "Standards",
+        "value": "IS 13311-1, ASTM C597, EN 12504-4"
+      }
+    ]
+  },
+  {
+    "name": "PROCEQ Profometer PM8000 Wireless Covermeter & Scanner",
+    "code": "Proceq  Profometer PM8000  Swiss Made",
+    "slug": "proceq-profometer-pm8000-wireless-covermeter-scanner",
+    "category": "ndt-equipment",
+    "subcategory": "rebar-detectors",
+    "short_description": "The gold standard in concrete cover measurement and rebar imaging. Wireless Swiss dual-core probe streams real-time 2D/3D augmented rebar distribution, cover thickness statistics, and diameter estimations directly to iPad tablets.",
+    "featured_image": "/images/products/ndt/ultrasonic-pulse-velocity.jpg",
+    "url": "products/ndt-equipment/rebar-detectors/#proceq-profometer-pm8000-wireless-covermeter-scanner",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Cover Measurement Accuracy",
+        "value": "±1 mm down to 80 mm cover depth"
+      },
+      {
+        "parameter": "Sensor",
+        "value": "Patented multi-coil electromagnetic pulse sensor probe"
+      },
+      {
+        "parameter": "Scan Modes",
+        "value": "Line scan, Area scan matrix, Single-Line zoom, DBV statistics"
+      },
+      {
+        "parameter": "Connectivity",
+        "value": "Wi-Fi & Bluetooth wireless connection to tablet display"
+      },
+      {
+        "parameter": "Cloud Reporting",
+        "value": "Instant cloud synchronization, PDF export & BIM integration"
+      },
+      {
+        "parameter": "Standards",
+        "value": "BS 1881-204, DIN 1045, DGZfP B2, SIA 262-1"
+      }
+    ]
+  },
+  {
+    "name": "PROCEQ Pundit 200 (PL-200) Touchscreen UPV System",
+    "code": "Proceq  Pundit 200 (PL-200)  Advanced",
+    "slug": "proceq-pundit-200-pl-200-touchscreen-upv-system",
+    "category": "ndt-equipment",
+    "subcategory": "upv-testers",
+    "short_description": "Flagship digital touchscreen system featuring real-time A-scan RF signal inspection, 2D line scanning, area scan uniformity heatmaps, and precise crack depth measurement algorithms for critical civil engineering infrastructure.",
+    "featured_image": "/images/products/ndt/ultrasonic-pulse-velocity.jpg",
+    "url": "products/ndt-equipment/upv-testers/#proceq-pundit-200-pl-200-touchscreen-upv-system",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Display",
+        "value": "7\" rugged colour touchscreen (800×480 pixels)"
+      },
+      {
+        "parameter": "Scanning Capabilities",
+        "value": "Line scan, Area scan matrix & data logging"
+      },
+      {
+        "parameter": "Transmitter Voltage",
+        "value": "100 V to 450 V biphase pulse excitation"
+      },
+      {
+        "parameter": "Crack Depth",
+        "value": "Dedicated automated crack depth evaluation routine"
+      },
+      {
+        "parameter": "Memory",
+        "value": "8 GB internal flash (thousands of scans with full waveforms)"
+      },
+      {
+        "parameter": "Sensors",
+        "value": "Standard 54 kHz, Shear wave (dry contact), exponential probes"
+      }
+    ]
+  },
+  {
+    "name": "PROCEQ Pundit Lab Ultrasonic Pulse Velocity Instrument",
+    "code": "Proceq  Pundit Lab  Swiss Made",
+    "slug": "proceq-pundit-lab-ultrasonic-pulse-velocity-instrument",
+    "category": "ndt-equipment",
+    "subcategory": "upv-testers",
+    "short_description": "The global benchmark for ultrasonic testing of concrete. Features laboratory-grade pulse timing accuracy, adjustable transmitter voltage, variable gain stages, and direct PC real-time data streaming via Punditlink software.",
+    "featured_image": "/images/products/ndt/proceq-pundit-lab.jpg",
+    "url": "products/ndt-equipment/upv-testers/#proceq-pundit-lab-ultrasonic-pulse-velocity-instrument",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Range",
+        "value": "0.1 to 9999 µs"
+      },
+      {
+        "parameter": "Resolution",
+        "value": "0.1 µs"
+      },
+      {
+        "parameter": "Pulse Voltage",
+        "value": "125 V, 250 V, 350 V, 500 V selectable"
+      },
+      {
+        "parameter": "Gain Stages",
+        "value": "1x, 2x, 5x, 10x, 20x, 50x, 100x, 200x, 500x, 1000x"
+      },
+      {
+        "parameter": "Sensor Compatibility",
+        "value": "24 kHz up to 500 kHz transducers"
+      },
+      {
+        "parameter": "PC Software",
+        "value": "Punditlink for analysis, waveforms & report generation"
+      }
+    ]
+  },
+  {
+    "name": "PROCEQ Pundit Lab+ Enhanced UPV Instrument",
+    "code": "Proceq  Pundit Lab+  Dynamic Modulus",
+    "slug": "proceq-pundit-lab-enhanced-upv-instrument",
+    "category": "ndt-equipment",
+    "subcategory": "upv-testers",
+    "short_description": "Extended capability edition of the Pundit Lab platform featuring integrated compressive strength correlation, automatic surface velocity measurements, dynamic E-modulus computation, and on-board memory for up to 500 tests.",
+    "featured_image": "/images/products/ndt/proceq-pundit-lab.jpg",
+    "url": "products/ndt-equipment/upv-testers/#proceq-pundit-lab-enhanced-upv-instrument",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Calculation Modes",
+        "value": "Pulse velocity, path length, crack depth, E-modulus"
+      },
+      {
+        "parameter": "Data Logging",
+        "value": "Up to 500 complete measurements in non-volatile memory"
+      },
+      {
+        "parameter": "Display",
+        "value": "Integrated LCD with backlighting"
+      },
+      {
+        "parameter": "Transmission Modes",
+        "value": "Direct, indirect (surface), and semi-direct"
+      },
+      {
+        "parameter": "Strength Estimation",
+        "value": "User-definable conversion curves"
+      },
+      {
+        "parameter": "Standards",
+        "value": "IS 13311-1, ASTM C597, EN 12504-4, BS 1881-203"
+      }
+    ]
+  },
+  {
+    "name": "TEM620XH Multi-Function Digital Rebar Detector",
+    "code": "TEM620XH  Dual-Range  Digital",
+    "slug": "tem620xh-multi-function-digital-rebar-detector",
+    "category": "ndt-equipment",
+    "subcategory": "rebar-detectors",
+    "short_description": "Multi-purpose digital electromagnetic rebar detector equipped with dual-range scanning, signal sound feedback, real-time depth calculation, and automated bar diameter assessment for core drilling clearance verification.",
+    "featured_image": "/images/products/ndt/ultrasonic-pulse-velocity.jpg",
+    "url": "products/ndt-equipment/rebar-detectors/#tem620xh-multi-function-digital-rebar-detector",
+    "featured": false,
+    "specifications": [
+      {
+        "parameter": "Measuring Depth",
+        "value": "10 mm – 200 mm"
+      },
+      {
+        "parameter": "Applicable Diameter",
+        "value": "Ø6 mm – Ø50 mm"
+      },
+      {
+        "parameter": "Encoder",
+        "value": "Built-in travel distance measuring wheel on sensor head"
+      },
+      {
+        "parameter": "Display",
+        "value": "High-contrast graphic screen with real-time waveform position"
+      },
+      {
+        "parameter": "Kit Includes",
+        "value": "Search head, data cable, zero reference block, rugged field case"
+      },
+      {
+        "parameter": "Standards",
+        "value": "BS 1881-204, ACI 318"
+      }
+    ]
+  },
+  {
+    "name": "Enamel Sample Preparation Trays",
+    "code": "",
+    "slug": "enamel-sample-preparation-trays",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Heavy-gauge porcelain enamel coated trays resistant to mild acids, chemicals, and moisture. Ideal for soil classification, sieving, and sample sorting.",
+    "featured_image": "/images/products/sampling-tools/enamel-tray.jpg",
+    "url": "products/sampling-tools/#enamel-sample-preparation-trays",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Galvanized Iron (GI) Sample Trays",
+    "code": "GI",
+    "slug": "galvanized-iron-gi-sample-trays",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Robust GI drying and mixing trays with folded leak-proof corners and reinforced rims. Ideal for oven drying and aggregate mixing batches.",
+    "featured_image": "/images/products/sampling-tools/galvanized-iron-tray.png",
+    "url": "products/sampling-tools/#galvanized-iron-gi-sample-trays",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Heavy-Duty Wheel Barrow (Scooter Tyre)",
+    "code": "-D",
+    "slug": "heavy-duty-wheel-barrow-scooter-tyre",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Rugged construction wheel barrow with heavy gauge pressed steel pan, reinforced tubular frame, and heavy-duty pneumatic scooter tyre for tough site conditions.",
+    "featured_image": "/images/products/sampling-tools/wheel-barrow.jpg",
+    "url": "products/sampling-tools/#heavy-duty-wheel-barrow-scooter-tyre",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Plastering Trowel (Gurmala) & Gauging Trowels",
+    "code": "",
+    "slug": "plastering-trowel-gurmala-gauging-trowels",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Hardened spring steel flat trowels and pointed gauging trowels for specimen finishing, mortar preparation, and concrete cube smoothing.",
+    "featured_image": "/images/products/sampling-tools/plastering-trowel.jpg",
+    "url": "products/sampling-tools/#plastering-trowel-gurmala-gauging-trowels",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Riffle Sampler & Sample Divider",
+    "code": "",
+    "slug": "riffle-sampler-sample-divider",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Precision sample divider as per IS 1607 for representative reduction of aggregate and soil samples. Heavy gauge metal body with 14/16 chutes and receiver pans.",
+    "featured_image": "/images/products/aggregate/riffle-sampler-divider.jpg",
+    "url": "products/sampling-tools/#riffle-sampler-sample-divider",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Stainless Steel Laboratory Scoops",
+    "code": "",
+    "slug": "stainless-steel-laboratory-scoops",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Seamless SS 304 scoops with ergonomic handle for handling soil, cement, aggregates, and powder chemicals. Available in 250g, 500g, 1kg, and 2kg capacities.",
+    "featured_image": "/images/products/sampling-tools/stainless-steel-scoop.jpg",
+    "url": "products/sampling-tools/#stainless-steel-laboratory-scoops",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Stainless Steel Precision Rules / Scales",
+    "code": "",
+    "slug": "stainless-steel-precision-rules-scales",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "Heavy-duty stainless steel metric and imperial engraved linear measurement rules (300 mm, 600 mm, and 1000 mm). Clear anti-glare markings.",
+    "featured_image": "/images/products/sampling-tools/stainless-steel-scale.jpg",
+    "url": "products/sampling-tools/#stainless-steel-precision-rules-scales",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Standard Laboratory Spatulas",
+    "code": "",
+    "slug": "standard-laboratory-spatulas",
+    "category": "sampling-tools",
+    "subcategory": "",
+    "short_description": "High-grade stainless steel laboratory spatulas with flexible blades and wooden/plastic handles for sample manipulation, mixing, and dispensing.",
+    "featured_image": "/images/products/sampling-tools/standard-spatula.png",
+    "url": "products/sampling-tools/#standard-laboratory-spatulas",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "IS Sieve Set for Aggregate Gradation",
+    "code": "IS",
+    "slug": "is-sieve-set-for-aggregate-gradation",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Complete set of IS sieves as per IS 460 for aggregate sieve analysis. Sizes: 80 mm to 75 µm. 300 mm diameter, brass/GI frame.",
+    "featured_image": "/images/products/sieves/test-sieve-gi-450mm.jpg",
+    "url": "products/sieves-shakers/#is-sieve-set-for-aggregate-gradation",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "IS Sieve Set for Soil Classification",
+    "code": "IS",
+    "slug": "is-sieve-set-for-soil-classification",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Set of IS sieves for soil particle size analysis as per IS 2720 Part 4. Sizes: 4.75 mm to 75 µm. With lid and receiver.",
+    "featured_image": "/images/products/sieves/test-sieve-brass-200mm.jpg",
+    "url": "products/sieves-shakers/#is-sieve-set-for-soil-classification",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Motorised Sieve Shaker (300 mm dia)",
+    "code": "300",
+    "slug": "motorised-sieve-shaker-300-mm-dia",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Electric motor-driven sieve shaker for 300 mm diameter sieves. Timer: 0-60 min. Amplitude adjustable. Holds up to 8 sieves.",
+    "featured_image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=75",
+    "url": "products/sieves-shakers/#motorised-sieve-shaker-300-mm-dia",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Sieve Analysis Balance (15 kg capacity)",
+    "code": "15",
+    "slug": "sieve-analysis-balance-15-kg-capacity",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Platform balance for weighing sieve fractions during gradation analysis. Capacity: 15 kg, readability: 1g.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/sieves-shakers/#sieve-analysis-balance-15-kg-capacity",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Sieve Cleaning Brush Set",
+    "code": "",
+    "slug": "sieve-cleaning-brush-set",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Set of 6 sieve cleaning brushes of different sizes for cleaning 75 µm to 80 mm IS sieves. Nylon and brass bristles.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/sieves-shakers/#sieve-cleaning-brush-set",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Wet Sieve Analysis Set",
+    "code": "",
+    "slug": "wet-sieve-analysis-set",
+    "category": "sieves-shakers",
+    "subcategory": "",
+    "short_description": "Complete wet sieve analysis set for fine-grained materials. Includes 75 µm IS sieve, receiver, and washing attachment.",
+    "featured_image": "/images/products/sieves/lid-pan-brass-200mm.jpg",
+    "url": "products/sieves-shakers/#wet-sieve-analysis-set",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "CBR Apparatus (Motorised)",
+    "code": "CBR",
+    "slug": "cbr-apparatus-motorised",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Motorised California Bearing Ratio test apparatus as per IS 2720 Part 16. Load frame capacity: 50 kN.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/soil-testing/#cbr-apparatus-motorised",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Consolidation Apparatus (Single Unit)",
+    "code": "",
+    "slug": "consolidation-apparatus-single-unit",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Oedometer consolidation test apparatus for determining settlement characteristics of cohesive soils as per IS 2720 Part 15.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/soil-testing/#consolidation-apparatus-single-unit",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Constant Head Permeability Apparatus",
+    "code": "",
+    "slug": "constant-head-permeability-apparatus",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "For determining coefficient of permeability of coarse-grained soils as per IS 2720 Part 17. Complete with accessories.",
+    "featured_image": "https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&q=75",
+    "url": "products/soil-testing/#constant-head-permeability-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Core Cutter Dolly with Rammer",
+    "code": "",
+    "slug": "core-cutter-dolly-with-rammer",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "For in-situ determination of dry density of fine-grained and cohesive soils as per IS 2720 Part 29. Hardened alloy steel cutter, dolly, and rammer.",
+    "featured_image": "/images/products/soil/core-cutter-dolly-rammer.jpg",
+    "url": "products/soil-testing/#core-cutter-dolly-with-rammer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Direct Shear Box Apparatus (Motorised)",
+    "code": "",
+    "slug": "direct-shear-box-apparatus-motorised",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Motorised direct shear test apparatus for determining shear strength parameters of soil as per IS 2720 Part 13.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/soil-testing/#direct-shear-box-apparatus-motorised",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Liquid Limit Device (Casagrande)",
+    "code": "",
+    "slug": "liquid-limit-device-casagrande",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Casagrande liquid limit device for determining Atterberg limits of fine-grained soils as per IS 2720 Part 5.",
+    "featured_image": "/images/products/soil/casagrande-apparatus.jpg",
+    "url": "products/soil-testing/#liquid-limit-device-casagrande",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Modified Proctor Compaction Apparatus",
+    "code": "",
+    "slug": "modified-proctor-compaction-apparatus",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Heavy compaction set as per IS 2720 Part 8 for sub-base and base course material testing.",
+    "featured_image": "/images/products/soil/proctor-mould-rammer.jpg",
+    "url": "products/soil-testing/#modified-proctor-compaction-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Plastic Limit Apparatus",
+    "code": "",
+    "slug": "plastic-limit-apparatus",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Complete set for determination of plastic limit and plasticity index of soil as per IS 2720 Part 5. Ground glass plate, 3mm rod, and spatula.",
+    "featured_image": "/images/products/soil/plastic-limit-apparatus.jpg",
+    "url": "products/soil-testing/#plastic-limit-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Sand Cone Apparatus (Field Density)",
+    "code": "",
+    "slug": "sand-cone-apparatus-field-density",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Sand replacement method apparatus for in-situ field density determination of compacted soil as per IS 2720 Part 28.",
+    "featured_image": "/images/products/soil/sand-pouring-cylinder.jpg",
+    "url": "products/soil-testing/#sand-cone-apparatus-field-density",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Soil Cone Penetrometer",
+    "code": "",
+    "slug": "soil-cone-penetrometer",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "For determination of liquid limit of soils by cone penetrometer method as per IS 2720 Part 5. 30° stainless steel cone, sliding clamp, and dial gauge.",
+    "featured_image": "/images/products/soil/soil-cone-penetrometer.jpg",
+    "url": "products/soil-testing/#soil-cone-penetrometer",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Standard Proctor Compaction Apparatus",
+    "code": "",
+    "slug": "standard-proctor-compaction-apparatus",
+    "category": "soil-testing",
+    "subcategory": "",
+    "short_description": "Complete set for determining optimum moisture content and maximum dry density of soil as per IS 2720 Part 7.",
+    "featured_image": "/images/products/soil/proctor-mould-rammer.jpg",
+    "url": "products/soil-testing/#standard-proctor-compaction-apparatus",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Aquasol Water Testing Kit (Portable)",
+    "code": "",
+    "slug": "aquasol-water-testing-kit-portable",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "Portable Aquasol water testing kit for field analysis of water quality parameters — pH, chloride, hardness, turbidity. Ideal for construction sites.",
+    "featured_image": "/images/products/water-testing/water-testing-kit.jpg",
+    "url": "products/water-testing/#aquasol-water-testing-kit-portable",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "BOD Incubator (55 litre)",
+    "code": "BOD",
+    "slug": "bod-incubator-55-litre",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "Temperature-controlled BOD incubator for biochemical oxygen demand determination. Range: 5°C to 60°C, capacity: 55 litres.",
+    "featured_image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75",
+    "url": "products/water-testing/#bod-incubator-55-litre",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Chlorine Test Kit (DPD Method)",
+    "code": "DPD",
+    "slug": "chlorine-test-kit-dpd-method",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "DPD method chlorine test kit for determining free and total chlorine in water. 100 test capacity. For swimming pools, water treatment plants.",
+    "featured_image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=75",
+    "url": "products/water-testing/#chlorine-test-kit-dpd-method",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital TDS / EC / Temperature Meter",
+    "code": "TDS",
+    "slug": "digital-tds-ec-temperature-meter",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "Portable digital TDS, electrical conductivity, and temperature meter. Range: 0-9999 ppm TDS. Battery operated.",
+    "featured_image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=75",
+    "url": "products/water-testing/#digital-tds-ec-temperature-meter",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital Turbidity Meter",
+    "code": "",
+    "slug": "digital-turbidity-meter",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "Microprocessor-based digital turbidity meter for water quality analysis. Range: 0-1000 NTU, RS-232 output.",
+    "featured_image": "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=600&q=75",
+    "url": "products/water-testing/#digital-turbidity-meter",
+    "featured": false,
+    "specifications": []
+  },
+  {
+    "name": "Digital pH Meter (Benchtop)",
+    "code": "",
+    "slug": "digital-ph-meter-benchtop",
+    "category": "water-testing",
+    "subcategory": "",
+    "short_description": "High accuracy pH/mV/temperature meter for laboratory use. Range: 0-14 pH, accuracy ±0.01 pH. With ATC and electrode.",
+    "featured_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=75",
+    "url": "products/water-testing/#digital-ph-meter-benchtop",
+    "featured": false,
+    "specifications": []
   }
 ]
