@@ -9,7 +9,10 @@ import os
 import glob
 import re
 import json
-from bs4 import BeautifulSoup
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -38,6 +41,10 @@ def build_complete_catalogue():
                 print(f"Warning reading existing products.json: {e}")
 
     # 2. Scan all category & subcategory HTML pages
+    if BeautifulSoup is None:
+        print(f"Notice: beautifulsoup4 not installed. Using {len(all_products)} products from products.json.")
+        return all_products
+
     pattern1 = os.path.join(ROOT_DIR, 'products', '*', 'index.html')
     pattern2 = os.path.join(ROOT_DIR, 'products', '*', '*', 'index.html')
     html_files = sorted(glob.glob(pattern1) + glob.glob(pattern2))
