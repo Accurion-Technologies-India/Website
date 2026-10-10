@@ -32,6 +32,8 @@
         }
       }
     }
+  }
+
   /* ── 1b. Save Enquiry to Local CRM Storage ────────────────── */
   function saveLocalEnquiry(formData) {
     try {
