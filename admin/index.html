@@ -304,32 +304,32 @@
           navBar.id = 'cms-accurion-nav';
           
           const modeBadge = isSandbox
-            ? `<a href="?oauth=true" title="Currently in offline Sandbox Mode. Click to connect via GitHub OAuth" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #166534; background: #dcfce7; border: 1px solid #86efac; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <span>⚡</span> Sandbox Mode <span style="font-size: 10.5px; opacity: 0.8; font-weight: 500;">(Click for GitHub OAuth)</span>
+            ? `<a href="?oauth=true" title="Currently in offline Sandbox Mode. Click to connect via GitHub OAuth" class="cms-nav-btn cms-mode-badge" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #166534; background: #dcfce7; border: 1px solid #86efac; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>⚡</span> <span class="cms-btn-label">Sandbox Mode</span>
                </a>`
-            : `<a href="?sandbox=true" title="Currently in live GitHub OAuth mode. Click to switch to offline Sandbox Mode" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <span>🔒</span> GitHub OAuth <span style="font-size: 10.5px; opacity: 0.8; font-weight: 500;">(Click for Sandbox)</span>
+            : `<a href="?sandbox=true" title="Currently in live GitHub OAuth mode. Click to switch to offline Sandbox Mode" class="cms-nav-btn cms-mode-badge" style="font-family: Inter, -apple-system, sans-serif; font-size: 11.5px; font-weight: 700; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; padding: 5px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>🔒</span> <span class="cms-btn-label">GitHub OAuth</span>
                </a>`;
 
           navBar.innerHTML = `
             <div class="nav-brand">
               <span class="nav-brand-title">
                 <span class="nav-brand-dot"></span>
-                Accurion Technologies
+                Accurion
               </span>
-              <span style="color: #475569; font-size: 13px;">|</span>
+              <span class="nav-brand-divider" style="color: #475569; font-size: 13px;">|</span>
               <span class="nav-brand-sub">Site &amp; Catalogue Portal</span>
             </div>
             <div class="nav-actions">
               ${modeBadge}
-              <a href="enquiries/" style="font-size: 12px; font-weight: 700; color: #ffffff; background: #c41217; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(196,18,23,0.35);">
-                <span>📋</span> Enquiries CRM
+              <a href="enquiries/" class="cms-nav-btn" style="font-size: 12px; font-weight: 700; color: #ffffff; background: #c41217; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(196,18,23,0.35);">
+                <span>📋</span> <span class="cms-btn-label">Enquiries CRM</span>
               </a>
-              <a href="guide/" target="_blank" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <span>📖</span> Guide
+              <a href="guide/" target="_blank" class="cms-nav-btn" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>📖</span> <span class="cms-btn-label">Guide</span>
               </a>
-              <a href="../" target="_blank" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
-                <span>🌐</span> View Site ↗
+              <a href="../" target="_blank" class="cms-nav-btn" style="font-size: 12px; font-weight: 600; color: #f1f5f9; background: #1e293b; border: 1px solid #334155; padding: 6px 10px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <span>🌐</span> <span class="cms-btn-label">View Site ↗</span>
               </a>
             </div>
           `;

@@ -256,10 +256,16 @@
       </div>
     </li>
     <li class="mobile-nav-item">
-      <a href="javascript:void(0)" class="mobile-nav-link" id="mobileProductsToggle">
-        Our Products <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
-      </a>
+      <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+        <a href="products/" class="mobile-nav-link" style="flex:1;">Our Products</a>
+        <button class="mobile-accordion-btn" id="mobileProductsToggle" aria-label="Toggle Our Products sub-links" aria-expanded="false" type="button">
+          <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
+        </button>
+      </div>
       <div class="mobile-nav-accordion" id="mobileProductsAccordion">
+        <a href="products/" style="display:flex;align-items:center;gap:8px;font-weight:700;color:var(--color-primary);background:var(--color-surface);padding:10px 14px;border-radius:8px;margin-bottom:8px;text-decoration:none;">
+          <span>🔍</span> Search All Equipment Catalog →
+        </a>
         <p class="mobile-nav-accordion-heading">Civil Testing</p>
         <div class="mobile-submenu-header">
           <a href="products/ndt-equipment/" class="mobile-submenu-title">NDT Equipment</a>
@@ -309,92 +315,77 @@
 <div class="hero-ambient-glow" id="heroAmbientGlow" aria-hidden="true"></div>
 <section aria-label="Product showcase" class="hero-carousel" id="heroCarousel">
 <!-- Slide 1: Civil Quality Lab Equipment -->
-<div class="hero-slide active" data-ambient-rgb="196, 18, 23" style="background-image:url('images/cqe-image.webp');">
+<div class="hero-slide active" data-ambient-rgb="196, 18, 23" data-category-url="products/" style="background-image:url('images/cqe-image.webp');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">Accuracy and Innovation</span>
 <h1 class="hero-headline"><span class="hero-brand-eyebrow">Accurion Technologies</span>Civil Quality<br/>Lab Equipment</h1>
 <p class="hero-subline">Trusted by contractors &amp; labs across India</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
-</div>
 </div>
 </div>
 </div>
 <!-- Slide 2: Soil Testing -->
-<div class="hero-slide" data-ambient-rgb="180, 83, 9" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="180, 83, 9" data-category-url="products/soil-testing/" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">Soil Testing Equipment</span>
-<h2 class="hero-headline">Engineered for<br/>Ground-Level Accuracy</h2>
+<h2 class="hero-headline"><span class="hero-brand-eyebrow">Accurion Soil Testing</span>Engineered for<br/>Ground-Level Accuracy</h2>
 <p class="hero-subline">Complete soil analysis solutions for every project</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/soil-testing/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
-</div>
 </div>
 </div>
 </div>
 <!-- Slide 3: Bitumen Testing -->
-<div class="hero-slide" data-ambient-rgb="217, 119, 6" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="217, 119, 6" data-category-url="products/bitumen-testing/" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">Bitumen Testing Equipment</span>
-<h2 class="hero-headline">Road-Grade<br/>Quality Assurance</h2>
+<h2 class="hero-headline"><span class="hero-brand-eyebrow">Accurion Bitumen QC</span>Road-Grade<br/>Quality Assurance</h2>
 <p class="hero-subline">Equipment built for tough site conditions</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/bitumen-testing/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
-</div>
 </div>
 </div>
 </div>
 <!-- Slide 4: Cement Testing -->
-<div class="hero-slide" data-ambient-rgb="59, 130, 246" style="background-image:url('images/products/cement/cement-testing-hero.jpg');">
+<div class="hero-slide" data-ambient-rgb="59, 130, 246" data-category-url="products/cement-testing/" style="background-image:url('images/products/cement/cement-testing-hero.jpg');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">Cement Testing Equipment</span>
-<h2 class="hero-headline">Setting the Standard<br/>in Cement QC</h2>
+<h2 class="hero-headline"><span class="hero-brand-eyebrow">Accurion Cement Testing</span>Setting the Standard<br/>in Cement QC</h2>
 <p class="hero-subline">From Vicat to Blaine — we have it all</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/cement-testing/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
-</div>
 </div>
 </div>
 </div>
 <!-- Slide 5: NDT Equipment -->
-<div class="hero-slide" data-ambient-rgb="2, 132, 199" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="2, 132, 199" data-category-url="products/ndt-equipment/" style="background-image:url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">NDT Equipment</span>
-<h2 class="hero-headline">Non-Destructive.<br/>Uncompromising.</h2>
+<h2 class="hero-headline"><span class="hero-brand-eyebrow">Accurion NDT Solutions</span>Non-Destructive.<br/>Uncompromising.</h2>
 <p class="hero-subline">In-situ testing without material damage</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/ndt-equipment/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
-</div>
 </div>
 </div>
 </div>
 <!-- Slide 6: Lab Instruments -->
-<div class="hero-slide" data-ambient-rgb="13, 148, 136" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1600&amp;q=80');">
+<div class="hero-slide" data-ambient-rgb="13, 148, 136" data-category-url="products/lab-balances/" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1600&amp;q=80');">
 <div class="hero-slide-overlay"></div>
 <div class="hero-slide-content">
 <div class="hero-text">
 <span class="hero-category-label">Lab Instruments &amp; Balances</span>
-<h2 class="hero-headline">Complete Lab Setup,<br/>End to End</h2>
+<h2 class="hero-headline"><span class="hero-brand-eyebrow">Accurion Lab Setup</span>Complete Lab Setup,<br/>End to End</h2>
 <p class="hero-subline">Balances, glassware, chemicals &amp; more</p>
-<div class="hero-cta-group">
-<a class="btn btn-primary btn-lg" href="products/lab-balances/">Explore Products</a>
-<a class="btn btn-outline btn-lg" href="contact">Get a Quote</a>
 </div>
+</div>
+</div>
+<!-- Persistent Stationary CTA Group (Stationary baseline, dynamic category link) -->
+<div class="hero-persistent-cta-container" aria-label="Hero actions">
+<div class="hero-persistent-cta-content">
+<div class="hero-cta-group" id="heroMainCtaGroup">
+<a class="btn btn-primary btn-lg" id="heroExploreBtn" href="products/">Explore Products</a>
+<a class="btn btn-outline btn-lg" id="heroQuoteBtn" href="contact/">Get a Quote</a>
 </div>
 </div>
 </div>

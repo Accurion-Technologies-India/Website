@@ -187,7 +187,19 @@
           glow.style.setProperty('--ambient-color', rgb);
         }
       }
-      if (slides.length > 0) updateAmbientLighting(slides[0]);
+
+      function updateHeroCtaLink(slide) {
+        if (!slide) return;
+        const exploreBtn = document.getElementById('heroExploreBtn');
+        if (exploreBtn) {
+          const url = slide.getAttribute('data-category-url') || 'products/';
+          exploreBtn.setAttribute('href', url);
+        }
+      }
+      if (slides.length > 0) {
+        updateAmbientLighting(slides[0]);
+        updateHeroCtaLink(slides[0]);
+      }
 
       function goToSlide(index) {
         slides[current].classList.remove('active');
@@ -196,6 +208,7 @@
         slides[current].classList.add('active');
         if (dots[current]) dots[current].classList.add('active');
         updateAmbientLighting(slides[current]);
+        updateHeroCtaLink(slides[current]);
       }
 
       function startAutoPlay() {
@@ -234,6 +247,7 @@
         slides[0].classList.add('active');
         if (dots[0]) dots[0].classList.add('active');
         updateAmbientLighting(slides[0]);
+        updateHeroCtaLink(slides[0]);
         startAutoPlay();
       }
     }

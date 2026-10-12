@@ -1,0 +1,76 @@
+graph TD
+    %% Accurion Technologies Website Architecture Map
+    subgraph ClientFacingPages [Public Website Pages]
+        HOME[index.html - Homepage with Hero Slider]
+        ABOUT[about/ - Company & Certifications]
+        SERVICES[services/ - Calibration & Maintenance]
+        PRODUCTS[products/ - Master Catalog & Live Search]
+        BLOGS[blogs/ - Knowledge Articles]
+        CONTACT[contact/ - Quote Request Form]
+        TERMS[terms/ & privacy/ - Legal Pages]
+    end
+
+    subgraph ProductCatalogCategories [Product Categories (17 Total)]
+        CAT_NDT[ndt-equipment/ (Langry, Proceq, Matest)]
+        CAT_CONC[concrete-testing/]
+        CAT_CEM[cement-testing/]
+        CAT_SOIL[soil-testing/]
+        CAT_BIT[bitumen-testing/]
+        CAT_AGG[aggregate-testing/]
+        CAT_CTM[compression-machines/]
+        CAT_BAL[lab-balances/]
+        CAT_WAT[water-testing/ (Aquasol)]
+        CAT_CHEM[lab-chemicals/]
+        CAT_GLASS[lab-glassware/]
+        CAT_CONS[lab-consumables/]
+        CAT_MOLD[lab-moulds/]
+        CAT_SIEV[sieves-shakers/]
+        CAT_METR[metrology-gauges/]
+        CAT_SAMP[sampling-tools/]
+        CAT_GEN[general-lab/]
+    end
+
+    subgraph StaticBuildPipeline [Static Generation & Automation]
+        DATA_PRODS[data/products/*.json]
+        DATA_CATS[data/categories/*.json]
+        BUILDER[scripts/build_site.py - Python SSG]
+        COMP_PROD[scripts/compile_all_products.py]
+        PROC_IMG[scripts/process_images.py]
+        VAL_DATA[scripts/validate_data.py]
+        SITEMAP[sitemap.xml - Dynamic Sitemap]
+        SEARCH_IDX[products/products.json - Search Index]
+        PROD_PAGES[products/{cat}/{slug}/index.html]
+    end
+
+    subgraph AdminCMS [Admin & Catalogue Portal]
+        ADMIN_HTML[admin/index.html - Decap CMS App]
+        ADMIN_CSS[admin/cms-theme.css - Custom Branding]
+        ADMIN_CFG[admin/config.yml - CMS Schema & Collections]
+        ADMIN_CRM[admin/enquiries/ - Inquiries CRM]
+        ADMIN_OAUTH[admin/oauth-worker.js - Cloudflare OAuth Worker]
+    end
+
+    subgraph DeploymentWorkflow [CI/CD & Hosting]
+        GH_REPO[GitHub: Accurion-Technologies-India/Website (main branch)]
+        GH_ACTIONS[.github/workflows/build-and-deploy.yml]
+        GH_PAGES[GitHub Pages Hosting (CNAME: www.accuriontechnologies.com)]
+    end
+
+    %% Relationships
+    HOME --> PRODUCTS
+    HOME --> CONTACT
+    PRODUCTS --> ProductCatalogCategories
+    ProductCatalogCategories --> PROD_PAGES
+
+    DATA_PRODS --> BUILDER
+    DATA_CATS --> BUILDER
+    BUILDER --> SEARCH_IDX
+    BUILDER --> PROD_PAGES
+    BUILDER --> SITEMAP
+
+    ADMIN_HTML --> GH_REPO
+    GH_REPO --> GH_ACTIONS
+    GH_ACTIONS --> VAL_DATA
+    GH_ACTIONS --> PROC_IMG
+    GH_ACTIONS --> BUILDER
+    GH_ACTIONS --> GH_PAGES

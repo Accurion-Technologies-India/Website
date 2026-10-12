@@ -137,10 +137,16 @@
       </div>
     </li>
     <li class="mobile-nav-item">
-      <a href="javascript:void(0)" class="mobile-nav-link" id="mobileProductsToggle">
-        Our Products <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
-      </a>
+      <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+        <a href="${root}products/" class="mobile-nav-link" style="flex:1;">Our Products</a>
+        <button class="mobile-accordion-btn" id="mobileProductsToggle" aria-label="Toggle Our Products sub-links" aria-expanded="false" type="button">
+          <span class="mobile-arrow" style="transition:transform 0.3s;display:inline-block;">▾</span>
+        </button>
+      </div>
       <div class="mobile-nav-accordion" id="mobileProductsAccordion">
+        <a href="${root}products/" style="display:flex;align-items:center;gap:8px;font-weight:700;color:var(--color-primary);background:var(--color-surface);padding:10px 14px;border-radius:8px;margin-bottom:8px;text-decoration:none;">
+          <span>🔍</span> Search All Equipment Catalog →
+        </a>
         <p class="mobile-nav-accordion-heading">Civil Testing</p>
         <div class="mobile-submenu-header">
           <a href="${root}products/ndt-equipment/" class="mobile-submenu-title">NDT Equipment</a>

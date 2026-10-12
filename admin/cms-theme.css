@@ -422,3 +422,144 @@ label[class*="ControlLabel"]:not([class*="Upload"]):not(.nc-fileUploadButton) {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* ============================================================
+   Mobile & Responsive Optimizations (Screens < 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  body {
+    padding-top: 50px !important;
+  }
+
+  /* 1. Top Utility Header Mobile Ergonomics */
+  #cms-accurion-nav {
+    height: 50px !important;
+    padding: 0 10px !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 6px !important;
+  }
+
+  #cms-accurion-nav .nav-brand {
+    flex-shrink: 0 !important;
+    gap: 6px !important;
+  }
+
+  #cms-accurion-nav .nav-brand-sub,
+  #cms-accurion-nav .nav-brand-divider {
+    display: none !important;
+  }
+
+  #cms-accurion-nav .nav-brand-title {
+    font-size: 13px !important;
+    white-space: nowrap !important;
+  }
+
+  #cms-accurion-nav .nav-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  #cms-accurion-nav .nav-actions a {
+    padding: 6px 9px !important;
+    font-size: 11.5px !important;
+    white-space: nowrap !important;
+  }
+
+  /* 2. Decap CMS Layout Mobile Fixes */
+  div[class*="AppContainer"],
+  div[class*="AppMain"],
+  div[class*="AppMainContainer"] {
+    min-width: 100% !important;
+    width: 100% !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Force Collection Sidebar and Editor to stack cleanly */
+  div[class*="SidebarContainer"],
+  aside[class*="Sidebar"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Editor Form Panes */
+  div[class*="EditorContainer"],
+  div[class*="ControlPaneContainer"],
+  div[class*="EditorControlPane"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 6px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Full-width Cards & Entries in Collection lists */
+  div[class*="CardGrid"],
+  div[class*="EntriesGrid"],
+  div[class*="CardsGrid"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  div[class*="Card"],
+  div[class*="CardContainer"],
+  a[class*="CardLink"] {
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3. Form Inputs & Touch Targets */
+  /* Prevent iOS auto-zoom on input focus with 16px minimum */
+  input,
+  textarea,
+  select,
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    font-size: 16px !important;
+    min-height: 44px !important;
+  }
+
+  /* Large Tap Targets for Action Buttons */
+  button,
+  a[role="button"],
+  div[class*="TopBarContainer"] button {
+    min-height: 42px !important;
+    padding: 8px 14px !important;
+    touch-action: manipulation !important;
+  }
+
+  /* Sticky Save/Publish bar */
+  div[class*="TopBarContainer"],
+  header[class*="EditorHeader"] {
+    position: sticky !important;
+    top: 50px !important;
+    z-index: 100 !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 8px 12px !important;
+  }
+
+  /* Disable hover tooltips on touch devices */
+  #cms-tooltip-container {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #cms-accurion-nav .cms-btn-label {
+    display: none !important;
+  }
+  #cms-accurion-nav .nav-actions a {
+    padding: 6px 8px !important;
+    font-size: 14px !important;
+  }
+}
